@@ -89,8 +89,9 @@ http-response ^https?:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user script
 ## advert
 http-response ^https:\/\/(api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads|open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ$|mi\.gdt\.qq\.com\/gdt_mview\.fcg\?) script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/adsense.js, requires-body=true, timeout=10, tag=广告联盟去广告
 http-response ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=start script-path=https://github.com/Larkris/earth/raw/main/script/startads.js, requires-body=true, timeout=60, tag=京东开屏广告
+http-response ^https:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad script-path=https://github.com/Larkris/earth/raw/main/script/wechat.js, requires-body=true, timeout=60, tag=微信公众号文章底部广告
 http-response ^https:\/\/api\.m\.mi\.com\/v1\/app\/start$ script-path=https://github.com/Larkris/earth/raw/main/script/startads.js, requires-body=true, timeout=60, tag=小米商城开屏广告
 http-response ^https:\/\/hd\.mina\.mi\.com\/splashscreen\/alert script-path=https://github.com/Larkris/earth/raw/main/script/startads.js, requires-body=true, timeout=60, tag=小爱音箱开屏广告
 
 [MITM]
-hostname = *.google.cn, acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api.m.jd.com, api.m.mi.com, backend.getdrafts.com, dayone.*, duckduckgo.com, gab.122.gov.cn, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, m.10010.com, m.client.10010.com, mi.gdt.qq.com, mobile-api.adguard.org, nczx*.czsmk.com, open.e.kuaishou.com, pan.baidu.com, ucmp.sf-express.com, www.themoviedb.org
+hostname = *.google.cn, acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api.m.jd.com, api.m.mi.com, backend.getdrafts.com, dayone.*, duckduckgo.com, gab.122.gov.cn, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, m.10010.com, m.client.10010.com, mi.gdt.qq.com, mobile-api.adguard.org, mp.weixin.qq.com, nczx*.czsmk.com, open.e.kuaishou.com, pan.baidu.com, ucmp.sf-express.com, www.themoviedb.org
