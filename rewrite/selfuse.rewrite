@@ -1,0 +1,109 @@
+# hostname
+hostname = *.google.cn, acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api.m.jd.com, api.m.mi.com, backend.getdrafts.com, dayone.*, duckduckgo.com, gab.122.gov.cn, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, m.10010.com, m.client.10010.com, mi.gdt.qq.com, mobile-api.adguard.org, mp.weixin.qq.com, nczx*.czsmk.com, open.e.kuaishou.com, pan.baidu.com, spclient.wg.spotify.com, testflight.apple.com, tiebac.baidu.com, ucmp.sf-express.com, www.themoviedb.org
+
+### rewrite
+## redirect
+# google *.google.cn
+^https?:\/\/(www\.)?g(oogle)?\.cn url 302 https://www.google.com
+
+# miwifi
+^http:\/\/miwifi\.com\/main\.html url 302 http://miwifi.com/cgi-bin/luci/web?goto=pc
+
+# tmdb www.themoviedb.org
+^https:\/\/www\.themoviedb\.org\/(.+?)\/(.+?)\?language=zh-hans-cn url 302 https://www.themoviedb.org/$1/$2
+
+## search duckduckgo.com
+# db 豆瓣
+^https?:\/\/duckduckgo.com\/\?q=db\+([^&]+).+ url 302 https://m.douban.com/search?query=$1
+
+# bd 百度
+^https?:\/\/duckduckgo.com\/\?q=bd\+([^&]+).+ url 302 https://www.baidu.com/s?wd=$1
+
+# 无指令 谷歌
+^https?:\/\/duckduckgo.com\/\?q=([^&]+).+ url 302 https://www.google.com/search?q=$1
+
+### reject
+# ali acs.m.taobao.com, gw.alicdn.com, heic.alicdn.com
+^https:\/\/(gw|heic)\.alicdn\.com\/imgextra\/i\d\/\d*\/?[\w!]+-\d-(octopus|tps-1125-1602)\.jpg_(1\d{3}|9\d{2})x(1\d{3}|9\d{2})q[59]0 url reject-dict
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.advertisementservice\.getadv url reject
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimama\.etao\.config\.query\/.+?etao_advertise url reject
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimusic\.common\.mobileservice\.startinit url reject
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.etao\.noah\.query\/.+tao_splash url reject
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryadvertise url reject
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.o2o\.ad\.gateway\.get url reject
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.taobao\.idle\.home\.welcome url reject
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.activity\.querytmsresources url reject
+^https:\/\/gw\.alicdn\.com\/imgextra\/i\d\/[\w!]+-\d-tps-702-758\.png url reject-dict
+
+# baidu pan.baidu.com
+^https:\/\/(update\.)?pan\.baidu\.com\/(act\/(api\/activityentry|v2\/(bchannel|welfare)\/list)|rest\/2\.0\/pcs\/ad|statistics) url reject-dict
+
+# bilibili 屏蔽B站视频流4480端口
+^http:\/\/.*:4480\/upgcxcode url reject
+^http:\/\/.*:4483\/upgcxcode url reject
+^http:\/\/.*:9102\/upgcxcode url reject
+
+# changzhouxing nczx*.czsmk.com
+^https:\/\/nczx(serv)?\.czsmk\.com:\d+(\/dgApi)?\/dgapp\/(adv|home|news)\/(list\?indexName=.+?&terminalType=\d|newsInfo\/getNewsClass|layout\/contents\?layoutIndex=(homeBanner|rmgn)&pageIndex=home) url reject-dict
+
+# chinaunicom m.10010.com, m.client.10010.com
+^https:\/\/m\.10010\.com\/(decoration|mall)-(data|order)\/(scaffold|query)\/(queryNewHomePageidShowData|newFirstPage)\?(page_alias|provinceCode) url reject-dict
+^https:\/\/m\.10010\.com\/homepage\/static\/js\/app\.\w+\.js$ url reject
+^https:\/\/m\.client\.10010\.com\/(mobile\wervice\/)?uniAdmsInterface\/(getHomePageAd|getWelcomeAd) url reject-dict
+^https:\/\/m\.client\.10010\.com\/mobile\wervice(important|Nine)?\/(activity|customer|homefusion|myPage|query|tyfbSearch|wisdom)\/(accountListData|fuInter|get(BroadCard|clientconfig)|get_(client_|start)adv|omoPrecisionConvergence|querySmart(BizHome|Client)|searchHotResult|selTips) url reject-dict
+
+# jd api.m.jd.com
+^https:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx url reject
+^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=queryMaterialAdverts url reject
+^https:\/\/ms\.jr\.jd\.com\/gw\/generic\/(aladdin|base)\/(new)?na\/m\/(getLoadingPicture|adInfo) url reject
+
+# jiaoguan12123 gab.122.gov.cn
+^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver$ url reject
+
+# sf ucmp.sf-express.com
+^https:\/\/ucmp\.sf-express\.com\/cx-wechat-query\/query\/info-flow\/reconsitution-list url reject-dict
+
+# wechat mp.weixin.qq.com
+^https:\/\/mp\.weixin\.qq\.com\/mp\/cps_product_info\? url reject-dict
+
+# xiaomi api.m.mi.com, home.mi.com
+^https:\/\/api\.m\.mi\.com\/v\d\/(app|home|(mi)?search)\/(page|popup|search)_(default|feed(_v\d)?|info|input)$ url reject-dict
+^https:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(carousel\/)?(banners?|myTab)\? url reject-dict
+
+### script
+## unlock
+# adguard mobile-api.adguard.org
+^https?:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt url script-response-body https://github.com/yqc007/QuantumultX/raw/master/AdGuardProCrack.js
+
+# baidu pan.baidu.com
+^https?:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user url script-response-body https://github.com/Larkris/earth/raw/main/script/baiducloud.js
+
+# dayone dayone.*
+^https?:\/\/dayone\.(me|app)\/api\/(users|v2\/users\/(account-status|receipt))$ url script-response-body https://github.com/Larkris/earth/raw/main/script/dayone.js
+
+# draft backend.getdrafts.com
+^https?:\/\/backend\.getdrafts\.com\/api\/.*\/verification* url script-response-body https://github.com/Larkris/earth/raw/main/script/draft.js
+
+# spotify spclient.wg.spotify.com
+^https?:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ url script-response-body https://github.com/app2smile/rules/raw/master/js/spotify-proto.js
+
+# testflight testflight.apple.com
+^https?:\/\/testflight\.apple\.com\/v\d\/(app|account|invite)s\/ url script-analyze-echo-response https://github.com/Larkris/earth/raw/main/script/testflightaccount.js
+
+## advert
+# adsense api-access.pangolin-sdk-toutiao.com, mi.gdt.qq.com, open.e.kuaishou.com
+^https:\/\/(api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads|open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ$|mi\.gdt\.qq\.com\/gdt_mview\.fcg\?) url script-response-body https://github.com/app2smile/rules/raw/master/js/adsense.js
+
+# baidu tiebac.baidu.com
+^https?:\/\/(c\.)?tieba(c)?\.baidu\.com\/(c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)$|tiebaads\/commonbatch|c\/s\/sync$) url script-response-body https://github.com/Larkris/earth/raw/main/script/tieba-json.js
+^https?:\/\/(c\.)?tieba(c)?\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd url script-response-body https://github.com/Larkris/earth/raw/main/script/tieba-proto.js
+
+# jd api.m.jd.com
+^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=start url script-response-body https://github.com/Larkris/earth/raw/main/script/startads.js
+
+# wechat mp.weixin.qq.com
+^https:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url script-response-body https://github.com/Larkris/earth/raw/main/script/wechat.js
+
+# xiaomi api.m.mi.com, hd.mina.mi.com
+^https:\/\/api\.m\.mi\.com\/v1\/app\/start$ url script-response-body https://github.com/Larkris/earth/raw/main/script/startads.js
+^https:\/\/hd\.mina\.mi\.com\/splashscreen\/alert url script-response-body https://github.com/Larkris/earth/raw/main/script/startads.js

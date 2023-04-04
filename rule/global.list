@@ -1,0 +1,115 @@
+# amazon
+DOMAIN-SUFFIX,amazon.com
+DOMAIN-SUFFIX,amazonaws.com
+DOMAIN-SUFFIX,amazontrust.com
+DOMAIN-SUFFIX,associates-amazon.com
+DOMAIN-SUFFIX,images-amazon.com
+DOMAIN-SUFFIX,media-amazon.com
+DOMAIN-SUFFIX,ssl-images-amazon.com
+
+# apple
+DOMAIN,testflight.apple.com
+DOMAIN-SUFFIX,apple.news
+DOMAIN-SUFFIX,appsto.re
+
+# google
+DOMAIN-KEYWORD,blogspot
+DOMAIN-KEYWORD,goog
+DOMAIN-SUFFIX,g.co
+DOMAIN-SUFFIX,ggpht.com
+DOMAIN-SUFFIX,gmail.com
+DOMAIN-SUFFIX,goo.gl
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,gvt0.com
+DOMAIN-SUFFIX,gvt1.com
+DOMAIN-SUFFIX,gvt2.com
+DOMAIN-SUFFIX,gvt3.com
+DOMAIN-SUFFIX,xn--ngstr-lra8j.com
+
+# meta
+DOMAIN-KEYWORD,facebook
+DOMAIN-KEYWORD,instagram
+DOMAIN-SUFFIX,fb.me
+DOMAIN-SUFFIX,fbcdn.net
+
+# pixiv
+DOMAIN-KEYWORD,pixiv
+DOMAIN-SUFFIX,pximg.net
+
+# reddit
+DOMAIN-SUFFIX,redd.it
+DOMAIN-SUFFIX,reddit.com
+DOMAIN-SUFFIX,redditmedia.com
+DOMAIN-SUFFIX,redditstatic.com
+
+# spotify
+DOMAIN-KEYWORD,spotify
+DOMAIN-SUFFIX,pscdn.co
+DOMAIN-SUFFIX,scdn.co
+DOMAIN-SUFFIX,spoti.fi
+IP-CIDR,35.186.224.47/32,no-resolve
+IP-CIDR,104.154.127.126/32,no-resolve
+
+# twitter
+DOMAIN-KEYWORD,twimg
+DOMAIN-KEYWORD,twitter
+DOMAIN-SUFFIX,periscope.tv
+DOMAIN-SUFFIX,pscp.tv
+DOMAIN-SUFFIX,t.co
+DOMAIN-SUFFIX,twitpic.com
+DOMAIN-SUFFIX,vine.co
+
+# wiki
+DOMAIN-SUFFIX,mediawiki.org
+DOMAIN-SUFFIX,wikibooks.org
+DOMAIN-SUFFIX,wikidata.org
+DOMAIN-SUFFIX,wikileaks.org
+DOMAIN-SUFFIX,wikimedia.org
+DOMAIN-SUFFIX,wikimediafoundation.org
+DOMAIN-SUFFIX,wikinews.org
+DOMAIN-SUFFIX,wikipedia.org
+DOMAIN-SUFFIX,wikiquote.org
+DOMAIN-SUFFIX,wikisource.org
+DOMAIN-SUFFIX,wikiversity.org
+DOMAIN-SUFFIX,wikivoyage.org
+DOMAIN-SUFFIX,wiktionary.org
+
+# youtube
+DOMAIN,youtubei.googleapis.com
+#DOMAIN,yt3.ggpht.com
+DOMAIN-SUFFIX,googlevideo.com
+DOMAIN-SUFFIX,withyoutube.com
+DOMAIN-SUFFIX,youtu.be
+DOMAIN-SUFFIX,youtube-nocookie.com
+DOMAIN-SUFFIX,youtube.com
+DOMAIN-SUFFIX,youtubeeducation.com
+DOMAIN-SUFFIX,youtubegaming.com
+DOMAIN-SUFFIX,youtubekids.com
+DOMAIN-SUFFIX,yt.be
+DOMAIN-SUFFIX,ytimg.com
+
+# misc
+DOMAIN,api.revenuecat.com
+DOMAIN,in.appcenter.ms
+DOMAIN-KEYWORD,dropbox
+DOMAIN-KEYWORD,gitbook
+DOMAIN-KEYWORD,github
+DOMAIN-KEYWORD,mastodon
+DOMAIN-KEYWORD,mobileread
+DOMAIN-SUFFIX,1lib.ph
+DOMAIN-SUFFIX,disq.us
+DOMAIN-SUFFIX,disqus.com
+DOMAIN-SUFFIX,disquscdn.com
+DOMAIN-SUFFIX,duckduckgo.com
+DOMAIN-SUFFIX,gravatar.com
+DOMAIN-SUFFIX,he.net
+DOMAIN-SUFFIX,jsdelivr.net
+DOMAIN-SUFFIX,loli.net
+DOMAIN-SUFFIX,quantumult.app
+DOMAIN-SUFFIX,themoviedb.org
+DOMAIN-SUFFIX,tmdb.org
+DOMAIN-SUFFIX,v2ex.com
+DOMAIN-SUFFIX,vercel.app
+
+# geoip
+GEOIP,global

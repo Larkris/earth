@@ -1,0 +1,131 @@
+# alibaba_ads
+DOMAIN,tunion-api.m.taobao.com
+
+# amap_ads
+DOMAIN,amap-aos-info-nogw.amap.com
+DOMAIN,awaken.amap.com
+DOMAIN,free-aos-cdn-image.amap.com
+DOMAIN,optimus-ads.amap.com
+DOMAIN,optimus-ads.amap.com.w.alikunlun.com
+
+# apple_ads
+DOMAIN,api-adservices.apple.com
+DOMAIN-SUFFIX,ads.internal.unity3d.com
+DOMAIN-SUFFIX,ads.prd.ie.internal.unity3d.com
+DOMAIN-SUFFIX,iadsdk.apple.com
+DOMAIN-SUFFIX,unityads.unity3d.com
+
+# apple_privacy
+DOMAIN,proxy.safebrowsing.apple
+DOMAIN,safebrowsing.g.applimg.com
+DOMAIN,token.safebrowsing.apple
+
+# baidu_ads
+DOMAIN,afd.baidu.com
+DOMAIN,als.baidu.com
+DOMAIN,duclick.baidu.com
+DOMAIN,mobads-logs.baidu.com
+DOMAIN,mobads.baidu.com
+DOMAIN,nadvideo2.baidu.com
+DOMAIN,nsclick.baidu.com
+DOMAIN-SUFFIX,cpro.baidu.com
+DOMAIN-SUFFIX,duapps.com
+DOMAIN-SUFFIX,pos.baidu.com
+IP-CIDR,180.76.76.200/32,no-resolve
+
+# baidu_privacy
+DOMAIN,hm.baidu.com
+DOMAIN,hmma.baidu.com
+DOMAIN,lookup.api.bsb.baidu.com
+
+# bilibili_cdn
+DOMAIN-SUFFIX,szbdyd.com
+IP-CIDR,203.107.1.1/24,no-resolve
+
+# bytedance_ads
+DOMAIN,ad.toutiao.com
+DOMAIN,dsp.toutiao.com
+DOMAIN,pangolin.snssdk.com
+DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
+
+# google_ads
+DOMAIN,ads.youtube.com
+DOMAIN-SUFFIX,doubleclick.net
+DOMAIN-SUFFIX,googleadsserving.cn
+DOMAIN-SUFFIX,googlesyndication.com
+DOMAIN-SUFFIX,googletagservices.com
+
+# google_privacy
+DOMAIN,safebrowsing.googleapis.com
+DOMAIN-SUFFIX,googletagmanager.com
+
+# mi_ads
+DOMAIN-SUFFIX,ad.xiaomi.com
+
+# mi_privacy
+DOMAIN,data.mistat.xiaomi.com
+DOMAIN,tracking.intl.miui.com
+DOMAIN-SUFFIX,tracking.miui.com
+
+# sina_ads
+DOMAIN,adimg.uve.weibo.com
+DOMAIN,adimg.vue.weibo.com
+DOMAIN,adstrategy.biz.weibo.com
+DOMAIN,kadmimage.biz.weibo.com
+DOMAIN,sax.sina.com.cn
+DOMAIN,saxn.sina.com.cn
+DOMAIN,saxs.sina.com.cn
+DOMAIN,sdkaction.biz.weibo.com
+DOMAIN,sdkclick.biz.weibo.com
+DOMAIN,sdkmonitor.biz.weibo.com
+DOMAIN,u1.img.mobile.sina.cn
+DOMAIN-SUFFIX,alitui.weibo.com
+DOMAIN-SUFFIX,beacon.sina.com.cn
+
+# tencent_ads
+DOMAIN,adsmind.apdcdn.tc.qq.com
+DOMAIN,adsmind.gdtimg.com
+DOMAIN,adsmind.tc.qq.com
+DOMAIN,adsmind.ugdtimg.com
+DOMAIN,livep.l.t002.ottcn.com
+DOMAIN,pgdt.gtimg.cn
+DOMAIN,pgdt.gtimg.com
+DOMAIN,pgdt.ugdtimg.com
+DOMAIN,splashqqlive.gtimg.com
+DOMAIN,tpns.qq.com
+DOMAIN,wa.gtimg.com
+DOMAIN-SUFFIX,e.qq.com
+DOMAIN-SUFFIX,gdt.qq.com
+DOMAIN-SUFFIX,l.qq.com
+
+# tencent_privacy
+DOMAIN,safebrowsing.urlsec.qq.com
+
+# misc_ads
+DOMAIN,api.share.mob.com
+DOMAIN,app-measurement.com
+DOMAIN,open.e.kuaishou.com
+DOMAIN-KEYWORD,adservice
+DOMAIN-KEYWORD,analytics
+DOMAIN-KEYWORD,inmobi
+DOMAIN-SUFFIX,ad.caiyunapp.com
+DOMAIN-SUFFIX,adjust.com
+DOMAIN-SUFFIX,admob.com
+DOMAIN-SUFFIX,ads-pixiv.net
+DOMAIN-SUFFIX,ads-twitter.com
+DOMAIN-SUFFIX,amazon-adsystem.com
+DOMAIN-SUFFIX,appsflyer.com
+DOMAIN-SUFFIX,flurry.com
+DOMAIN-SUFFIX,growingio.com
+DOMAIN-SUFFIX,inmobi.cn
+DOMAIN-SUFFIX,inmobicdn.cn
+DOMAIN-SUFFIX,irs01.com
+DOMAIN-SUFFIX,irs01.net
+DOMAIN-SUFFIX,irs03.com
+DOMAIN-SUFFIX,irs09.com
+DOMAIN-SUFFIX,miaozhen.com
+DOMAIN-SUFFIX,mmstat.com
+DOMAIN-SUFFIX,mopub.com
+DOMAIN-SUFFIX,openx.net
+DOMAIN-SUFFIX,tanx.com

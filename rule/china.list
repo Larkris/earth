@@ -1,0 +1,226 @@
+# adguard
+DOMAIN-KEYWORD,adguard
+DOMAIN-SUFFIX,adtidy.org
+
+# ali
+DOMAIN-KEYWORD,alibaba
+DOMAIN-KEYWORD,alipay
+DOMAIN-KEYWORD,aliyun
+DOMAIN-SUFFIX,aliapp.org
+DOMAIN-SUFFIX,alicdn.com
+DOMAIN-SUFFIX,cainiao.com
+DOMAIN-SUFFIX,ele.me
+DOMAIN-SUFFIX,elemecdn.com
+DOMAIN-SUFFIX,soku.com
+DOMAIN-SUFFIX,taobao.com
+DOMAIN-SUFFIX,tmall.com
+DOMAIN-SUFFIX,ucweb.com
+DOMAIN-SUFFIX,ykimg.com
+DOMAIN-SUFFIX,youku.com
+
+# amap
+DOMAIN-SUFFIX,amap.com
+DOMAIN-SUFFIX,autonavi.com
+DOMAIN-SUFFIX,gaode.com
+
+# baidu
+DOMAIN-SUFFIX,baidu.com
+DOMAIN-SUFFIX,baidubcr.com
+DOMAIN-SUFFIX,baidupan.com
+DOMAIN-SUFFIX,baidupcs.com
+DOMAIN-SUFFIX,baidustatic.com
+DOMAIN-SUFFIX,bcebos.com
+DOMAIN-SUFFIX,bdimg.com
+DOMAIN-SUFFIX,bdstatic.com
+DOMAIN-SUFFIX,duxiaoman.com
+DOMAIN-SUFFIX,duxiaomanfintech.com
+DOMAIN-SUFFIX,dxmpay.com
+DOMAIN-SUFFIX,nuomi.com
+
+# bilibili
+DOMAIN-SUFFIX,biliapi.com
+DOMAIN-SUFFIX,biliapi.net
+DOMAIN-SUFFIX,bilibili.com
+DOMAIN-SUFFIX,bilicomic.com
+DOMAIN-SUFFIX,bilicomics.com
+DOMAIN-SUFFIX,biligame.com
+DOMAIN-SUFFIX,biliimg.com
+DOMAIN-SUFFIX,bilivideo.com
+DOMAIN-SUFFIX,hdslb.com
+
+# bytedance
+DOMAIN-KEYWORD,douyin
+DOMAIN-KEYWORD,toutiao
+DOMAIN-SUFFIX,bytecdntp.com
+DOMAIN-SUFFIX,bytegoofy.com
+DOMAIN-SUFFIX,ctobsnssdk.com
+DOMAIN-SUFFIX,gifshow.com
+DOMAIN-SUFFIX,pstatp.com
+DOMAIN-SUFFIX,snssdk.com
+
+# caiyun
+DOMAIN-SUFFIX,caiyunapp.com
+DOMAIN-SUFFIX,caiyuncdn.com
+DOMAIN-SUFFIX,colorfulclouds.net
+DOMAIN-SUFFIX,dutils.com
+
+# days_matter
+DOMAIN-SUFFIX,2q10.com
+DOMAIN-SUFFIX,appcloudcdn.com
+DOMAIN-SUFFIX,icitycdn.com
+DOMAIN-SUFFIX,yupoo.com
+
+# iqiyi
+DOMAIN-KEYWORD,qiyi
+DOMAIN-SUFFIX,qy.net
+
+# jd
+DOMAIN-SUFFIX,300hu.com
+DOMAIN-SUFFIX,360buyimg.com
+DOMAIN-SUFFIX,jd.com
+DOMAIN-SUFFIX,jdcloud-oss.com
+DOMAIN-SUFFIX,jddebug.com
+DOMAIN-SUFFIX,jdpay.com
+DOMAIN-SUFFIX,jingxi.com
+
+# media
+DOMAIN-KEYWORD,cfnode
+DOMAIN-KEYWORD,cupfox
+DOMAIN-KEYWORD,ffzy-online
+DOMAIN-KEYWORD,ffzy-play
+DOMAIN-KEYWORD,fsvod
+DOMAIN-KEYWORD,libvio
+DOMAIN-KEYWORD,lz-cdn
+DOMAIN-KEYWORD,yzzy-tv
+DOMAIN-SUFFIX,ajeee.com
+DOMAIN-SUFFIX,ebys.cc
+DOMAIN-SUFFIX,freeok.vip
+DOMAIN-SUFFIX,kdcdn.net
+DOMAIN-SUFFIX,qooqlevideo.com
+
+# netease
+DOMAIN-SUFFIX,126.com
+DOMAIN-SUFFIX,126.net
+DOMAIN-SUFFIX,127.net
+DOMAIN-SUFFIX,163.com
+DOMAIN-SUFFIX,163yun.com
+DOMAIN-SUFFIX,netease.com
+DOMAIN-SUFFIX,ydstatic.com
+DOMAIN-SUFFIX,youdao.com
+
+# ookla
+DOMAIN-KEYWORD,speedtest
+DOMAIN-SUFFIX,ooklaserver.net
+
+# pinduoduo
+DOMAIN-SUFFIX,pddpic.com
+DOMAIN-SUFFIX,pinduoduo.com
+DOMAIN-SUFFIX,yangkeduo.com
+
+# qweather
+DOMAIN-SUFFIX,hecdn.net
+DOMAIN-SUFFIX,heweather.net
+DOMAIN-SUFFIX,qweather.com
+DOMAIN-SUFFIX,qweather.net
+
+# sogo
+DOMAIN-SUFFIX,sogo.com
+DOMAIN-SUFFIX,sogou.com
+DOMAIN-SUFFIX,sogoucdn.com
+
+# sohu
+DOMAIN-SUFFIX,sohu-inc.com
+DOMAIN-SUFFIX,sohu.com
+DOMAIN-SUFFIX,sohucs.com
+DOMAIN-SUFFIX,v-56.com
+
+# tencent
+DOMAIN-KEYWORD,tencent
+DOMAIN-KEYWORD,wechat
+DOMAIN-KEYWORD,weixin
+DOMAIN-SUFFIX,cdntips.net
+DOMAIN-SUFFIX,dianping.com
+DOMAIN-SUFFIX,gdtimg.com
+DOMAIN-SUFFIX,gtimg.com
+DOMAIN-SUFFIX,idqqimg.com
+DOMAIN-SUFFIX,maoyan.com
+DOMAIN-SUFFIX,meituan.com
+DOMAIN-SUFFIX,meituan.net
+DOMAIN-SUFFIX,myapp.com
+DOMAIN-SUFFIX,myqcloud.com
+DOMAIN-SUFFIX,qcloud.com
+DOMAIN-SUFFIX,qcloudimg.com
+DOMAIN-SUFFIX,qq.com
+DOMAIN-SUFFIX,qqmail.com
+DOMAIN-SUFFIX,tenpay.com
+
+# weibo
+DOMAIN-SUFFIX,miaopai.com
+DOMAIN-SUFFIX,weibo.com
+DOMAIN-SUFFIX,weibocdn.com
+
+# xiaomi
+DOMAIN-KEYWORD,xiaomi
+DOMAIN-SUFFIX,appmifile.com
+DOMAIN-SUFFIX,duokan.com
+DOMAIN-SUFFIX,huami.com
+DOMAIN-SUFFIX,mi-img.com
+DOMAIN-SUFFIX,mi.com
+DOMAIN-SUFFIX,miot-spec.org
+DOMAIN-SUFFIX,mipay.com
+DOMAIN-SUFFIX,miui.com
+DOMAIN-SUFFIX,miwifi.com
+DOMAIN-SUFFIX,xmcdn.com
+DOMAIN-SUFFIX,zepp.com
+
+# misc
+DOMAIN-KEYWORD,-cn
+DOMAIN-KEYWORD,lanzou
+DOMAIN-KEYWORD,smzdm
+DOMAIN-SUFFIX,10010.com
+DOMAIN-SUFFIX,423down.com
+DOMAIN-SUFFIX,bnpublicsub.com
+DOMAIN-SUFFIX,bookfere.com
+DOMAIN-SUFFIX,crashlytics.com
+DOMAIN-SUFFIX,czjtkx.com
+DOMAIN-SUFFIX,czsmk.com
+DOMAIN-SUFFIX,douban.com
+DOMAIN-SUFFIX,doubanio.com
+DOMAIN-SUFFIX,gitee.com
+DOMAIN-SUFFIX,ipsw.me
+DOMAIN-SUFFIX,jianguoyun.com
+DOMAIN-SUFFIX,jianshu.com
+DOMAIN-SUFFIX,jianshu.io
+DOMAIN-SUFFIX,komect.com
+DOMAIN-SUFFIX,kuaishou.com
+DOMAIN-SUFFIX,notion.so
+DOMAIN-SUFFIX,nsloon.com
+DOMAIN-SUFFIX,pcbeta.com
+DOMAIN-SUFFIX,regex101.com
+DOMAIN-SUFFIX,sf-express.com
+DOMAIN-SUFFIX,unicompayment.com
+DOMAIN-SUFFIX,xiaoxiongyouhao.com
+DOMAIN-SUFFIX,yinfans.me
+DOMAIN-SUFFIX,zdmimg.com
+DOMAIN-SUFFIX,zhihu.com
+DOMAIN-SUFFIX,zhimg.com
+DOMAIN-SUFFIX,zimuku.org
+DOMAIN-SUFFIX,zmk.pw
+DOMAIN-SUFFIX,zxcs.info
+DOMAIN-SUFFIX,zxcs.me
+
+# code
+DOMAIN-SUFFIX,cn
+
+# lan
+DOMAIN-SUFFIX,local
+IP-CIDR,10.0.0.0/8,no-resolve
+IP-CIDR,100.64.0.0/10,no-resolve
+IP-CIDR,127.0.0.0/8,no-resolve
+IP-CIDR,172.16.0.0/12,no-resolve
+IP-CIDR,192.168.0.0/16,no-resolve
+IP-CIDR,224.0.0.0/4,no-resolve
+IP-CIDR6,fe80::/10,no-resolve
+
+# geoip
+GEOIP,cn

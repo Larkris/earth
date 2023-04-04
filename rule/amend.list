@@ -1,0 +1,16 @@
+# ali
+DOMAIN,log.mmstat.com
+DOMAIN,sycm.mmstat.com
+
+# apple
+#DOMAIN,weather-analytics-events.apple.com
+
+# tencent
+DOMAIN,fairplay.l.qq.com
+DOMAIN,livew.l.qq.com
+DOMAIN,vd.l.qq.com
+DOMAIN,vi.l.qq.com
+
+# misc
+DOMAIN,app.adjust.com
+DOMAIN,app.appsflyer.com
