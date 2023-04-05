@@ -110,6 +110,3 @@ DOMAIN-SUFFIX,themoviedb.org
 DOMAIN-SUFFIX,tmdb.org
 DOMAIN-SUFFIX,v2ex.com
 DOMAIN-SUFFIX,vercel.app
-
-# geoip
-GEOIP,global
