@@ -1,12 +1,3 @@
-# amazon
-DOMAIN-SUFFIX,amazon.com
-DOMAIN-SUFFIX,amazonaws.com
-DOMAIN-SUFFIX,amazontrust.com
-DOMAIN-SUFFIX,associates-amazon.com
-DOMAIN-SUFFIX,images-amazon.com
-DOMAIN-SUFFIX,media-amazon.com
-DOMAIN-SUFFIX,ssl-images-amazon.com
-
 # apple
 DOMAIN,testflight.apple.com
 DOMAIN-SUFFIX,apple.news
@@ -38,10 +29,8 @@ DOMAIN-KEYWORD,pixiv
 DOMAIN-SUFFIX,pximg.net
 
 # reddit
+DOMAIN-KEYWORD,reddit
 DOMAIN-SUFFIX,redd.it
-DOMAIN-SUFFIX,reddit.com
-DOMAIN-SUFFIX,redditmedia.com
-DOMAIN-SUFFIX,redditstatic.com
 
 # spotify
 DOMAIN-KEYWORD,spotify
@@ -76,71 +65,56 @@ DOMAIN-SUFFIX,wikivoyage.org
 DOMAIN-SUFFIX,wiktionary.org
 
 # youtube
+DOMAIN-KEYWORD,youtube
 DOMAIN,youtubei.googleapis.com
 #DOMAIN,yt3.ggpht.com
 DOMAIN-SUFFIX,googlevideo.com
-DOMAIN-SUFFIX,withyoutube.com
 DOMAIN-SUFFIX,youtu.be
-DOMAIN-SUFFIX,youtube-nocookie.com
-DOMAIN-SUFFIX,youtube.com
-DOMAIN-SUFFIX,youtubeeducation.com
-DOMAIN-SUFFIX,youtubegaming.com
-DOMAIN-SUFFIX,youtubekids.com
 DOMAIN-SUFFIX,yt.be
 DOMAIN-SUFFIX,ytimg.com
 
 # misc
 DOMAIN,api.revenuecat.com
 DOMAIN,in.appcenter.ms
+DOMAIN-KEYWORD,9to5
+DOMAIN-KEYWORD,amazon
+DOMAIN-KEYWORD,cloudflare
 DOMAIN-KEYWORD,dropbox
 DOMAIN-KEYWORD,gitbook
 DOMAIN-KEYWORD,github
+DOMAIN-KEYWORD,jsdelivr
 DOMAIN-KEYWORD,mastodon
 DOMAIN-KEYWORD,mobileread
 DOMAIN-SUFFIX,1lib.ph
-DOMAIN-SUFFIX,9to5mac.com
-DOMAIN-SUFFIX,9to5terminal.com
-DOMAIN-SUFFIX,adobe.com
-DOMAIN-SUFFIX,adobe.io
 DOMAIN-SUFFIX,anbernic.com
 DOMAIN-SUFFIX,azureedge.net
 DOMAIN-SUFFIX,bugsnag.com
 DOMAIN-SUFFIX,cdn.com
 DOMAIN-SUFFIX,cerebralgardens.com
-DOMAIN-SUFFIX,cloudflare-dns.com
-DOMAIN-SUFFIX,cloudflare.com
 DOMAIN-SUFFIX,cloudfront.net
 DOMAIN-SUFFIX,comodoca.com
-DOMAIN-SUFFIX,darkreader.org
 DOMAIN-SUFFIX,digicert.com
 DOMAIN-SUFFIX,digitalcertvalidation.com
 DOMAIN-SUFFIX,disq.us
 DOMAIN-SUFFIX,disqus.com
 DOMAIN-SUFFIX,disquscdn.com
 DOMAIN-SUFFIX,duckduckgo.com
-DOMAIN-SUFFIX,footprintdns.com
 DOMAIN-SUFFIX,getupnote.com
 DOMAIN-SUFFIX,godaddy.com
 DOMAIN-SUFFIX,gravatar.com
 DOMAIN-SUFFIX,he.net
 DOMAIN-SUFFIX,idownloadblog.com
-DOMAIN-SUFFIX,jsdelivr.com
-DOMAIN-SUFFIX,jsdelivr.net
 DOMAIN-SUFFIX,lencr.org
 DOMAIN-SUFFIX,loli.net
 DOMAIN-SUFFIX,macrumors.com
 DOMAIN-SUFFIX,macstories.net
-DOMAIN-SUFFIX,nvidia.com
 DOMAIN-SUFFIX,onetrust.com
 DOMAIN-SUFFIX,onthe.io
 DOMAIN-SUFFIX,owenyoung.com
-DOMAIN-SUFFIX,packagecontrol.io
 DOMAIN-SUFFIX,quantumult.app
-DOMAIN-SUFFIX,scorecardresearch.com
 DOMAIN-SUFFIX,sectigo.com
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,spot.im
-DOMAIN-SUFFIX,sublimetext.com
 DOMAIN-SUFFIX,symcb.com
 DOMAIN-SUFFIX,symcd.com
 DOMAIN-SUFFIX,tapbots.net
