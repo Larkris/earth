@@ -8,7 +8,7 @@ DOMAIN-SUFFIX,spoti.fi
 
 # youtube
 DOMAIN-KEYWORD,youtube
-DOMAIN,youtubei.googleapis.com
+#DOMAIN,youtubei.googleapis.com
 #DOMAIN,yt3.ggpht.com
 DOMAIN-SUFFIX,googlevideo.com
 DOMAIN-SUFFIX,youtu.be

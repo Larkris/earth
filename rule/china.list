@@ -144,7 +144,6 @@ DOMAIN-SUFFIX,xmcdn.com
 DOMAIN-SUFFIX,zepp.com
 
 # misc
-DOMAIN,images-cn.ssl-images-amazon.com
 DOMAIN-KEYWORD,-cn
 DOMAIN-KEYWORD,douban
 DOMAIN-KEYWORD,jianshu

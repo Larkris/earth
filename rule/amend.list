@@ -2,6 +2,9 @@
 DOMAIN,log.mmstat.com
 DOMAIN,sycm.mmstat.com
 
+# amazon
+DOMAIN,images-cn.ssl-images-amazon.com
+
 # tencent
 DOMAIN,fairplay.l.qq.com
 DOMAIN,livew.l.qq.com
