@@ -1,0 +1,12 @@
+#!name = Draft Unlock
+#!desc = Draft 解锁
+#!openurl = 
+#!author = 
+#!homepage = https://github.com/Larkris/earth/tree/main/plugin
+#!icon = https://gitlab.com/Larkris/larkris/-/raw/main/icon/draft.png
+
+[Script]
+http-response ^https:\/\/backend\.getdrafts\.com\/api\/.*\/verification* script-path=https://github.com/Larkris/earth/raw/main/script/draft.js, requires-body=true, timeout=60, tag=Draft Unlock
+
+[MITM]
+hostname = backend.getdrafts.com

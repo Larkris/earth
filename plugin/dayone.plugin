@@ -1,0 +1,12 @@
+#!name = Dayone Unlock
+#!desc = Dayone 解锁
+#!openurl = 
+#!author = 
+#!homepage = https://github.com/Larkris/earth/tree/main/plugin
+#!icon = https://gitlab.com/Larkris/larkris/-/raw/main/icon/dayone.png
+
+[Script]
+http-response ^https:\/\/dayone\.(me|app)\/api\/(users|v2\/users\/(account-status|receipt))$ script-path=https://github.com/Larkris/earth/raw/main/script/dayone.js, requires-body=true, timeout=60, tag=Dayone Unlock
+
+[MITM]
+hostname = dayone.*
