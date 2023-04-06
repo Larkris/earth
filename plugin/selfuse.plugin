@@ -23,13 +23,13 @@ www.miwifi.com = server:system
 
 ## search duckduckgo.com
 # db 豆瓣
-^https?:\/\/duckduckgo.com\/\?q=db\+([^&]+).+ https://m.douban.com/search?query=$1 302
+^https:\/\/duckduckgo.com\/\?q=db\+([^&]+).+ https://m.douban.com/search?query=$1 302
 
 # bd 百度
-^https?:\/\/duckduckgo.com\/\?q=bd\+([^&]+).+ https://www.baidu.com/s?wd=$1 302
+^https:\/\/duckduckgo.com\/\?q=bd\+([^&]+).+ https://www.baidu.com/s?wd=$1 302
 
 # 无指令 谷歌
-^https?:\/\/duckduckgo.com\/\?q=([^&]+).+ https://www.google.com/search?q=$1 302
+^https:\/\/duckduckgo.com\/\?q=([^&]+).+ https://www.google.com/search?q=$1 302
 
 ### reject
 # ali acs.m.taobao.com, gw.alicdn.com, heic.alicdn.com
@@ -81,10 +81,10 @@ www.miwifi.com = server:system
 
 [Script]
 ## unlock
-http-response ^https?:\/\/backend\.getdrafts\.com\/api\/.*\/verification* script-path=https://github.com/Larkris/earth/raw/main/script/draft.js, requires-body=true, timeout=60, tag=Draft
-http-response ^https?:\/\/dayone\.(me|app)\/api\/(users|v2\/users\/(account-status|receipt))$ script-path=https://github.com/Larkris/earth/raw/main/script/dayone.js, requires-body=true, timeout=60, tag=Dayone
-http-response ^https?:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt script-path=https://github.com/yqc007/QuantumultX/raw/master/AdGuardProCrack.js, requires-body=true, timeout=60, tag=AdGuardPro
-http-response ^https?:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user script-path=https://github.com/Larkris/earth/raw/main/script/baiducloud.js, requires-body=true, timeout=60, tag=百度网盘解锁
+http-response ^https:\/\/backend\.getdrafts\.com\/api\/.*\/verification* script-path=https://github.com/Larkris/earth/raw/main/script/draft.js, requires-body=true, timeout=60, tag=Draft
+http-response ^https:\/\/dayone\.(me|app)\/api\/(users|v2\/users\/(account-status|receipt))$ script-path=https://github.com/Larkris/earth/raw/main/script/dayone.js, requires-body=true, timeout=60, tag=Dayone
+http-response ^https:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt script-path=https://github.com/yqc007/QuantumultX/raw/master/AdGuardProCrack.js, requires-body=true, timeout=60, tag=AdGuardPro
+http-response ^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user script-path=https://github.com/Larkris/earth/raw/main/script/baiducloud.js, requires-body=true, timeout=60, tag=百度网盘解锁
 
 ## advert
 http-response ^https:\/\/(api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads|open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ$|mi\.gdt\.qq\.com\/gdt_mview\.fcg\?) script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/adsense.js, requires-body=true, timeout=10, tag=广告联盟去广告
