@@ -14,13 +14,13 @@ hostname = *.google.cn, acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, a
 
 ## search duckduckgo.com
 # db 豆瓣
-^https?:\/\/duckduckgo.com\/\?q=db\+([^&]+).+ url 302 https://m.douban.com/search?query=$1
+^https:\/\/duckduckgo.com\/\?q=db\+([^&]+).+ url 302 https://m.douban.com/search?query=$1
 
 # bd 百度
-^https?:\/\/duckduckgo.com\/\?q=bd\+([^&]+).+ url 302 https://www.baidu.com/s?wd=$1
+^https:\/\/duckduckgo.com\/\?q=bd\+([^&]+).+ url 302 https://www.baidu.com/s?wd=$1
 
 # 无指令 谷歌
-^https?:\/\/duckduckgo.com\/\?q=([^&]+).+ url 302 https://www.google.com/search?q=$1
+^https:\/\/duckduckgo.com\/\?q=([^&]+).+ url 302 https://www.google.com/search?q=$1
 
 ### reject
 # ali acs.m.taobao.com, gw.alicdn.com, heic.alicdn.com
@@ -73,22 +73,22 @@ hostname = *.google.cn, acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, a
 ### script
 ## unlock
 # adguard mobile-api.adguard.org
-^https?:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt url script-response-body https://github.com/yqc007/QuantumultX/raw/master/AdGuardProCrack.js
+^https:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt url script-response-body https://github.com/yqc007/QuantumultX/raw/master/AdGuardProCrack.js
 
 # baidu pan.baidu.com
-^https?:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user url script-response-body https://github.com/Larkris/earth/raw/main/script/baiducloud.js
+^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user url script-response-body https://github.com/Larkris/earth/raw/main/script/baiducloud.js
 
 # dayone dayone.*
-^https?:\/\/dayone\.(me|app)\/api\/(users|v2\/users\/(account-status|receipt))$ url script-response-body https://github.com/Larkris/earth/raw/main/script/dayone.js
+^https:\/\/dayone\.(me|app)\/api\/(users|v2\/users\/(account-status|receipt))$ url script-response-body https://github.com/Larkris/earth/raw/main/script/dayone.js
 
 # draft backend.getdrafts.com
-^https?:\/\/backend\.getdrafts\.com\/api\/.*\/verification* url script-response-body https://github.com/Larkris/earth/raw/main/script/draft.js
+^https:\/\/backend\.getdrafts\.com\/api\/.*\/verification* url script-response-body https://github.com/Larkris/earth/raw/main/script/draft.js
 
 # spotify spclient.wg.spotify.com
-^https?:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ url script-response-body https://github.com/app2smile/rules/raw/master/js/spotify-proto.js
+^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ url script-response-body https://github.com/app2smile/rules/raw/master/js/spotify-proto.js
 
 # testflight testflight.apple.com
-^https?:\/\/testflight\.apple\.com\/v\d\/(app|account|invite)s\/ url script-analyze-echo-response https://github.com/Larkris/earth/raw/main/script/testflightaccount.js
+^https:\/\/testflight\.apple\.com\/v\d\/(app|account|invite)s\/ url script-analyze-echo-response https://github.com/Larkris/earth/raw/main/script/testflightaccount.js
 
 ## advert
 # adsense api-access.pangolin-sdk-toutiao.com, mi.gdt.qq.com, open.e.kuaishou.com
