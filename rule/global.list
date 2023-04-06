@@ -125,6 +125,3 @@ DOMAIN-SUFFIX,vercel.app
 DOMAIN-SUFFIX,wordpress.com
 DOMAIN-SUFFIX,wp.com
 DOMAIN-SUFFIX,yahoo.com
-
-# geoip
-GEOIP,global
