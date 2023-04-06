@@ -11,6 +11,7 @@ DOMAIN-SUFFIX,ssl-images-amazon.com
 DOMAIN,testflight.apple.com
 DOMAIN-SUFFIX,apple.news
 DOMAIN-SUFFIX,appsto.re
+DOMAIN-SUFFIX,safebrowsing.apple
 
 # google
 DOMAIN-KEYWORD,blogspot
@@ -44,8 +45,10 @@ DOMAIN-SUFFIX,redditstatic.com
 
 # spotify
 DOMAIN-KEYWORD,spotify
+DOMAIN-SUFFIX,branch.io
 DOMAIN-SUFFIX,pscdn.co
 DOMAIN-SUFFIX,scdn.co
+DOMAIN-SUFFIX,scorecardresearch.com
 DOMAIN-SUFFIX,spoti.fi
 
 # twitter
@@ -121,6 +124,7 @@ DOMAIN-SUFFIX,godaddy.com
 DOMAIN-SUFFIX,gravatar.com
 DOMAIN-SUFFIX,he.net
 DOMAIN-SUFFIX,idownloadblog.com
+DOMAIN-SUFFIX,jsdelivr.com
 DOMAIN-SUFFIX,jsdelivr.net
 DOMAIN-SUFFIX,lencr.org
 DOMAIN-SUFFIX,loli.net
