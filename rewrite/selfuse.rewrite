@@ -38,7 +38,7 @@ hostname = *.google.cn, acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, a
 # baidu pan.baidu.com
 ^https:\/\/(update\.)?pan\.baidu\.com\/(act\/(api\/activityentry|v2\/(bchannel|welfare)\/list)|rest\/2\.0\/pcs\/ad|statistics) url reject-dict
 
-# bilibili 屏蔽B站视频流4480端口
+# bilibili 屏蔽B站视频流端口
 ^http:\/\/.*:4480\/upgcxcode url reject
 ^http:\/\/.*:4483\/upgcxcode url reject
 ^http:\/\/.*:9102\/upgcxcode url reject
