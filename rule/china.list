@@ -174,6 +174,7 @@ DOMAIN-SUFFIX,xmcdn.com
 DOMAIN-SUFFIX,zepp.com
 
 # misc
+DOMAIN,images-cn.ssl-images-amazon.com
 DOMAIN-KEYWORD,-cn
 DOMAIN-KEYWORD,lanzou
 DOMAIN-KEYWORD,smzdm
@@ -187,6 +188,7 @@ DOMAIN-SUFFIX,czsmk.com
 DOMAIN-SUFFIX,douban.com
 DOMAIN-SUFFIX,doubanio.com
 DOMAIN-SUFFIX,gitee.com
+DOMAIN-SUFFIX,greasyfork.org
 DOMAIN-SUFFIX,ipsw.me
 DOMAIN-SUFFIX,jianguoyun.com
 DOMAIN-SUFFIX,jianshu.com
@@ -198,6 +200,7 @@ DOMAIN-SUFFIX,nsloon.com
 DOMAIN-SUFFIX,pcbeta.com
 DOMAIN-SUFFIX,regex101.com
 DOMAIN-SUFFIX,sf-express.com
+DOMAIN-SUFFIX,stayfork.app
 DOMAIN-SUFFIX,unicompayment.com
 DOMAIN-SUFFIX,xiaoxiongyouhao.com
 DOMAIN-SUFFIX,yinfans.me
