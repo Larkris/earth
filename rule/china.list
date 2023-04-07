@@ -1,13 +1,8 @@
 # adguard
-DOMAIN-KEYWORD,adguard
 DOMAIN-SUFFIX,adtidy.org
+DOMAIN-KEYWORD,adguard
 
 # ali
-DOMAIN-KEYWORD,aliapp
-DOMAIN-KEYWORD,alibaba
-DOMAIN-KEYWORD,alicdn
-DOMAIN-KEYWORD,alipay
-DOMAIN-KEYWORD,aliyun
 DOMAIN-SUFFIX,cainiao.com
 DOMAIN-SUFFIX,ele.me
 DOMAIN-SUFFIX,elemecdn.com
@@ -17,6 +12,11 @@ DOMAIN-SUFFIX,tmall.com
 DOMAIN-SUFFIX,ucweb.com
 DOMAIN-SUFFIX,ykimg.com
 DOMAIN-SUFFIX,youku.com
+DOMAIN-KEYWORD,aliapp
+DOMAIN-KEYWORD,alibaba
+DOMAIN-KEYWORD,alicdn
+DOMAIN-KEYWORD,alipay
+DOMAIN-KEYWORD,aliyun
 
 # amap
 DOMAIN-SUFFIX,amap.com
@@ -24,31 +24,31 @@ DOMAIN-SUFFIX,autonavi.com
 DOMAIN-SUFFIX,gaode.com
 
 # baidu
-DOMAIN-KEYWORD,baidu
-DOMAIN-KEYWORD,duxiaoman
 DOMAIN-SUFFIX,bcebos.com
 DOMAIN-SUFFIX,bdimg.com
 DOMAIN-SUFFIX,bdstatic.com
 DOMAIN-SUFFIX,dxmpay.com
 DOMAIN-SUFFIX,nuomi.com
+DOMAIN-KEYWORD,baidu
+DOMAIN-KEYWORD,duxiaoman
 
 # bilibili
-DOMAIN-KEYWORD,bili
 DOMAIN-SUFFIX,hdslb.com
+DOMAIN-KEYWORD,bili
 
 # bytedance
-DOMAIN-KEYWORD,douyin
-DOMAIN-KEYWORD,snssdk
-DOMAIN-KEYWORD,toutiao
 DOMAIN-SUFFIX,bytecdntp.com
 DOMAIN-SUFFIX,bytegoofy.com
 DOMAIN-SUFFIX,gifshow.com
 DOMAIN-SUFFIX,pstatp.com
+DOMAIN-KEYWORD,douyin
+DOMAIN-KEYWORD,snssdk
+DOMAIN-KEYWORD,toutiao
 
 # caiyun
-DOMAIN-KEYWORD,caiyun
 DOMAIN-SUFFIX,colorfulclouds.net
 DOMAIN-SUFFIX,dutils.com
+DOMAIN-KEYWORD,caiyun
 
 # days_matter
 DOMAIN-SUFFIX,2q10.com
@@ -57,8 +57,8 @@ DOMAIN-SUFFIX,icitycdn.com
 DOMAIN-SUFFIX,yupoo.com
 
 # iqiyi
-DOMAIN-KEYWORD,qiyi
 DOMAIN-SUFFIX,qy.net
+DOMAIN-KEYWORD,qiyi
 
 # jd
 DOMAIN-SUFFIX,300hu.com
@@ -70,6 +70,11 @@ DOMAIN-SUFFIX,jdpay.com
 DOMAIN-SUFFIX,jingxi.com
 
 # media
+DOMAIN-SUFFIX,ajeee.com
+DOMAIN-SUFFIX,ebys.cc
+DOMAIN-SUFFIX,freeok.vip
+DOMAIN-SUFFIX,kdcdn.net
+DOMAIN-SUFFIX,qooqlevideo.com
 DOMAIN-KEYWORD,cfnode
 DOMAIN-KEYWORD,cupfox
 DOMAIN-KEYWORD,ffzy-online
@@ -78,11 +83,6 @@ DOMAIN-KEYWORD,fsvod
 DOMAIN-KEYWORD,libvio
 DOMAIN-KEYWORD,lz-cdn
 DOMAIN-KEYWORD,yzzy-tv
-DOMAIN-SUFFIX,ajeee.com
-DOMAIN-SUFFIX,ebys.cc
-DOMAIN-SUFFIX,freeok.vip
-DOMAIN-SUFFIX,kdcdn.net
-DOMAIN-SUFFIX,qooqlevideo.com
 
 # netease
 DOMAIN-SUFFIX,126.com
@@ -95,25 +95,20 @@ DOMAIN-SUFFIX,ydstatic.com
 DOMAIN-SUFFIX,youdao.com
 
 # ookla
-DOMAIN-KEYWORD,speedtest
 DOMAIN-SUFFIX,ooklaserver.net
+DOMAIN-KEYWORD,speedtest
 
 # pinduoduo
-DOMAIN-KEYWORD,pinduoduo
 DOMAIN-SUFFIX,pddpic.com
 DOMAIN-SUFFIX,yangkeduo.com
+DOMAIN-KEYWORD,pinduoduo
 
 # qweather
-DOMAIN-KEYWORD,qweather
 DOMAIN-SUFFIX,hecdn.net
 DOMAIN-SUFFIX,heweather.net
+DOMAIN-KEYWORD,qweather
 
 # tencent
-DOMAIN-KEYWORD,meituan
-DOMAIN-KEYWORD,qcloud
-DOMAIN-KEYWORD,tencent
-DOMAIN-KEYWORD,wechat
-DOMAIN-KEYWORD,weixin
 DOMAIN-SUFFIX,cdntips.net
 DOMAIN-SUFFIX,dianping.com
 DOMAIN-SUFFIX,gdtimg.com
@@ -124,13 +119,17 @@ DOMAIN-SUFFIX,myapp.com
 DOMAIN-SUFFIX,qq.com
 DOMAIN-SUFFIX,qqmail.com
 DOMAIN-SUFFIX,tenpay.com
+DOMAIN-KEYWORD,meituan
+DOMAIN-KEYWORD,qcloud
+DOMAIN-KEYWORD,tencent
+DOMAIN-KEYWORD,wechat
+DOMAIN-KEYWORD,weixin
 
 # weibo
-DOMAIN-KEYWORD,weibo
 DOMAIN-SUFFIX,miaopai.com
+DOMAIN-KEYWORD,weibo
 
 # xiaomi
-DOMAIN-KEYWORD,xiaomi
 DOMAIN-SUFFIX,appmifile.com
 DOMAIN-SUFFIX,duokan.com
 DOMAIN-SUFFIX,huami.com
@@ -142,15 +141,9 @@ DOMAIN-SUFFIX,miui.com
 DOMAIN-SUFFIX,miwifi.com
 DOMAIN-SUFFIX,xmcdn.com
 DOMAIN-SUFFIX,zepp.com
+DOMAIN-KEYWORD,xiaomi
 
 # misc
-DOMAIN-KEYWORD,-cn
-DOMAIN-KEYWORD,douban
-DOMAIN-KEYWORD,jianshu
-DOMAIN-KEYWORD,lanzou
-DOMAIN-KEYWORD,smzdm
-DOMAIN-KEYWORD,sogo
-DOMAIN-KEYWORD,sohu
 DOMAIN-SUFFIX,10010.com
 DOMAIN-SUFFIX,423down.com
 DOMAIN-SUFFIX,bnpublicsub.com
@@ -180,6 +173,13 @@ DOMAIN-SUFFIX,zimuku.org
 DOMAIN-SUFFIX,zmk.pw
 DOMAIN-SUFFIX,zxcs.info
 DOMAIN-SUFFIX,zxcs.me
+DOMAIN-KEYWORD,-cn
+DOMAIN-KEYWORD,douban
+DOMAIN-KEYWORD,jianshu
+DOMAIN-KEYWORD,lanzou
+DOMAIN-KEYWORD,smzdm
+DOMAIN-KEYWORD,sogo
+DOMAIN-KEYWORD,sohu
 
 # code
 DOMAIN-SUFFIX,cn

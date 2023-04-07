@@ -106,10 +106,6 @@ DOMAIN,safebrowsing.urlsec.qq.com
 DOMAIN,api.share.mob.com
 DOMAIN,app-measurement.com
 DOMAIN,open.e.kuaishou.com
-DOMAIN-KEYWORD,adservice
-DOMAIN-KEYWORD,analytics
-DOMAIN-KEYWORD,inmobi
-DOMAIN-KEYWORD,irs0
 DOMAIN-SUFFIX,ad.caiyunapp.com
 DOMAIN-SUFFIX,ad.cyapi.cn
 DOMAIN-SUFFIX,adjust.com
@@ -127,3 +123,7 @@ DOMAIN-SUFFIX,mmstat.com
 DOMAIN-SUFFIX,mopub.com
 DOMAIN-SUFFIX,openx.net
 DOMAIN-SUFFIX,tanx.com
+DOMAIN-KEYWORD,adservice
+DOMAIN-KEYWORD,analytics
+DOMAIN-KEYWORD,inmobi
+DOMAIN-KEYWORD,irs0
