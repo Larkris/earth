@@ -1,19 +1,11 @@
-# spotify
-DOMAIN-KEYWORD,spotify
-DOMAIN-SUFFIX,branch.io
-DOMAIN-SUFFIX,pscdn.co
-DOMAIN-SUFFIX,scdn.co
-DOMAIN-SUFFIX,scorecardresearch.com
-DOMAIN-SUFFIX,spoti.fi
-
-# youtube
-DOMAIN-KEYWORD,youtube
-#DOMAIN,youtubei.googleapis.com
-#DOMAIN,yt3.ggpht.com
-DOMAIN-SUFFIX,googlevideo.com
-DOMAIN-SUFFIX,youtu.be
-DOMAIN-SUFFIX,yt.be
-DOMAIN-SUFFIX,ytimg.com
+# amazon
+DOMAIN-SUFFIX,amazon.com
+DOMAIN-SUFFIX,amazonaws.com
+DOMAIN-SUFFIX,amazontrust.com
+DOMAIN-SUFFIX,associates-amazon.com
+DOMAIN-SUFFIX,images-amazon.com
+DOMAIN-SUFFIX,media-amazon.com
+DOMAIN-SUFFIX,ssl-images-amazon.com
 
 # apple
 DOMAIN,testflight.apple.com
@@ -77,7 +69,6 @@ DOMAIN-SUFFIX,wiktionary.org
 DOMAIN,api.revenuecat.com
 DOMAIN,in.appcenter.ms
 DOMAIN-KEYWORD,9to5
-DOMAIN-KEYWORD,amazon
 DOMAIN-KEYWORD,cloudflare
 DOMAIN-KEYWORD,dropbox
 DOMAIN-KEYWORD,gitbook
