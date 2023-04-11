@@ -4,38 +4,55 @@ DOMAIN-SUFFIX,adguard.org
 DOMAIN-SUFFIX,adtidy.org
 
 # ali
-#DOMAIN-SUFFIX,cainiao.com
-#DOMAIN-SUFFIX,ele.me
-#DOMAIN-SUFFIX,elemecdn.com
+DOMAIN-SUFFIX,aliapp.org
+DOMAIN-SUFFIX,alibabachengdun.com
+DOMAIN-SUFFIX,alicdn.com
+DOMAIN-SUFFIX,alipay.com
+DOMAIN-SUFFIX,alipayobjects.com
+DOMAIN-SUFFIX,aliyuncs.com
+DOMAIN-SUFFIX,cainiao.com
+DOMAIN-SUFFIX,ele.me
+DOMAIN-SUFFIX,elemecdn.com
 #DOMAIN-SUFFIX,soku.com
-#DOMAIN-SUFFIX,taobao.com
+DOMAIN-SUFFIX,taobao.com
+DOMAIN-SUFFIX,taopiaopiao.com
 #DOMAIN-SUFFIX,tmall.com
 #DOMAIN-SUFFIX,ucweb.com
 #DOMAIN-SUFFIX,ykimg.com
 #DOMAIN-SUFFIX,youku.com
-#DOMAIN-KEYWORD,aliapp
-#DOMAIN-KEYWORD,alibaba
-#DOMAIN-KEYWORD,alicdn
-#DOMAIN-KEYWORD,alipay
-#DOMAIN-KEYWORD,aliyun
+DOMAIN-KEYWORD,alibaba
+DOMAIN-KEYWORD,alipay
+DOMAIN-KEYWORD,aliyun
 
 # amap
-#DOMAIN-SUFFIX,amap.com
-#DOMAIN-SUFFIX,autonavi.com
+DOMAIN-SUFFIX,amap.com
+DOMAIN-SUFFIX,autonavi.com
 #DOMAIN-SUFFIX,gaode.com
 
 # baidu
-#DOMAIN-SUFFIX,bcebos.com
-#DOMAIN-SUFFIX,bdimg.com
-#DOMAIN-SUFFIX,bdstatic.com
+DOMAIN-SUFFIX,baidu.com
+DOMAIN-SUFFIX,baidubcr.com
+DOMAIN-SUFFIX,baidupan.com
+DOMAIN-SUFFIX,baidupcs.com
+DOMAIN-SUFFIX,baidustatic.com
+DOMAIN-SUFFIX,bcebos.com
+DOMAIN-SUFFIX,bdimg.com
+DOMAIN-SUFFIX,bdstatic.com
 #DOMAIN-SUFFIX,dxmpay.com
 #DOMAIN-SUFFIX,nuomi.com
-#DOMAIN-KEYWORD,baidu
+DOMAIN-KEYWORD,baidu
 #DOMAIN-KEYWORD,duxiaoman
 
 # bilibili
-#DOMAIN-SUFFIX,hdslb.com
-#DOMAIN-KEYWORD,bili
+DOMAIN-SUFFIX,biliapi.com
+DOMAIN-SUFFIX,biliapi.net
+DOMAIN-SUFFIX,bilibili.com
+DOMAIN-SUFFIX,bilicomic.com
+DOMAIN-SUFFIX,bilicomics.com
+DOMAIN-SUFFIX,biligame.com
+DOMAIN-SUFFIX,biliimg.com
+DOMAIN-SUFFIX,bilivideo.com
+DOMAIN-SUFFIX,hdslb.com
 
 # bytedance
 #DOMAIN-SUFFIX,bytecdntp.com
@@ -47,9 +64,10 @@ DOMAIN-SUFFIX,adtidy.org
 #DOMAIN-KEYWORD,toutiao
 
 # caiyun
-#DOMAIN-SUFFIX,colorfulclouds.net
-#DOMAIN-SUFFIX,dutils.com
-#DOMAIN-KEYWORD,caiyun
+DOMAIN-SUFFIX,caiyunapp.com
+DOMAIN-SUFFIX,caiyuncdn.com
+DOMAIN-SUFFIX,colorfulclouds.net
+DOMAIN-SUFFIX,dutils.com
 
 # days_matter
 #DOMAIN-SUFFIX,2q10.com
@@ -62,12 +80,12 @@ DOMAIN-SUFFIX,adtidy.org
 #DOMAIN-KEYWORD,qiyi
 
 # jd
-#DOMAIN-SUFFIX,300hu.com
-#DOMAIN-SUFFIX,360buyimg.com
-#DOMAIN-SUFFIX,jd.com
+DOMAIN-SUFFIX,300hu.com
+DOMAIN-SUFFIX,360buyimg.com
+DOMAIN-SUFFIX,jd.com
 #DOMAIN-SUFFIX,jdcloud-oss.com
 #DOMAIN-SUFFIX,jddebug.com
-#DOMAIN-SUFFIX,jdpay.com
+DOMAIN-SUFFIX,jdpay.com
 #DOMAIN-SUFFIX,jingxi.com
 
 # media
@@ -85,16 +103,6 @@ DOMAIN-KEYWORD,libvio
 DOMAIN-KEYWORD,lz-cdn
 DOMAIN-KEYWORD,yzzy-tv
 
-# netease
-#DOMAIN-SUFFIX,126.com
-#DOMAIN-SUFFIX,126.net
-#DOMAIN-SUFFIX,127.net
-#DOMAIN-SUFFIX,163.com
-#DOMAIN-SUFFIX,163yun.com
-#DOMAIN-SUFFIX,netease.com
-#DOMAIN-SUFFIX,ydstatic.com
-#DOMAIN-SUFFIX,youdao.com
-
 # ookla
 DOMAIN-SUFFIX,ooklaserver.net
 DOMAIN-KEYWORD,speedtest
@@ -105,82 +113,84 @@ DOMAIN-KEYWORD,speedtest
 #DOMAIN-KEYWORD,pinduoduo
 
 # qweather
-#DOMAIN-SUFFIX,hecdn.net
-#DOMAIN-SUFFIX,heweather.net
-#DOMAIN-KEYWORD,qweather
+DOMAIN-SUFFIX,hecdn.net
+DOMAIN-SUFFIX,heweather.net
+DOMAIN-SUFFIX,qweather.com
+DOMAIN-SUFFIX,qweather.net
 
 # tencent
-#DOMAIN-SUFFIX,cdntips.net
-#DOMAIN-SUFFIX,dianping.com
-#DOMAIN-SUFFIX,gdtimg.com
-#DOMAIN-SUFFIX,gtimg.com
-#DOMAIN-SUFFIX,idqqimg.com
-#DOMAIN-SUFFIX,maoyan.com
-#DOMAIN-SUFFIX,myapp.com
-#DOMAIN-SUFFIX,qq.com
-#DOMAIN-SUFFIX,qqmail.com
-#DOMAIN-SUFFIX,tenpay.com
-#DOMAIN-KEYWORD,meituan
-#DOMAIN-KEYWORD,qcloud
-#DOMAIN-KEYWORD,tencent
-#DOMAIN-KEYWORD,wechat
-#DOMAIN-KEYWORD,weixin
+DOMAIN,slife.xy-asia.com
+DOMAIN-SUFFIX,cdntips.net
+DOMAIN-SUFFIX,dianping.com
+DOMAIN-SUFFIX,gdtimg.com
+DOMAIN-SUFFIX,gtimg.com
+DOMAIN-SUFFIX,idqqimg.com
+DOMAIN-SUFFIX,iot-tencent.com
+DOMAIN-SUFFIX,maoyan.com
+DOMAIN-SUFFIX,meituan.com
+DOMAIN-SUFFIX,meituan.net
+DOMAIN-SUFFIX,myapp.com
+DOMAIN-SUFFIX,myqcloud.com
+DOMAIN-SUFFIX,qcloud.com
+DOMAIN-SUFFIX,qcloudimg.com
+DOMAIN-SUFFIX,qq.com
+DOMAIN-SUFFIX,qqmail.com
+DOMAIN-SUFFIX,servicewechat.com
+DOMAIN-SUFFIX,tencent-cloud.com
+DOMAIN-SUFFIX,tencent-cloud.net
+DOMAIN-SUFFIX,tencent.com
+DOMAIN-SUFFIX,tencent.net
+DOMAIN-SUFFIX,tenpay.com
+DOMAIN-SUFFIX,wechat.com
+DOMAIN-SUFFIX,wechatlegal.net
+DOMAIN-SUFFIX,wechatos.net
+DOMAIN-SUFFIX,wechatpay.com
+DOMAIN-SUFFIX,weixin.com
+DOMAIN-SUFFIX,weixinbridge.com
+DOMAIN-SUFFIX,weixinsxy.com
+DOMAIN-KEYWORD,tencent
+DOMAIN-KEYWORD,wechat
+DOMAIN-KEYWORD,weixin
 
 # weibo
-#DOMAIN-SUFFIX,miaopai.com
-#DOMAIN-KEYWORD,weibo
+DOMAIN-SUFFIX,miaopai.com
+DOMAIN-SUFFIX,weibo.com
+DOMAIN-SUFFIX,weibocdn.com
 
 # xiaomi
-#DOMAIN-SUFFIX,appmifile.com
-#DOMAIN-SUFFIX,duokan.com
-#DOMAIN-SUFFIX,huami.com
-#DOMAIN-SUFFIX,mi-img.com
-#DOMAIN-SUFFIX,mi.com
-#DOMAIN-SUFFIX,miot-spec.org
-#DOMAIN-SUFFIX,mipay.com
-#DOMAIN-SUFFIX,miui.com
-#DOMAIN-SUFFIX,miwifi.com
-#DOMAIN-SUFFIX,xmcdn.com
-#DOMAIN-SUFFIX,zepp.com
-#DOMAIN-KEYWORD,xiaomi
+DOMAIN-SUFFIX,appmifile.com
+DOMAIN-SUFFIX,duokan.com
+DOMAIN-SUFFIX,huami.com
+DOMAIN-SUFFIX,mi-img.com
+DOMAIN-SUFFIX,mi.com
+DOMAIN-SUFFIX,miot-spec.org
+DOMAIN-SUFFIX,mipay.com
+DOMAIN-SUFFIX,miui.com
+DOMAIN-SUFFIX,miwifi.com
+DOMAIN-SUFFIX,xiaomi.com
+DOMAIN-SUFFIX,xiaomi.net
+DOMAIN-SUFFIX,xiaomiyoupin.com
+DOMAIN-SUFFIX,xmcdn.com
+DOMAIN-SUFFIX,zepp.com
 
 # misc
-#DOMAIN-SUFFIX,10010.com
 DOMAIN-SUFFIX,423down.com
 DOMAIN-SUFFIX,bnpublicsub.com
 DOMAIN-SUFFIX,bookfere.com
-#DOMAIN-SUFFIX,crashlytics.com
-#DOMAIN-SUFFIX,czjtkx.com
-#DOMAIN-SUFFIX,czsmk.com
-#DOMAIN-SUFFIX,gitee.com
+DOMAIN-SUFFIX,crashlytics.com
+DOMAIN-SUFFIX,czjtkx.com
+DOMAIN-SUFFIX,czsmk.com
 DOMAIN-SUFFIX,greasyfork.org
 DOMAIN-SUFFIX,ipsw.me
-#DOMAIN-SUFFIX,jianguoyun.com
-#DOMAIN-SUFFIX,komect.com
-#DOMAIN-SUFFIX,kuaishou.com
 DOMAIN-SUFFIX,notion.so
-#DOMAIN-SUFFIX,nsloon.com
-#DOMAIN-SUFFIX,pcbeta.com
 DOMAIN-SUFFIX,regex101.com
-#DOMAIN-SUFFIX,sf-express.com
 DOMAIN-SUFFIX,stayfork.app
-#DOMAIN-SUFFIX,unicompayment.com
-#DOMAIN-SUFFIX,xiaoxiongyouhao.com
 DOMAIN-SUFFIX,yinfans.me
-#DOMAIN-SUFFIX,zdmimg.com
-#DOMAIN-SUFFIX,zhihu.com
-#DOMAIN-SUFFIX,zhimg.com
 DOMAIN-SUFFIX,zimuku.org
 DOMAIN-SUFFIX,zmk.pw
 DOMAIN-SUFFIX,zxcs.info
 DOMAIN-SUFFIX,zxcs.me
-#DOMAIN-KEYWORD,-cn
-#DOMAIN-KEYWORD,douban
-#DOMAIN-KEYWORD,jianshu
 DOMAIN-KEYWORD,lanzou
-#DOMAIN-KEYWORD,smzdm
-#DOMAIN-KEYWORD,sogo
-#DOMAIN-KEYWORD,sohu
 
 # code
 DOMAIN-SUFFIX,cn
