@@ -67,12 +67,14 @@ DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
 # google_ads
 DOMAIN,ads.youtube.com
 DOMAIN-SUFFIX,doubleclick.net
+DOMAIN-SUFFIX,googleadservices.com
 DOMAIN-SUFFIX,googleadsserving.cn
 DOMAIN-SUFFIX,googlesyndication.com
 DOMAIN-SUFFIX,googletagservices.com
 
 # google_privacy
 DOMAIN,safebrowsing.googleapis.com
+DOMAIN-SUFFIX,google-analytics.com
 DOMAIN-SUFFIX,googletagmanager.com
 
 # mi_ads
@@ -87,6 +89,7 @@ DOMAIN-SUFFIX,tracking.miui.com
 DOMAIN,adimg.uve.weibo.com
 DOMAIN,adimg.vue.weibo.com
 DOMAIN,adstrategy.biz.weibo.com
+#DOMAIN,boot.biz.weibo.com
 DOMAIN,kadmimage.biz.weibo.com
 DOMAIN,sax.sina.com.cn
 DOMAIN,saxn.sina.com.cn
@@ -103,7 +106,6 @@ DOMAIN,adsmind.apdcdn.tc.qq.com
 DOMAIN,adsmind.gdtimg.com
 DOMAIN,adsmind.tc.qq.com
 DOMAIN,adsmind.ugdtimg.com
-DOMAIN,livep.l.t002.ottcn.com
 DOMAIN,pgdt.gtimg.cn
 DOMAIN,pgdt.gtimg.com
 DOMAIN,pgdt.ugdtimg.com
@@ -136,7 +138,6 @@ IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 # misc_ads
 DOMAIN,api.share.mob.com
 DOMAIN,app-measurement.com
-DOMAIN,open.e.kuaishou.com
 DOMAIN-SUFFIX,ad.caiyunapp.com
 DOMAIN-SUFFIX,ad.cyapi.cn
 DOMAIN-SUFFIX,adjust.com
@@ -145,6 +146,7 @@ DOMAIN-SUFFIX,ads-pixiv.net
 DOMAIN-SUFFIX,ads-twitter.com
 DOMAIN-SUFFIX,amazon-adsystem.com
 DOMAIN-SUFFIX,appsflyer.com
+DOMAIN-SUFFIX,e.kuaishou.com
 DOMAIN-SUFFIX,flurry.com
 DOMAIN-SUFFIX,growingio.com
 DOMAIN-SUFFIX,inmobi.cn
@@ -165,5 +167,4 @@ DOMAIN-SUFFIX,mopub.com
 DOMAIN-SUFFIX,openx.net
 DOMAIN-SUFFIX,tanx.com
 DOMAIN-KEYWORD,adservice
-DOMAIN-KEYWORD,analytics
 DOMAIN-KEYWORD,stun
