@@ -72,13 +72,20 @@ www.miwifi.com = server:system
 # sf ucmp.sf-express.com
 ^https:\/\/ucmp\.sf-express\.com\/cx-wechat-query\/query\/info-flow\/reconsitution-list reject-dict
 
+# wechat mp.weixin.qq.com
+^https:\/\/mp\.weixin\.qq\.com\/mp\/cps_product_info\? reject-dict
+
 # xiaomi api.m.mi.com, home.mi.com
 ^https:\/\/api\.m\.mi\.com\/v\d\/(app|home|(mi)?search)\/(page|popup|search)_(default|feed(_v\d)?|info|input)$ reject-dict
 ^https:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(carousel\/)?(banners?|myTab)\? reject-dict
 
 [Script]
 ## unlock
+http-response ^https:\/\/backend\.getdrafts\.com\/api\/.*\/verification* script-path=https://github.com/Larkris/earth/raw/main/script/draft.js, requires-body=true, timeout=60, tag=Draft Unlock
+http-response ^https:\/\/dayone\.(me|app)\/api\/(users|v2\/users\/(account-status|receipt))$ script-path=https://github.com/Larkris/earth/raw/main/script/dayone.js, requires-body=true, timeout=60, tag=Dayone Unlock
+http-response ^https:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt script-path=https://github.com/yqc007/QuantumultX/raw/master/AdGuardProCrack.js, requires-body=true, timeout=60, tag=AdGuard Pro Unlock
 http-response ^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user script-path=https://github.com/Larkris/earth/raw/main/script/baiducloud.js, requires-body=true, timeout=60, tag=百度网盘解锁
+http-response ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js, requires-body=true, binary-body-mode=true, timeout=10, tag=Spotify Unlock
 
 ## advert
 http-response ^https:\/\/(api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads|open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ$|mi\.gdt\.qq\.com\/gdt_mview\.fcg\?) script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/adsense.js, requires-body=true, timeout=10, tag=广告联盟去广告
@@ -88,7 +95,8 @@ http-response ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=start scrip
 http-response ^https:\/\/api\.m\.mi\.com\/v1\/app\/start$ script-path=https://github.com/Larkris/earth/raw/main/script/startads.js, requires-body=true, timeout=60, tag=小米商城开屏广告
 http-response ^https:\/\/boxer\.baidu\.com\/scheme\?scheme script-path=https://github.com/RuCu6/QuanX/raw/main/Scripts/baidu/baiduNoRedirect.js, timeout=60, tag=百度防跳转
 http-response ^https:\/\/hd\.mina\.mi\.com\/splashscreen\/alert script-path=https://github.com/Larkris/earth/raw/main/script/startads.js, requires-body=true, timeout=60, tag=小爱音箱开屏广告
+http-response ^https:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad script-path=https://github.com/Larkris/earth/raw/main/script/wechat.js, requires-body=true, timeout=60, tag=微信公众号文章底部广告
 http-response ^https:\/\/zhidao\.baidu\.com\/(question|index|\?fr|\?word) script-path=https://github.com/RuCu6/QuanX/raw/main/Scripts/webpage/baidu-zhidao.js, requires-body=true, timeout=60, tag=百度知道搜索广告
 
 [MITM]
-hostname = *.google.cn, acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api.m.jd.com, api.m.mi.com, boxer.baidu.com, duckduckgo.com, gab.122.gov.cn, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, m.10010.com, m.baidu.com, m.client.10010.com, mi.gdt.qq.com, nczx*.czsmk.com, open.e.kuaishou.com, pan.baidu.com, ucmp.sf-express.com, www.baidu.com, www.themoviedb.org, zhidao.baidu.com
+hostname = *.google.cn, acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api.m.jd.com, api.m.mi.com, backend.getdrafts.com, boxer.baidu.com, dayone.*, duckduckgo.com, gab.122.gov.cn, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, m.10010.com, m.baidu.com, m.client.10010.com, mi.gdt.qq.com, mobile-api.adguard.org, mp.weixin.qq.com, nczx*.czsmk.com, open.e.kuaishou.com, pan.baidu.com, spclient.wg.spotify.com, ucmp.sf-express.com, www.baidu.com, www.themoviedb.org, zhidao.baidu.com
