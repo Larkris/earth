@@ -27,7 +27,6 @@ DOMAIN-SUFFIX,gitbook.io
 DOMAIN-SUFFIX,gitbook.zendesk.com
 
 # github
-DOMAIN-SUFFIX,github.blog
 DOMAIN-SUFFIX,github.com
 DOMAIN-SUFFIX,github.io
 DOMAIN-SUFFIX,githubapp.com
@@ -37,7 +36,6 @@ DOMAIN-KEYWORD,github
 
 # gitlab
 DOMAIN-SUFFIX,gitlab.com
-DOMAIN-SUFFIX,gitlab.io
 DOMAIN-SUFFIX,gitlab.net
 
 # google
@@ -48,14 +46,12 @@ DOMAIN-SUFFIX,goo.gl
 DOMAIN-SUFFIX,goog
 DOMAIN-SUFFIX,google.com
 DOMAIN-SUFFIX,googleapis.com
-DOMAIN-SUFFIX,googleblog.com
 DOMAIN-SUFFIX,googlemashups.com
 DOMAIN-SUFFIX,googleusercontent.com
 DOMAIN-SUFFIX,gstatic.com
 DOMAIN-SUFFIX,gvt0.com
 DOMAIN-SUFFIX,gvt1.com
 DOMAIN-SUFFIX,gvt3.com
-DOMAIN-SUFFIX,withgoogle.com
 DOMAIN-SUFFIX,xn--ngstr-lra8j.com
 DOMAIN-KEYWORD,blogspot
 DOMAIN-KEYWORD,google
@@ -70,7 +66,6 @@ DOMAIN-SUFFIX,cdninstagram.com
 DOMAIN-SUFFIX,facebook.com
 DOMAIN-SUFFIX,fb.me
 DOMAIN-SUFFIX,fbcdn.net
-DOMAIN-SUFFIX,instagr.am
 DOMAIN-SUFFIX,instagram.com
 
 # pixiv
@@ -79,7 +74,6 @@ DOMAIN-SUFFIX,pixiv.org
 DOMAIN-SUFFIX,pximg.net
 
 # reddit
-DOMAIN-SUFFIX,redd.it
 DOMAIN-SUFFIX,reddit.com
 DOMAIN-SUFFIX,redditmedia.com
 DOMAIN-SUFFIX,redditstatic.com
@@ -89,11 +83,9 @@ DOMAIN-SUFFIX,periscope.tv
 DOMAIN-SUFFIX,pscp.tv
 DOMAIN-SUFFIX,t.co
 DOMAIN-SUFFIX,tweetdeck.com
-DOMAIN-SUFFIX,twimg.co
 DOMAIN-SUFFIX,twimg.com
 DOMAIN-SUFFIX,twitpic.com
 DOMAIN-SUFFIX,twitter.com
-DOMAIN-SUFFIX,twitter.jp
 DOMAIN-SUFFIX,vine.co
 
 # wiki
@@ -115,7 +107,6 @@ DOMAIN-SUFFIX,wiktionary.org
 DOMAIN,api.revenuecat.com
 DOMAIN,in.appcenter.ms
 DOMAIN-SUFFIX,1lib.ph
-DOMAIN-SUFFIX,anbernic.com
 DOMAIN-SUFFIX,azureedge.net
 DOMAIN-SUFFIX,branch.io
 DOMAIN-SUFFIX,bugsnag.com
