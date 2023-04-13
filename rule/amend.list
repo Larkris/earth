@@ -16,6 +16,9 @@ DOMAIN,alt7-mtalk.google.com
 DOMAIN,alt8-mtalk.google.com
 DOMAIN,mtalk.google.com
 
+# github
+DOMAIN,gist.github.com
+
 # google
 DOMAIN,clientservices.googleapis.com
 DOMAIN,dl.google.com
