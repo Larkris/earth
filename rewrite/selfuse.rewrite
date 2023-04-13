@@ -1,5 +1,5 @@
 # hostname
-hostname = *.google.cn, acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api.m.jd.com, api.m.mi.com, backend.getdrafts.com, dayone.*, duckduckgo.com, gab.122.gov.cn, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, m.10010.com, m.client.10010.com, mi.gdt.qq.com, mobile-api.adguard.org, mp.weixin.qq.com, nczx*.czsmk.com, open.e.kuaishou.com, pan.baidu.com, spclient.wg.spotify.com, testflight.apple.com, tiebac.baidu.com, ucmp.sf-express.com, www.themoviedb.org
+hostname = *.google.cn, acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api.m.jd.com, api.m.mi.com, backend.getdrafts.com, boxer.baidu.com, dayone.*, duckduckgo.com, gab.122.gov.cn, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, m.10010.com, m.baidu.com, m.client.10010.com, mi.gdt.qq.com, mobile-api.adguard.org, mp.weixin.qq.com, nczx*.czsmk.com, open.e.kuaishou.com, pan.baidu.com, spclient.wg.spotify.com, testflight.apple.com, tiebac.baidu.com, ucmp.sf-express.com, www.baidu.com, www.themoviedb.org, zhidao.baidu.com
 
 ### rewrite
 ## redirect
@@ -94,7 +94,11 @@ hostname = *.google.cn, acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, a
 # adsense api-access.pangolin-sdk-toutiao.com, mi.gdt.qq.com, open.e.kuaishou.com
 ^https:\/\/(api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads|open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ$|mi\.gdt\.qq\.com\/gdt_mview\.fcg\?) url script-response-body https://github.com/app2smile/rules/raw/master/js/adsense.js
 
-# baidu tiebac.baidu.com
+# baidu boxer.baidu.com, m.baidu.com, tiebac.baidu.com, www.baidu.com, zhidao.baidu.com
+^https:\/\/(www|m)\.baidu\.com(\/$|\/\?(ref|from).*) url script-response-body https://github.com/RuCu6/QuanX/raw/main/Scripts/webpage/baidu-index.js
+^https:\/\/(www|m)\.baidu\.com\/.*word=.* url script-response-body https://github.com/RuCu6/QuanX/raw/main/Scripts/webpage/baidu.js
+^https:\/\/boxer\.baidu\.com\/scheme\?scheme url script-response-header https://github.com/RuCu6/QuanX/raw/main/Scripts/baidu/baiduNoRedirect.js
+^https:\/\/zhidao\.baidu\.com\/(question|index|\?fr|\?word) url script-response-body https://github.com/RuCu6/QuanX/raw/main/Scripts/webpage/baidu-zhidao.js
 ^https?:\/\/(c\.)?tieba(c)?\.baidu\.com\/(c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)$|tiebaads\/commonbatch|c\/s\/sync$) url script-response-body https://github.com/Larkris/earth/raw/main/script/tieba-json.js
 ^https?:\/\/(c\.)?tieba(c)?\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd url script-response-body https://github.com/Larkris/earth/raw/main/script/tieba-proto.js
 
