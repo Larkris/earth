@@ -78,16 +78,6 @@ DOMAIN-SUFFIX,reddit.com
 DOMAIN-SUFFIX,redditmedia.com
 DOMAIN-SUFFIX,redditstatic.com
 
-# twitter
-DOMAIN-SUFFIX,periscope.tv
-DOMAIN-SUFFIX,pscp.tv
-DOMAIN-SUFFIX,t.co
-DOMAIN-SUFFIX,tweetdeck.com
-DOMAIN-SUFFIX,twimg.com
-DOMAIN-SUFFIX,twitpic.com
-DOMAIN-SUFFIX,twitter.com
-DOMAIN-SUFFIX,vine.co
-
 # wiki
 DOMAIN-SUFFIX,mediawiki.org
 DOMAIN-SUFFIX,wikibooks.org
@@ -160,7 +150,6 @@ DOMAIN-SUFFIX,wp.com
 DOMAIN-SUFFIX,yahoo.com
 DOMAIN-SUFFIX,yandex.net
 DOMAIN-KEYWORD,9to5
-DOMAIN-KEYWORD,mastodon
 DOMAIN-KEYWORD,mobileread
 
 # akamai_ip_asn
@@ -274,11 +263,6 @@ IP-ASN,55897
 IP-ASN,57175
 IP-ASN,59598
 IP-ASN,211066
-
-# twitter_ip_asn
-IP-ASN,13414
-IP-ASN,35995
-IP-ASN,63179
 
 # wiki_ip_asn
 IP-ASN,262503
