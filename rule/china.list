@@ -138,9 +138,9 @@ DOMAIN-SUFFIX,ooklaserver.net
 DOMAIN-KEYWORD,speedtest
 
 # pinduoduo
-#DOMAIN-SUFFIX,pddpic.com
-#DOMAIN-SUFFIX,pinduoduo.com
-#DOMAIN-SUFFIX,yangkeduo.com
+DOMAIN-SUFFIX,pddpic.com
+DOMAIN-SUFFIX,pinduoduo.com
+DOMAIN-SUFFIX,yangkeduo.com
 
 # qweather
 DOMAIN-SUFFIX,hecdn.net
