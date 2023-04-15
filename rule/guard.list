@@ -1,12 +1,6 @@
 # ali_ads
 DOMAIN,tunion-api.m.taobao.com
 
-# ali_httpdns
-DOMAIN,httpdns-api.aliyuncs.com
-DOMAIN,httpdns-sc.aliyuncs.com
-DOMAIN,httpdns.alicdn.com
-IP-CIDR,203.107.1.0/24,no-resolve
-
 # amap_ads
 DOMAIN,amap-aos-info-nogw.amap.com
 DOMAIN,awaken.amap.com
@@ -44,18 +38,9 @@ DOMAIN,hm.baidu.com
 DOMAIN,hmma.baidu.com
 DOMAIN,lookup.api.bsb.baidu.com
 
-# baidu_httpdns
-DOMAIN,httpdns.baidu.com
-DOMAIN,httpdns.baidubce.com
-DOMAIN,httpsdns.baidu.com
-IP-CIDR,186.76.76.200/32,no-resolve
-
 # bilibili_cdn
 DOMAIN-SUFFIX,szbdyd.com
-#IP-CIDR,203.107.1.1/24,no-resolve
-
-# bilibili_httpdns
-DOMAIN,httpdns.bilivideo.com
+IP-CIDR,203.107.1.1/24,no-resolve
 
 # bytedance_ads
 DOMAIN,ad.toutiao.com
@@ -118,22 +103,6 @@ DOMAIN-SUFFIX,l.qq.com
 
 # tencent_privacy
 DOMAIN,safebrowsing.urlsec.qq.com
-
-# weibo_httpdns
-DOMAIN,dns.weibo.cn
-IP-CIDR,39.97.128.148/32,no-resolve
-IP-CIDR,39.97.130.51/32,no-resolve
-
-# weixin_httpdns
-DOMAIN,dns.weixin.qq.com
-DOMAIN,dns.weixin.qq.com.cn
-IP-CIDR,42.81.232.18/32,no-resolve
-IP-CIDR,42.187.182.106/32,no-resolve
-IP-CIDR,42.187.182.123/32,no-resolve
-IP-CIDR,42.187.184.154/32,no-resolve
-IP-CIDR,123.151.54.50/32,no-resolve
-IP-CIDR6,2402:4e00:1900:1700:0:9554:1ad9:c3a/128,no-resolve
-IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 
 # misc_ads
 DOMAIN,api.share.mob.com
