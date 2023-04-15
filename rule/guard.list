@@ -74,7 +74,6 @@ DOMAIN-SUFFIX,tracking.miui.com
 DOMAIN,adimg.uve.weibo.com
 DOMAIN,adimg.vue.weibo.com
 DOMAIN,adstrategy.biz.weibo.com
-#DOMAIN,boot.biz.weibo.com
 DOMAIN,kadmimage.biz.weibo.com
 DOMAIN,sax.sina.com.cn
 DOMAIN,saxn.sina.com.cn
@@ -106,7 +105,6 @@ DOMAIN,safebrowsing.urlsec.qq.com
 
 # misc_ads
 DOMAIN,api.share.mob.com
-DOMAIN,app-measurement.com
 DOMAIN-SUFFIX,ad.caiyunapp.com
 DOMAIN-SUFFIX,ad.cyapi.cn
 DOMAIN-SUFFIX,adjust.com

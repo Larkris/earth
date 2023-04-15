@@ -1,6 +1,5 @@
 # mastodon
 DOMAIN-SUFFIX,mastodon.social
-DOMAIN-KEYWORD,mastodon
 
 # telegram
 DOMAIN-SUFFIX,graph.org
