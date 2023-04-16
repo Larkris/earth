@@ -34,14 +34,8 @@ www.miwifi.com = server:system
 ### reject
 # ali acs.m.taobao.com, gw.alicdn.com, heic.alicdn.com
 ^https:\/\/(gw|heic)\.alicdn\.com\/imgextra\/i\d\/\d*\/?[\w!]+-\d-(octopus|tps-1125-1602)\.jpg_(1\d{3}|9\d{2})x(1\d{3}|9\d{2})q[59]0 reject-dict
-^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.advertisementservice\.getadv reject
-^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimama\.etao\.config\.query\/.+?etao_advertise reject
-^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimusic\.common\.mobileservice\.startinit reject
-^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.etao\.noah\.query\/.+tao_splash reject
-^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryadvertise reject
-^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.o2o\.ad\.gateway\.get reject
-^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.taobao\.idle\.home\.welcome reject
-^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.activity\.querytmsresources reject
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.(ali(baba|music)|film|o2o|taobao|trip)\.(activity|ad(vertisementservice)?|common|idle|mtopadvertiseapi)\.(gateway|getadv|home|mobileservice|query(advertise|tmsresources))(\.(get|startinit|welcome))? reject
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.(alimama\.)?etao\.(config|noah)\.query\/.+?tao_(advertise|splash) reject
 ^https:\/\/gw\.alicdn\.com\/imgextra\/i\d\/[\w!]+-\d-tps-702-758\.png reject-dict
 
 # baidu pan.baidu.com
