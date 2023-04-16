@@ -33,9 +33,7 @@ hostname = *.google.cn, acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, a
 ^https:\/\/(update\.)?pan\.baidu\.com\/(act\/(api\/activityentry|v2\/(bchannel|welfare)\/list)|rest\/2\.0\/pcs\/ad|statistics) url reject-dict
 
 # bilibili 屏蔽B站视频流端口
-^http:\/\/.*:4480\/upgcxcode url reject
-^http:\/\/.*:4483\/upgcxcode url reject
-^http:\/\/.*:9102\/upgcxcode url reject
+^http:\/\/.*:(448[03]|9102)\/upgcxcode url reject
 
 # changzhouxing nczx*.czsmk.com
 ^https:\/\/nczx(serv)?\.czsmk\.com:\d+(\/dgApi)?\/dgapp\/(adv|home|news)\/(list\?indexName=.+?&terminalType=\d|newsInfo\/getNewsClass|layout\/contents\?layoutIndex=(homeBanner|rmgn)&pageIndex=home) url reject-dict
