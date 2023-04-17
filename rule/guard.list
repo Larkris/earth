@@ -51,6 +51,7 @@ DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
 
 # google_ads
 DOMAIN,ads.youtube.com
+DOMAIN-SUFFIX,doubleclick-cn.net
 DOMAIN-SUFFIX,doubleclick.net
 DOMAIN-SUFFIX,googleadservices.com
 DOMAIN-SUFFIX,googleadsserving.cn
