@@ -1,5 +1,0 @@
-# hostname
-hostname = gist.githubusercontent.com, raw.githubusercontent.com
-
-# github_private
-^https?:\/\/(raw|gist)\.githubusercontent\.com url script-request-header https://github.com/Larkris/earth/raw/main/script/github-private-repo.js
