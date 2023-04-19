@@ -41,7 +41,7 @@ hostname = *.google.cn, acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, a
 # chinaunicom m.10010.com, m.client.10010.com
 ^https:\/\/m\.10010\.com\/(decoration|mall)-(data|order)\/(scaffold|query)\/(queryNewHomePageidShowData|newFirstPage)\?(page_alias|provinceCode) url reject-dict
 ^https:\/\/m\.10010\.com\/homepage\/static\/js\/app\.\w+\.js$ url reject
-^https:\/\/m\.client\.10010\.com\/(mobile\wervice\/)?uniAdmsInterface\/(getHomePageAd|getWelcomeAd) url reject-dict
+^https:\/\/m\.client\.10010\.com\/(mobile\wervice\/)?uniAdmsInterface\/get(HomePage|Welcome)Ad url reject-dict
 ^https:\/\/m\.client\.10010\.com\/mobile\wervice(important|Nine)?\/(activity|customer|homefusion|myPage|query|tyfbSearch|wisdom)\/(accountListData|fuInter|get(BroadCard|clientconfig)|get_(client_|start)adv|omoPrecisionConvergence|querySmart(BizHome|Client)|searchHotResult|selTips) url reject-dict
 
 # jd api.m.jd.com
