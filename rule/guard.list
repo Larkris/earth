@@ -142,4 +142,11 @@ DOMAIN-SUFFIX,mopub.com
 DOMAIN-SUFFIX,openx.net
 DOMAIN-SUFFIX,tanx.com
 DOMAIN-KEYWORD,adservice
+
+# stun
+DOMAIN,stun.l.google.com
+DOMAIN,stun1.l.google.com
+DOMAIN,stun2.l.google.com
+DOMAIN,stun3.l.google.com
+DOMAIN,stun4.l.google.com
 DOMAIN-KEYWORD,stun
