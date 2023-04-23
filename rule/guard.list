@@ -39,8 +39,6 @@ DOMAIN,hmma.baidu.com
 DOMAIN,lookup.api.bsb.baidu.com
 
 # bilibili_cdn
-DOMAIN,mall.bilibili.com
-DOMAIN,passport.bilibili.com
 DOMAIN-SUFFIX,szbdyd.com
 IP-CIDR,203.107.1.1/24,no-resolve
 
