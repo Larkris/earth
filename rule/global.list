@@ -43,7 +43,7 @@ DOMAIN-SUFFIX,ggpht.com
 DOMAIN-SUFFIX,gmail.com
 DOMAIN-SUFFIX,goo.gl
 DOMAIN-SUFFIX,goog
-#DOMAIN-SUFFIX,google.com
+DOMAIN-SUFFIX,google.com
 DOMAIN-SUFFIX,googleapis.com
 DOMAIN-SUFFIX,googlemashups.com
 DOMAIN-SUFFIX,googleusercontent.com
