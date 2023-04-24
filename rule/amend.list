@@ -1,8 +1,3 @@
-# adguard
-DOMAIN-SUFFIX,adguard.com
-DOMAIN-SUFFIX,adguard.org
-DOMAIN-SUFFIX,adtidy.org
-
 # ali
 DOMAIN,log.mmstat.com
 DOMAIN,sycm.mmstat.com
@@ -27,22 +22,6 @@ DOMAIN-SUFFIX,blog.google
 DOMAIN-SUFFIX,googleapis-cn.com
 DOMAIN-SUFFIX,googletraveladservices.com
 
-# media
-DOMAIN-SUFFIX,ebys.cc
-DOMAIN-SUFFIX,qooqlevideo.com
-DOMAIN-KEYWORD,cfnode
-DOMAIN-KEYWORD,cupfox
-DOMAIN-KEYWORD,ffzy-online
-DOMAIN-KEYWORD,ffzy-play
-DOMAIN-KEYWORD,fsvod
-DOMAIN-KEYWORD,libvio
-DOMAIN-KEYWORD,lz-cdn
-DOMAIN-KEYWORD,yzzy-tv
-
-# ookla
-DOMAIN-SUFFIX,ooklaserver.net
-DOMAIN-KEYWORD,speedtest
-
 # tencent
 DOMAIN,fairplay.l.qq.com
 DOMAIN,livew.l.qq.com
@@ -56,15 +35,3 @@ DOMAIN,msg.umengcloud.com
 # misc
 DOMAIN,app.adjust.com
 DOMAIN,app.appsflyer.com
-DOMAIN-SUFFIX,423down.com
-DOMAIN-SUFFIX,bnpublicsub.com
-DOMAIN-SUFFIX,bookfere.com
-DOMAIN-SUFFIX,greasyfork.org
-DOMAIN-SUFFIX,ipsw.me
-DOMAIN-SUFFIX,notion.so
-DOMAIN-SUFFIX,regex101.com
-DOMAIN-SUFFIX,stayfork.app
-DOMAIN-SUFFIX,yinfans.me
-DOMAIN-SUFFIX,zimuku.org
-DOMAIN-SUFFIX,zmk.pw
-DOMAIN-SUFFIX,zxcs.info
