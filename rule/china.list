@@ -7,6 +7,9 @@ DOMAIN-SUFFIX,adtidy.org
 DOMAIN-SUFFIX,amap.com
 DOMAIN-SUFFIX,autonavi.com
 
+# amazon
+DOMAIN,images-cn.ssl-images-amazon.com
+
 # media
 DOMAIN-SUFFIX,ebys.cc
 DOMAIN-SUFFIX,qooqlevideo.com
