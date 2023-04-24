@@ -54,9 +54,7 @@ www.miwifi.com = server:system
 ^https:\/\/m\.client\.10010\.com\/mobile\wervice(important|Nine)?\/(activity|customer|homefusion|myPage|query|tyfbSearch|wisdom)\/(accountListData|fuInter|get(BroadCard|clientconfig)|get_(client_|start)adv|omoPrecisionConvergence|querySmart(BizHome|Client)|searchHotResult|selTips) reject-dict
 
 # jd api.m.jd.com
-^https:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx reject
 ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=queryMaterialAdverts reject
-^https:\/\/ms\.jr\.jd\.com\/gw\/generic\/(aladdin|base)\/(new)?na\/m\/(getLoadingPicture|adInfo) reject
 
 # jiaoguan12123 gab.122.gov.cn
 ^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver$ reject
