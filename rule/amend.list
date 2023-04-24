@@ -2,6 +2,9 @@
 DOMAIN,log.mmstat.com
 DOMAIN,sycm.mmstat.com
 
+# amazon
+DOMAIN,images-cn.ssl-images-amazon.com
+
 # firebase_cloud_messaging
 DOMAIN,alt1-mtalk.google.com
 DOMAIN,alt2-mtalk.google.com
