@@ -5,31 +5,27 @@
 #!homepage = https://github.com/Larkris/earth/tree/main/plugin
 #!icon = https://gitlab.com/Larkris/larkris/-/raw/main/icon/general.png
 
-[Host]
-miwifi.com = server:system
-www.miwifi.com = server:system
-
 [Rewrite]
 ### rewrite
 ## redirect
 # google *.google.cn
-^https?:\/\/(www\.)?g(oogle)?\.cn https://www.google.com 302
+^https?:\/\/(www\.)?g(oogle)?\.cn 302 https://www.google.com
 
 # miwifi
-^http:\/\/miwifi\.com\/main\.html http://miwifi.com/cgi-bin/luci/web?goto=pc 302
+^http:\/\/miwifi\.com\/main\.html 302 http://miwifi.com/cgi-bin/luci/web?goto=pc
 
 # tmdb www.themoviedb.org
-^https:\/\/www\.themoviedb\.org\/(.+?)\/(.+?)\?language=zh-hans-cn https://www.themoviedb.org/$1/$2 302
+^https:\/\/www\.themoviedb\.org\/(.+?)\/(.+?)\?language=zh-hans-cn 302 https://www.themoviedb.org/$1/$2
 
 ## search duckduckgo.com
 # db 豆瓣
-^https:\/\/duckduckgo.com\/\?q=db\+([^&]+).+ https://m.douban.com/search?query=$1 302
+^https:\/\/duckduckgo.com\/\?q=db\+([^&]+).+ 302 https://m.douban.com/search?query=$1
 
 # bd 百度
-^https:\/\/duckduckgo.com\/\?q=bd\+([^&]+).+ https://www.baidu.com/s?wd=$1 302
+^https:\/\/duckduckgo.com\/\?q=bd\+([^&]+).+ 302 https://www.baidu.com/s?wd=$1
 
 # 无指令 谷歌
-^https:\/\/duckduckgo.com\/\?q=([^&]+).+ https://www.google.com/search?q=$1 302
+^https:\/\/duckduckgo.com\/\?q=([^&]+).+ 302 https://www.google.com/search?q=$1
 
 ### reject
 # ali acs.m.taobao.com, gw.alicdn.com, heic.alicdn.com
