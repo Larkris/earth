@@ -43,7 +43,8 @@
 # changzhouxing nczx*.czsmk.com
 ^https:\/\/nczx(serv)?\.czsmk\.com:\d+(\/dgApi)?\/dgapp\/(adv|home|news)\/(list\?indexName=.+?&terminalType=\d|newsInfo\/getNewsClass|layout\/contents\?layoutIndex=(homeBanner|rmgn)&pageIndex=home) reject-dict
 
-# chinaunicom m.10010.com, m.client.10010.com
+# chinaunicom img.client.10010.com, m.10010.com, m.client.10010.com
+^https:\/\/img\.client\.10010\.com\/caifuhome\/index\.html\?isPreLoad=true reject
 ^https:\/\/m\.10010\.com\/(decoration|mall)-(data|order)\/(scaffold|query)\/(queryNewHomePageidShowData|newFirstPage)\?(page_alias|provinceCode) reject-dict
 ^https:\/\/m\.10010\.com\/homepage\/static\/js\/app\.\w+\.js$ reject
 ^https:\/\/m\.client\.10010\.com\/(mobile\wervice\/)?uniAdmsInterface\/get(HomePage|Welcome)Ad reject-dict
@@ -88,4 +89,4 @@ http-response ^https:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad script-path=https:
 http-response ^https:\/\/zhidao\.baidu\.com\/(question|index|\?fr|\?word) script-path=https://github.com/RuCu6/QuanX/raw/main/Scripts/webpage/baidu-zhidao.js, requires-body=true, timeout=60, tag=百度知道搜索广告
 
 [MITM]
-hostname = *.google.cn, acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api.m.jd.com, api.m.mi.com, backend.getdrafts.com, boxer.baidu.com, dayone.*, duckduckgo.com, gab.122.gov.cn, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, m.10010.com, m.baidu.com, m.client.10010.com, mi.gdt.qq.com, mobile-api.adguard.org, mobile.yangkeduo.com, mp.weixin.qq.com, nczx*.czsmk.com, open.e.kuaishou.com, pan.baidu.com, spclient.wg.spotify.com, ucmp.sf-express.com, www.baidu.com, www.themoviedb.org, zhidao.baidu.com
+hostname = *.google.cn, acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api.m.jd.com, api.m.mi.com, backend.getdrafts.com, boxer.baidu.com, dayone.*, duckduckgo.com, gab.122.gov.cn, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, img.client.10010.com, m.10010.com, m.baidu.com, m.client.10010.com, mi.gdt.qq.com, mobile-api.adguard.org, mobile.yangkeduo.com, mp.weixin.qq.com, nczx*.czsmk.com, open.e.kuaishou.com, pan.baidu.com, spclient.wg.spotify.com, ucmp.sf-express.com, www.baidu.com, www.themoviedb.org, zhidao.baidu.com
