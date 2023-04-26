@@ -1,9 +1,13 @@
 # ali
+DOMAIN,amdc.m.taobao.com
 DOMAIN,log.mmstat.com
 DOMAIN,sycm.mmstat.com
 
 # amazon
 DOMAIN,images-cn.ssl-images-amazon.com
+
+# apple
+DOMAIN,ca.iadsdk.apple.com
 
 # firebase_cloud_messaging
 DOMAIN,alt1-mtalk.google.com
