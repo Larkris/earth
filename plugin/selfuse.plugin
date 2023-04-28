@@ -9,10 +9,10 @@
 ### rewrite
 ## redirect
 # google *.google.cn
-^https?:\/\/(www\.)?g(oogle)?\.cn 302 https://www.google.com
+#^https?:\/\/(www\.)?g(oogle)?\.cn 302 https://www.google.com
 
 # miwifi
-^http:\/\/miwifi\.com\/main\.html 302 http://miwifi.com/cgi-bin/luci/web?goto=pc
+#^http:\/\/miwifi\.com\/main\.html 302 http://miwifi.com/cgi-bin/luci/web?goto=pc
 
 # tmdb www.themoviedb.org
 ^https:\/\/www\.themoviedb\.org\/(.+?)\/(.+?)\?language=zh-hans-cn 302 https://www.themoviedb.org/$1/$2
@@ -92,4 +92,4 @@ http-response ^https:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad script-path=https:
 http-response ^https:\/\/zhidao\.baidu\.com\/(question|index|\?fr|\?word) script-path=https://github.com/RuCu6/QuanX/raw/main/Scripts/webpage/baidu-zhidao.js, requires-body=true, timeout=60, tag=百度知道搜索广告
 
 [MITM]
-hostname = *.google.cn, acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api.m.jd.com, api.m.mi.com, backend.getdrafts.com, boxer.baidu.com, dayone.*, duckduckgo.com, gab.122.gov.cn, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, hfapp-service.qweather.net, home.mi.com, img.client.10010.com, m.10010.com, m.baidu.com, m.client.10010.com, mi.gdt.qq.com, mobile-api.adguard.org, mobile.yangkeduo.com, mp.weixin.qq.com, nczx*.czsmk.com, open.e.kuaishou.com, pan.baidu.com, spclient.wg.spotify.com, ucmp.sf-express.com, www.baidu.com, www.themoviedb.org, zhidao.baidu.com
+hostname = acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api.m.jd.com, api.m.mi.com, backend.getdrafts.com, boxer.baidu.com, dayone.*, duckduckgo.com, gab.122.gov.cn, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, hfapp-service.qweather.net, home.mi.com, img.client.10010.com, m.10010.com, m.baidu.com, m.client.10010.com, mi.gdt.qq.com, mobile-api.adguard.org, mobile.yangkeduo.com, mp.weixin.qq.com, nczx*.czsmk.com, open.e.kuaishou.com, pan.baidu.com, spclient.wg.spotify.com, ucmp.sf-express.com, www.baidu.com, www.themoviedb.org, zhidao.baidu.com
