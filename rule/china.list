@@ -20,7 +20,7 @@ DOMAIN-KEYWORD,lz-cdn
 DOMAIN-KEYWORD,yzzy-tv
 
 # ookla
-DOMAIN-SUFFIX,ooklaserver.net
+DOMAIN-KEYWORD,ookla
 DOMAIN-KEYWORD,speedtest
 
 # misc

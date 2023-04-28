@@ -16,9 +16,8 @@ DOMAIN-SUFFIX,iadsdk.apple.com
 DOMAIN-SUFFIX,unityads.unity3d.com
 
 # apple_privacy
-DOMAIN,proxy.safebrowsing.apple
 DOMAIN,safebrowsing.g.applimg.com
-DOMAIN,token.safebrowsing.apple
+DOMAIN-SUFFIX,safebrowsing.apple
 
 # baidu_ads
 DOMAIN,afd.baidu.com
@@ -86,14 +85,6 @@ DOMAIN,u1.img.mobile.sina.cn
 DOMAIN-SUFFIX,alitui.weibo.com
 DOMAIN-SUFFIX,beacon.sina.com.cn
 
-# stun_ads
-DOMAIN,stun.l.google.com
-DOMAIN,stun1.l.google.com
-DOMAIN,stun2.l.google.com
-DOMAIN,stun3.l.google.com
-DOMAIN,stun4.l.google.com
-DOMAIN-KEYWORD,stun
-
 # tencent_ads
 DOMAIN,adsmind.apdcdn.tc.qq.com
 DOMAIN,adsmind.gdtimg.com
@@ -127,13 +118,7 @@ DOMAIN-SUFFIX,e.kuaishou.com
 DOMAIN-SUFFIX,flurry.com
 DOMAIN-SUFFIX,growingio.com
 DOMAIN-SUFFIX,inmobi.cn
-DOMAIN-SUFFIX,inmobi.cn
-DOMAIN-SUFFIX,inmobi.com
-DOMAIN-SUFFIX,inmobi.net
 DOMAIN-SUFFIX,inmobicdn.cn
-DOMAIN-SUFFIX,inmobicdn.cn
-DOMAIN-SUFFIX,inmobicdn.com
-DOMAIN-SUFFIX,inmobicdn.net
 DOMAIN-SUFFIX,irs01.com
 DOMAIN-SUFFIX,irs01.net
 DOMAIN-SUFFIX,irs03.com
@@ -144,3 +129,5 @@ DOMAIN-SUFFIX,mopub.com
 DOMAIN-SUFFIX,openx.net
 DOMAIN-SUFFIX,tanx.com
 DOMAIN-KEYWORD,adservice
+DOMAIN-KEYWORD,inmobi
+DOMAIN-KEYWORD,stun

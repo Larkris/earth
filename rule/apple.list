@@ -21,9 +21,5 @@ DOMAIN-SUFFIX,itunes.com
 DOMAIN-SUFFIX,me.com
 DOMAIN-SUFFIX,mzstatic.com
 
-# apple_ip_asn
-#IP-ASN,714,no-resolve
-#IP-ASN,6185,no-resolve
-
 # geoip
 GEOIP,apple
