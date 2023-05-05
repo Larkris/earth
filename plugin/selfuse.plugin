@@ -68,7 +68,8 @@
 # wechat mp.weixin.qq.com
 ^https:\/\/mp\.weixin\.qq\.com\/mp\/cps_product_info\? reject-dict
 
-# xiaomi api.m.mi.com, home.mi.com
+# xiaomi api.m.mi.com, api2.mina.mi.com, home.mi.com
+^https:\/\/api2\.mina\.mi\.com\/(banner\/get|common_config\/)\?(hardware|configName=app_homepage_greendiamond_tiny_banner&requestId)= reject-dict
 ^https:\/\/api\.m\.mi\.com\/v\d\/(app|home|(mi)?search)\/(page|popup|search)_(default|feed(_v\d)?|info|input)$ reject-dict
 ^https:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(carousel\/)?(banners?|myTab)\? reject-dict
 
@@ -92,4 +93,4 @@ http-response ^https:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad script-path=https:
 http-response ^https:\/\/zhidao\.baidu\.com\/(question|index|\?fr|\?word) script-path=https://github.com/RuCu6/QuanX/raw/main/Scripts/webpage/baidu-zhidao.js, requires-body=true, timeout=60, tag=百度知道搜索广告
 
 [MITM]
-hostname = acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api.m.jd.com, api.m.mi.com, backend.getdrafts.com, boxer.baidu.com, dayone.*, duckduckgo.com, gab.122.gov.cn, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, hfapp-service.qweather.net, home.mi.com, img.client.10010.com, m.10010.com, m.baidu.com, m.client.10010.com, mi.gdt.qq.com, mobile-api.adguard.org, mobile.yangkeduo.com, mp.weixin.qq.com, nczx*.czsmk.com, open.e.kuaishou.com, pan.baidu.com, spclient.wg.spotify.com, ucmp.sf-express.com, www.baidu.com, www.themoviedb.org, zhidao.baidu.com
+hostname = acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api.m.jd.com, api.m.mi.com, api2.mina.mi.com, backend.getdrafts.com, boxer.baidu.com, dayone.*, duckduckgo.com, gab.122.gov.cn, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, hfapp-service.qweather.net, home.mi.com, img.client.10010.com, m.10010.com, m.baidu.com, m.client.10010.com, mi.gdt.qq.com, mobile-api.adguard.org, mobile.yangkeduo.com, mp.weixin.qq.com, nczx*.czsmk.com, open.e.kuaishou.com, pan.baidu.com, spclient.wg.spotify.com, ucmp.sf-express.com, www.baidu.com, www.themoviedb.org, zhidao.baidu.com
