@@ -64,8 +64,7 @@ hostname = acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api.m.jd.com, 
 ^https:\/\/mp\.weixin\.qq\.com\/mp\/cps_product_info\? url reject-dict
 
 # xiaomi api.m.mi.com, api2.mina.mi.com, home.mi.com
-^https:\/\/api2\.mina\.mi\.com\/banner\/get\?hardware= url reject-dict
-^https:\/\/api2\.mina\.mi\.com\/common_config\/\?configName=app_homepage_greendiamond_tiny_banner&requestId= url reject-dict
+^https:\/\/api2\.mina\.mi\.com\/(banner\/get|common_config\/)\?(hardware|configName=app_homepage_greendiamond_tiny_banner&requestId)= url reject-dict
 ^https:\/\/api\.m\.mi\.com\/v\d\/(app|home|(mi)?search)\/(page|popup|search)_(default|feed(_v\d)?|info|input)$ url reject-dict
 ^https:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(carousel\/)?(banners?|myTab)\? url reject-dict
 
