@@ -36,7 +36,7 @@ hostname = acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api.m.jd.com, 
 ^http:\/\/.*:(448[03]|9102)\/upgcxcode url reject
 
 # changzhouxing nczx*.czsmk.com
-^https:\/\/nczx(serv)?\.czsmk\.com:\d+(\/dgApi)?\/dgapp\/(adv|home|news)\/(list\?indexName=.+?&terminalType=\d|newsInfo\/getNewsClass|layout\/contents\?layoutIndex=(homeBanner|rmgn)&pageIndex=home) url reject-dict
+^https:\/\/nczx(serv)?\.czsmk\.com(:\d+)?(\/dgApi)?\/dgapp\/(adv|home|news)\/(list\?indexName=.+?&terminalType=\d|newsInfo\/getNewsClass|layout\/contents\?layoutIndex=(homeBanner|rmgn)&pageIndex=home) url reject-dict
 
 # chinaunicom img.client.10010.com, m.10010.com, m.client.10010.com
 ^https:\/\/img\.client\.10010\.com\/caifuhome\/index\.html\?isPreLoad=true url reject
