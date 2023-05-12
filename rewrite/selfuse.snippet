@@ -10,7 +10,7 @@ hostname = acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api-mifit-cn2.
 ;^http:\/\/miwifi\.com\/main\.html url 302 http://miwifi.com/cgi-bin/luci/web?goto=pc
 
 # tmdb www.themoviedb.org
-^https:\/\/www\.themoviedb\.org\/(.+?)\/(.+?)\?language=zh-hans-cn url 302 https://www.themoviedb.org/$1/$2
+^https:\/\/www\.themoviedb\.org\/(\w+)\/(\d+)\?language=zh-hans-cn url 302 https://www.themoviedb.org/$1/$2
 
 ## search duckduckgo.com
 # db 豆瓣
@@ -36,7 +36,7 @@ hostname = acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api-mifit-cn2.
 ^http:\/\/.*:(448[03]|9102)\/upgcxcode url reject
 
 # changzhouxing nczx*.czsmk.com
-^https:\/\/nczx(serv)?\.czsmk\.com(:\d+)?(\/dgApi)?\/dgapp\/(adv|home|news)\/(list\?indexName=.+?&terminalType=\d|newsInfo\/getNewsClass|layout\/contents\?layoutIndex=(homeBanner|rmgn)&pageIndex=home) url reject-dict
+^https:\/\/nczx(serv)?\.czsmk\.com:\d+(\/dgApi)?\/dgapp\/(adv|home|news)\/(list\?indexName=.+?&terminalType=\d|newsInfo\/getNewsClass|layout\/contents\?layoutIndex=(homeBanner|rmgn)&pageIndex=home) url reject-dict
 
 # chinaunicom img.client.10010.com, m.10010.com, m.client.10010.com
 ^https:\/\/img\.client\.10010\.com\/caifuhome\/index\.html\?isPreLoad=true url reject
