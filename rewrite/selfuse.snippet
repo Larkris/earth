@@ -42,8 +42,7 @@ hostname = acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api-mifit-cn2.
 ^https:\/\/img\.client\.10010\.com\/caifuhome\/index\.html\?isPreLoad=true url reject
 ^https:\/\/m\.10010\.com\/(decoration|mall)-(data|order)\/(scaffold|query)\/(queryNewHomePageidShowData|newFirstPage)\?(page_alias|provinceCode) url reject-dict
 ^https:\/\/m\.10010\.com\/homepage\/static\/js\/app\.\w+\.js$ url reject
-^https:\/\/m\.client\.10010\.com\/(mobile\wervice\/)?uniAdmsInterface\/get(HomePage|Welcome)Ad url reject-dict
-^https:\/\/m\.client\.10010\.com\/mobile\wervice(important|Nine)?\/(activity|customer|homefusion|myPage|query|tyfbSearch|wisdom)\/(accountListData|fuInter|get(BroadCard|clientconfig)|get_(client_|start)adv|newUserInfo|omoPrecisionConvergence|querySmart(BizHome|Client)|searchHotResult|selTips) url reject-dict
+^https:\/\/m\.client\.10010\.com\/(mobile\wervice(important|Nine)?\/)?(activity|customer|homefusion|myPage|query|tyfbSearch|uniAdmsInterface|wisdom)\/(accountListData|fuInter|get(BroadCard|clientconfig)|get(HomePage|Welcome)Ad|get_(client_|start)adv|newUserInfo|omoPrecisionConvergence|querySmart(BizHome|Client)|searchHotResult|selTips) url reject-dict
 
 # jd api.m.jd.com
 ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=queryMaterialAdverts url reject
