@@ -117,6 +117,3 @@ DOMAIN-KEYWORD,github
 DOMAIN-KEYWORD,gitlab
 DOMAIN-KEYWORD,jsdelivr
 DOMAIN-KEYWORD,mobileread
-
-# geoip
-GEOIP,global
