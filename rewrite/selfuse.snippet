@@ -96,8 +96,8 @@ hostname = acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api-mifit-cn2.
 ^https:\/\/(www|m)\.baidu\.com\/.*word=.* url script-response-body https://github.com/RuCu6/QuanX/raw/main/Scripts/webpage/baidu.js
 ^https:\/\/boxer\.baidu\.com\/scheme\?scheme url script-response-header https://github.com/RuCu6/QuanX/raw/main/Scripts/baidu/baiduNoRedirect.js
 ^https:\/\/zhidao\.baidu\.com\/(question|index|\?fr|\?word) url script-response-body https://github.com/RuCu6/QuanX/raw/main/Scripts/webpage/baidu-zhidao.js
-^https?:\/\/(c\.)?tieba(c)?\.baidu\.com\/(c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)$|tiebaads\/commonbatch|c\/s\/sync$) url script-response-body https://github.com/Larkris/earth/raw/main/script/tieba-json.js
-^https?:\/\/(c\.)?tieba(c)?\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd url script-response-body https://github.com/Larkris/earth/raw/main/script/tieba-proto.js
+^https?:\/\/(c\.)?tiebac?\.baidu\.com\/(c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)$|tiebaads\/commonbatch|c\/s\/sync$) url script-response-body https://github.com/Larkris/earth/raw/main/script/tieba-json.js
+^https?:\/\/(c\.)?tiebac?\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd url script-response-body https://github.com/Larkris/earth/raw/main/script/tieba-proto.js
 
 # jd api.m.jd.com
 ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=start url script-response-body https://github.com/Larkris/earth/raw/main/script/startads.js
