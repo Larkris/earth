@@ -45,8 +45,7 @@
 
 # chinaunicom img.client.10010.com, m.10010.com, m.client.10010.com
 ^https:\/\/img\.client\.10010\.com\/caifuhome\/index\.html\?isPreLoad=true reject
-^https:\/\/m\.10010\.com\/(decoration|mall)-(data|order)\/(scaffold|query)\/(queryNewHomePageidShowData|newFirstPage)\?(page_alias|provinceCode) reject-dict
-^https:\/\/m\.10010\.com\/homepage\/static\/js\/\w+\.\w+\.js$ reject
+^https:\/\/m\.10010\.com\/((decoration|mall)-(data|order)|homepage)\/(scaffold|static|query)\/((queryNewHomePageidShowData|newFirstPage)\?(page_alias|provinceCode)|js\/\w+\.\w+\.js$) reject-dict
 ^https:\/\/m\.client\.10010\.com\/(mobile\wervice(important|Nine)?\/)?(activity|customer|homefusion|myPage|query|tyfbSearch|uniAdmsInterface|wisdom)\/(accountListData|fuInter|get(BroadCard|clientconfig|HomePageAd|WelcomeAd)|get_(client_|start)adv|newUserInfo|omoPrecisionConvergence|querySmart(BizHome|Client)|searchHotResult|selTips) reject-dict
 
 # jd api.m.jd.com
@@ -82,13 +81,9 @@ http-response ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|u
 
 ## advert
 http-response ^https:\/\/(api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads|open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ$|mi\.gdt\.qq\.com\/gdt_mview\.fcg\?) script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/adsense.js, requires-body=true, timeout=10, tag=广告联盟去广告
-http-response ^https:\/\/(www|m)\.baidu\.com(\/$|\/\?(ref|from).*) script-path=https://github.com/RuCu6/QuanX/raw/main/Scripts/webpage/baidu-index.js, requires-body=true, timeout=60, tag=百度搜索首页广告
-http-response ^https:\/\/(www|m)\.baidu\.com\/.*word=.* script-path=https://github.com/RuCu6/QuanX/raw/main/Scripts/webpage/baidu.js, requires-body=true, timeout=60, tag=百度搜索结果广告
 http-response ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=start script-path=https://github.com/Larkris/earth/raw/main/script/startads.js, requires-body=true, timeout=60, tag=京东开屏广告
 http-response ^https:\/\/api\.m\.mi\.com\/v1\/app\/start$ script-path=https://github.com/Larkris/earth/raw/main/script/startads.js, requires-body=true, timeout=60, tag=小米商城开屏广告
-http-response ^https:\/\/boxer\.baidu\.com\/scheme\?scheme script-path=https://github.com/RuCu6/QuanX/raw/main/Scripts/baidu/baiduNoRedirect.js, timeout=60, tag=百度防跳转
 http-response ^https:\/\/hd\.mina\.mi\.com\/splashscreen\/alert script-path=https://github.com/Larkris/earth/raw/main/script/startads.js, requires-body=true, timeout=60, tag=小爱音箱开屏广告
-http-response ^https:\/\/zhidao\.baidu\.com\/(question|index|\?fr|\?word) script-path=https://github.com/RuCu6/QuanX/raw/main/Scripts/webpage/baidu-zhidao.js, requires-body=true, timeout=60, tag=百度知道搜索广告
 
 [MITM]
-hostname = acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api-mifit-cn2.zepp.com, api.m.jd.com, api.m.mi.com, backend.getdrafts.com, boxer.baidu.com, dayone.*, duckduckgo.com, gab.122.gov.cn, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, hfapp-service.qweather.net, home.mi.com, img.client.10010.com, m.10010.com, m.baidu.com, m.client.10010.com, mi.gdt.qq.com, mobile-api.adguard.org, mobile.yangkeduo.com, mp.weixin.qq.com, nczx*.czsmk.com, open.e.kuaishou.com, pan.baidu.com, spclient.wg.spotify.com, ucmp.sf-express.com, www.baidu.com, www.themoviedb.org, zhidao.baidu.com
+hostname = acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api-mifit-cn2.zepp.com, api.m.jd.com, api.m.mi.com, backend.getdrafts.com, dayone.*, duckduckgo.com, gab.122.gov.cn, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, hfapp-service.qweather.net, home.mi.com, img.client.10010.com, m.10010.com, m.client.10010.com, mi.gdt.qq.com, mobile-api.adguard.org, mobile.yangkeduo.com, mp.weixin.qq.com, nczx*.czsmk.com, open.e.kuaishou.com, pan.baidu.com, spclient.wg.spotify.com, ucmp.sf-express.com, www.themoviedb.org
