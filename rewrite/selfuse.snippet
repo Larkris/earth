@@ -1,5 +1,5 @@
 # hostname
-hostname = acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api-mifit-cn2.zepp.com, api.m.jd.com, api.m.mi.com, backend.getdrafts.com, dayone.*, duckduckgo.com, gab.122.gov.cn, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, hfapp-service.qweather.net, home.mi.com, img.client.10010.com, m.10010.com, m.client.10010.com, mi.gdt.qq.com, mobile-api.adguard.org, mobile.yangkeduo.com, mp.weixin.qq.com, nczx*.czsmk.com, open.e.kuaishou.com, pan.baidu.com, spclient.wg.spotify.com, testflight.apple.com, tiebac.baidu.com, ucmp.sf-express.com, www.themoviedb.org
+hostname = acs.m.taobao.com, api-mifit-cn2.zepp.com, api.m.jd.com, api.m.mi.com, backend.getdrafts.com, dayone.*, duckduckgo.com, gab.122.gov.cn, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, hfapp-service.qweather.net, home.mi.com, img.client.10010.com, m.10010.com, m.client.10010.com, mobile-api.adguard.org, mobile.yangkeduo.com, mp.weixin.qq.com, nczx*.czsmk.com, pan.baidu.com, spclient.wg.spotify.com, testflight.apple.com, tiebac.baidu.com, ucmp.sf-express.com, www.themoviedb.org
 
 ### rewrite
 ## redirect
@@ -30,7 +30,7 @@ hostname = acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api-mifit-cn2.
 ^https:\/\/gw\.alicdn\.com\/imgextra\/i\d\/[\w!]+-\d-tps-702-758\.png url reject-dict
 
 # baidu pan.baidu.com
-^https:\/\/(update\.)?pan\.baidu\.com\/(act\/(api\/activityentry|v2\/(bchannel|welfare)\/list)|rest\/2\.0\/pcs\/ad|statistics) url reject-dict
+^https:\/\/(update\.)?pan\.baidu\.com\/(act\/(api\/activityentry|v\d\/(bchannel|welfare)\/list)|rest\/2\.0\/pcs\/ad|statistics) url reject-dict
 
 # bilibili 屏蔽B站视频流端口
 ^http:\/\/.*:(448[03]|9102)\/upgcxcode url reject
@@ -64,7 +64,7 @@ hostname = acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api-mifit-cn2.
 # xiaomi api-mifit-cn2.zepp.com, api.m.mi.com, home.mi.com
 ^https:\/\/api-mifit-cn2\.zepp\.com\/wechapplets url reject-dict
 ^https:\/\/api\.m\.mi\.com\/v\d\/(app|home|(mi)?search)\/(page|popup|search)_(default|feed(_v\d)?|info|input)$ url reject-dict
-^https:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(carousel\/)?(banners?|myTab)\? url reject-dict
+^https:\/\/home\.mi\.com\/cgi-op\/api\/v\d\/recommendation\/(carousel\/)?(banners?|myTab)\? url reject-dict
 
 ### script
 ## unlock
@@ -75,21 +75,18 @@ hostname = acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api-mifit-cn2.
 ^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user url script-response-body https://github.com/Larkris/earth/raw/main/script/baiducloud.js
 
 # dayone dayone.*
-^https:\/\/dayone\.(me|app)\/api\/(users|v2\/users\/(account-status|receipt))$ url script-response-body https://github.com/Larkris/earth/raw/main/script/dayone.js
+^https:\/\/dayone\.(me|app)\/api\/(users|v\d\/users\/(account-status|receipt))$ url script-response-body https://github.com/Larkris/earth/raw/main/script/dayone.js
 
 # draft backend.getdrafts.com
 ^https:\/\/backend\.getdrafts\.com\/api\/.*\/verification* url script-response-body https://github.com/Larkris/earth/raw/main/script/draft.js
 
 # spotify spclient.wg.spotify.com
-^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ url script-response-body https://github.com/app2smile/rules/raw/master/js/spotify-proto.js
+^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v\d\/bootstrap|user-customization-service\/v\d\/customize)$ url script-response-body https://github.com/app2smile/rules/raw/master/js/spotify-proto.js
 
 # testflight testflight.apple.com
 ^https:\/\/testflight\.apple\.com\/v\d\/(app|account|invite)s\/ url script-analyze-echo-response https://github.com/Larkris/earth/raw/main/script/testflightaccount.js
 
 ## advert
-# adsense api-access.pangolin-sdk-toutiao.com, mi.gdt.qq.com, open.e.kuaishou.com
-^https:\/\/(api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads|open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ$|mi\.gdt\.qq\.com\/gdt_mview\.fcg\?) url script-response-body https://github.com/app2smile/rules/raw/master/js/adsense.js
-
 # baidu tiebac.baidu.com
 ^https?:\/\/(c\.)?tiebac?\.baidu\.com\/(c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)$|tiebaads\/commonbatch|c\/s\/sync$) url script-response-body https://github.com/Larkris/earth/raw/main/script/tieba-json.js
 ^https?:\/\/(c\.)?tiebac?\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd url script-response-body https://github.com/Larkris/earth/raw/main/script/tieba-proto.js
@@ -98,5 +95,5 @@ hostname = acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api-mifit-cn2.
 ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=start url script-response-body https://github.com/Larkris/earth/raw/main/script/startads.js
 
 # xiaomi api.m.mi.com, hd.mina.mi.com
-^https:\/\/api\.m\.mi\.com\/v1\/app\/start$ url script-response-body https://github.com/Larkris/earth/raw/main/script/startads.js
+^https:\/\/api\.m\.mi\.com\/v\d\/app\/start$ url script-response-body https://github.com/Larkris/earth/raw/main/script/startads.js
 ^https:\/\/hd\.mina\.mi\.com\/splashscreen\/alert url script-response-body https://github.com/Larkris/earth/raw/main/script/startads.js
