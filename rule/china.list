@@ -25,7 +25,7 @@ DOMAIN-KEYWORD,speedtest
 
 # misc
 DOMAIN-SUFFIX,423down.com
-DOMAIN-SUFFIX,bnpublicsub.com
+#DOMAIN-SUFFIX,bnpublicsub.com
 DOMAIN-SUFFIX,bookfere.com
 DOMAIN-SUFFIX,greasyfork.org
 DOMAIN-SUFFIX,ipsw.me
