@@ -35,7 +35,7 @@
 ^https:\/\/gw\.alicdn\.com\/imgextra\/i\d\/[\w!]+-\d-tps-702-758\.png reject-dict
 
 # baidu pan.baidu.com
-^https:\/\/(update\.)?pan\.baidu\.com\/(act\/(api\/activityentry|v\d\/(bchannel|welfare)\/list)|rest\/2\.0\/pcs\/ad|statistics) reject-dict
+^https:\/\/(update\.)?pan\.baidu\.com\/(act\/(api\/activityentry|v\d\/(bchannel|welfare)\/list)|rest\/\d\.\d\/pcs\/ad|statistics) reject-dict
 
 # bilibili 屏蔽B站视频流端口
 ^http:\/\/.*:(448[03]|9102)\/upgcxcode reject
@@ -56,9 +56,6 @@
 
 # pdd mobile.yangkeduo.com
 ^https:\/\/mobile\.yangkeduo\.com\/proxy\/api\/api\/(tesla|caterham)\/(v\d\/)?query reject-dict
-
-# qweather hfapp-service.qweather.net
-^https:\/\/hfapp-service\.qweather\.net\/v\d\.\d\/app\/ad\/list\? reject-dict
 
 # sf ucmp.sf-express.com
 ^https:\/\/ucmp\.sf-express\.com\/cx-wechat-query\/query\/info-flow\/reconsitution-list reject-dict
@@ -85,4 +82,4 @@ http-response ^https:\/\/api\.m\.mi\.com\/v\d\/app\/start$ script-path=https://g
 http-response ^https:\/\/hd\.mina\.mi\.com\/splashscreen\/alert script-path=https://github.com/Larkris/earth/raw/main/script/startads.js, requires-body=true, timeout=60, tag=小爱音箱开屏广告
 
 [MITM]
-hostname = acs.m.taobao.com, api-mifit-cn2.zepp.com, api.m.jd.com, api.m.mi.com, backend.getdrafts.com, dayone.*, duckduckgo.com, gab.122.gov.cn, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, hfapp-service.qweather.net, home.mi.com, img.client.10010.com, m.10010.com, m.client.10010.com, mobile-api.adguard.org, mobile.yangkeduo.com, mp.weixin.qq.com, nczx*.czsmk.com, pan.baidu.com, spclient.wg.spotify.com, ucmp.sf-express.com, www.themoviedb.org
+hostname = acs.m.taobao.com, api-mifit-cn2.zepp.com, api.m.jd.com, api.m.mi.com, backend.getdrafts.com, dayone.*, duckduckgo.com, gab.122.gov.cn, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, img.client.10010.com, m.10010.com, m.client.10010.com, mobile-api.adguard.org, mobile.yangkeduo.com, mp.weixin.qq.com, nczx*.czsmk.com, pan.baidu.com, spclient.wg.spotify.com, ucmp.sf-express.com, www.themoviedb.org
