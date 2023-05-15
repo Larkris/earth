@@ -35,7 +35,7 @@
 ^https:\/\/gw\.alicdn\.com\/imgextra\/i\d\/[\w!]+-\d-tps-702-758\.png reject-dict
 
 # baidu pan.baidu.com
-^https:\/\/(update\.)?pan\.baidu\.com\/(act\/(api\/activityentry|v2\/(bchannel|welfare)\/list)|rest\/2\.0\/pcs\/ad|statistics) reject-dict
+^https:\/\/(update\.)?pan\.baidu\.com\/(act\/(api\/activityentry|v\d\/(bchannel|welfare)\/list)|rest\/2\.0\/pcs\/ad|statistics) reject-dict
 
 # bilibili 屏蔽B站视频流端口
 ^http:\/\/.*:(448[03]|9102)\/upgcxcode reject
@@ -69,21 +69,20 @@
 # xiaomi api-mifit-cn2.zepp.com, api.m.mi.com, home.mi.com
 ^https:\/\/api-mifit-cn2\.zepp\.com\/wechapplets reject-dict
 ^https:\/\/api\.m\.mi\.com\/v\d\/(app|home|(mi)?search)\/(page|popup|search)_(default|feed(_v\d)?|info|input)$ reject-dict
-^https:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(carousel\/)?(banners?|myTab)\? reject-dict
+^https:\/\/home\.mi\.com\/cgi-op\/api\/v\d\/recommendation\/(carousel\/)?(banners?|myTab)\? reject-dict
 
 [Script]
 ## unlock
 http-response ^https:\/\/backend\.getdrafts\.com\/api\/.*\/verification* script-path=https://github.com/Larkris/earth/raw/main/script/draft.js, requires-body=true, timeout=60, tag=Draft Unlock
-http-response ^https:\/\/dayone\.(me|app)\/api\/(users|v2\/users\/(account-status|receipt))$ script-path=https://github.com/Larkris/earth/raw/main/script/dayone.js, requires-body=true, timeout=60, tag=Dayone Unlock
+http-response ^https:\/\/dayone\.(me|app)\/api\/(users|v\d\/users\/(account-status|receipt))$ script-path=https://github.com/Larkris/earth/raw/main/script/dayone.js, requires-body=true, timeout=60, tag=Dayone Unlock
 http-response ^https:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt script-path=https://github.com/yqc007/QuantumultX/raw/master/AdGuardProCrack.js, requires-body=true, timeout=60, tag=AdGuard Pro Unlock
 http-response ^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user script-path=https://github.com/Larkris/earth/raw/main/script/baiducloud.js, requires-body=true, timeout=60, tag=百度网盘解锁
-http-response ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js, requires-body=true, binary-body-mode=true, timeout=10, tag=Spotify Unlock
+http-response ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v\d\/bootstrap|user-customization-service\/v\d\/customize)$ script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js, requires-body=true, binary-body-mode=true, timeout=10, tag=Spotify Unlock
 
 ## advert
-http-response ^https:\/\/(api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads|open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ$|mi\.gdt\.qq\.com\/gdt_mview\.fcg\?) script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/adsense.js, requires-body=true, timeout=10, tag=广告联盟去广告
 http-response ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=start script-path=https://github.com/Larkris/earth/raw/main/script/startads.js, requires-body=true, timeout=60, tag=京东开屏广告
-http-response ^https:\/\/api\.m\.mi\.com\/v1\/app\/start$ script-path=https://github.com/Larkris/earth/raw/main/script/startads.js, requires-body=true, timeout=60, tag=小米商城开屏广告
+http-response ^https:\/\/api\.m\.mi\.com\/v\d\/app\/start$ script-path=https://github.com/Larkris/earth/raw/main/script/startads.js, requires-body=true, timeout=60, tag=小米商城开屏广告
 http-response ^https:\/\/hd\.mina\.mi\.com\/splashscreen\/alert script-path=https://github.com/Larkris/earth/raw/main/script/startads.js, requires-body=true, timeout=60, tag=小爱音箱开屏广告
 
 [MITM]
-hostname = acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api-mifit-cn2.zepp.com, api.m.jd.com, api.m.mi.com, backend.getdrafts.com, dayone.*, duckduckgo.com, gab.122.gov.cn, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, hfapp-service.qweather.net, home.mi.com, img.client.10010.com, m.10010.com, m.client.10010.com, mi.gdt.qq.com, mobile-api.adguard.org, mobile.yangkeduo.com, mp.weixin.qq.com, nczx*.czsmk.com, open.e.kuaishou.com, pan.baidu.com, spclient.wg.spotify.com, ucmp.sf-express.com, www.themoviedb.org
+hostname = acs.m.taobao.com, api-mifit-cn2.zepp.com, api.m.jd.com, api.m.mi.com, backend.getdrafts.com, dayone.*, duckduckgo.com, gab.122.gov.cn, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, hfapp-service.qweather.net, home.mi.com, img.client.10010.com, m.10010.com, m.client.10010.com, mobile-api.adguard.org, mobile.yangkeduo.com, mp.weixin.qq.com, nczx*.czsmk.com, pan.baidu.com, spclient.wg.spotify.com, ucmp.sf-express.com, www.themoviedb.org
