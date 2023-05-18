@@ -40,4 +40,4 @@ DOMAIN-KEYWORD,twitter
 #IP-CIDR6,2a0a:f280::/32,no-resolve
 
 # geoip
-GEOIP,social
+GEOIP,social,no-resolve
