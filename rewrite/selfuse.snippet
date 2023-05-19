@@ -1,5 +1,5 @@
 # hostname
-hostname = acs.m.taobao.com, api-mifit-cn2.zepp.com, api.m.jd.com, api.m.mi.com, backend.getdrafts.com, dayone.*, duckduckgo.com, gab.122.gov.cn, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, img.client.10010.com, m.10010.com, m.client.10010.com, mobile-api.adguard.org, mobile.yangkeduo.com, mp.weixin.qq.com, nczx*.czsmk.com, pan.baidu.com, spclient.wg.spotify.com, testflight.apple.com, tiebac.baidu.com, ucmp.sf-express.com, www.themoviedb.org
+hostname = acs.m.taobao.com, api-mifit-cn2.zepp.com, api.m.jd.com, api.m.mi.com, backend.getdrafts.com, dayone.*, duckduckgo.com, gab.122.gov.cn, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, img.client.10010.com, m.10010.com, m.client.10010.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx*.czsmk.com, pan.baidu.com, spclient.wg.spotify.com, testflight.apple.com, tiebac.baidu.com, ucmp.sf-express.com, www.themoviedb.org
 
 ### rewrite
 ## redirect
@@ -65,9 +65,6 @@ hostname = acs.m.taobao.com, api-mifit-cn2.zepp.com, api.m.jd.com, api.m.mi.com,
 
 ### script
 ## unlock
-# adguard mobile-api.adguard.org
-^https:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt url script-response-body https://github.com/yqc007/QuantumultX/raw/master/AdGuardProCrack.js
-
 # baidu pan.baidu.com
 ^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user url script-response-body https://github.com/Larkris/earth/raw/main/script/baiducloud.js
 
