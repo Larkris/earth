@@ -89,5 +89,4 @@ hostname = acs.m.taobao.com, api-mifit-cn2.zepp.com, api.m.jd.com, api.m.mi.com,
 ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=start url script-response-body https://github.com/Larkris/earth/raw/main/script/startads.js
 
 # xiaomi api.m.mi.com, hd.mina.mi.com
-^https:\/\/api\.m\.mi\.com\/v\d\/app\/start$ url script-response-body https://github.com/Larkris/earth/raw/main/script/startads.js
-^https:\/\/hd\.mina\.mi\.com\/splashscreen\/alert url script-response-body https://github.com/Larkris/earth/raw/main/script/startads.js
+^https:\/\/(api|hd)\.m(ina)?\.mi\.com\/(v\d\/app\/start$|splashscreen\/alert) url script-response-body https://github.com/Larkris/earth/raw/main/script/startads.js
