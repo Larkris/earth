@@ -3,10 +3,6 @@ DOMAIN-SUFFIX,adguard.com
 DOMAIN-SUFFIX,adguard.org
 DOMAIN-SUFFIX,adtidy.org
 
-# amap
-DOMAIN-SUFFIX,amap.com
-DOMAIN-SUFFIX,autonavi.com
-
 # media
 DOMAIN-SUFFIX,ebys.cc
 DOMAIN-SUFFIX,qooqlevideo.com
