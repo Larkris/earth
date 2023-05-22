@@ -72,7 +72,6 @@
 ## unlock
 http-response ^https:\/\/backend\.getdrafts\.com\/api\/.*\/verification* script-path=https://github.com/Larkris/earth/raw/main/script/draft.js, requires-body=true, timeout=60, tag=Draft Unlock
 http-response ^https:\/\/dayone\.(me|app)\/api\/(users|v\d\/users\/(account-status|receipt))$ script-path=https://github.com/Larkris/earth/raw/main/script/dayone.js, requires-body=true, timeout=60, tag=Dayone Unlock
-http-response ^https:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt script-path=https://github.com/yqc007/QuantumultX/raw/master/AdGuardProCrack.js, requires-body=true, timeout=60, tag=AdGuard Pro Unlock
 http-response ^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user script-path=https://github.com/Larkris/earth/raw/main/script/baiducloud.js, requires-body=true, timeout=60, tag=百度网盘解锁
 http-response ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v\d\/bootstrap|user-customization-service\/v\d\/customize)$ script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js, requires-body=true, binary-body-mode=true, timeout=10, tag=Spotify Unlock
 
@@ -82,4 +81,4 @@ http-response ^https:\/\/api\.m\.mi\.com\/v\d\/app\/start$ script-path=https://g
 http-response ^https:\/\/hd\.mina\.mi\.com\/splashscreen\/alert script-path=https://github.com/Larkris/earth/raw/main/script/startads.js, requires-body=true, timeout=60, tag=小爱音箱开屏广告
 
 [MITM]
-hostname = acs.m.taobao.com, api-mifit-cn2.zepp.com, api.m.jd.com, api.m.mi.com, backend.getdrafts.com, dayone.*, duckduckgo.com, gab.122.gov.cn, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, img.client.10010.com, m.10010.com, m.client.10010.com, mobile-api.adguard.org, mobile.yangkeduo.com, mp.weixin.qq.com, nczx*.czsmk.com, pan.baidu.com, spclient.wg.spotify.com, ucmp.sf-express.com, www.themoviedb.org
+hostname = acs.m.taobao.com, api-mifit-cn2.zepp.com, api.m.jd.com, api.m.mi.com, backend.getdrafts.com, dayone.*, duckduckgo.com, gab.122.gov.cn, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, img.client.10010.com, m.10010.com, m.client.10010.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx*.czsmk.com, pan.baidu.com, spclient.wg.spotify.com, ucmp.sf-express.com, www.themoviedb.org
