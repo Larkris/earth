@@ -11,6 +11,9 @@
 # google *.google.cn
 #^https?:\/\/(www\.)?g(oogle)?\.cn 302 https://www.google.com
 
+# mgtv
+&src=mgtv&suuid=.*&testversion=&ticket=[A-Z0-9]{32} 302 &src=mgtv&suuid=430bab112551f8b3d4b1fa60b3576f4d&testversion=&ticket=D8DBDC5C65D535DABAAE6484AEB7A90C
+
 # miwifi
 #^http:\/\/miwifi\.com\/main\.html 302 http://miwifi.com/cgi-bin/luci/web?goto=pc
 
@@ -54,8 +57,9 @@
 # jiaoguan12123 gab.122.gov.cn
 ^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver$ reject
 
-# mgtv mob.bz.mgtv.com, mobile.da.mgtv.com
-^https?:\/\/(mob(ile)?|recom|vip)\.(api|bz|da)\.mgtv\.com\/((json\/)?app\/(bdboot|pause)|client\/dynamic_entry\?|creative\/list|m\/page|odin\/c\d\/channel\/ads\?|xyt\/banner\?) reject-dict
+# mgtv api-access.pangolin-sdk-toutiao.com, mob.bz.mgtv.com, mobile.da.mgtv.com, nuc.api.mgtv.com, pcvideoyd.titan.mgtv.com, sf3-fe-tos.pglstatp-toutiao.com
+^https:\/\/(api-access|sf3-fe-tos)\.(pangolin-sdk|pglstatp)-toutiao\.com\/(api\/ad\/|obj\/ad-pattern\/renderer\/) reject-dict
+^https?:\/\/(mob(ile)?|recom|nuc|pcvideoyd|vip)\.(api|bz|da|titan)\.mgtv\.com\/((json\/)?app\/(bdboot|pause)|client\/dynamic_entry\?|creative\/list|Logout|m\/page|mobile\/config\?_support|odin\/c\d\/channel\/ads\?|pb\/|xyt\/banner\?) reject-dict
 
 # pdd mobile.yangkeduo.com
 ^https:\/\/mobile\.yangkeduo\.com\/proxy\/api\/api\/(tesla|caterham)\/(v\d\/)?query reject-dict
@@ -84,4 +88,4 @@ http-response ^https:\/\/api\.m\.mi\.com\/v\d\/app\/start$ script-path=https://g
 http-response ^https:\/\/hd\.mina\.mi\.com\/splashscreen\/alert script-path=https://github.com/Larkris/earth/raw/main/script/startads.js, requires-body=true, timeout=60, tag=小爱音箱开屏广告
 
 [MITM]
-hostname = acs.m.taobao.com, api-mifit-cn2.zepp.com, api.m.jd.com, api.m.mi.com, backend.getdrafts.com, dayone.*, duckduckgo.com, gab.122.gov.cn, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, img.client.10010.com, m.10010.com, m.client.10010.com, mob.bz.mgtv.com, mobile.da.mgtv.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx*.czsmk.com, pan.baidu.com, spclient.wg.spotify.com, ucmp.sf-express.com, www.themoviedb.org
+hostname = acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api-mifit-cn2.zepp.com, api.m.jd.com, api.m.mi.com, backend.getdrafts.com, dayone.*, duckduckgo.com, gab.122.gov.cn, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, img.client.10010.com, m.10010.com, m.client.10010.com, mob.bz.mgtv.com, mobile.da.mgtv.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx*.czsmk.com, nuc.api.mgtv.com, pan.baidu.com, pcvideoyd.titan.mgtv.com, sf3-fe-tos.pglstatp-toutiao.com, spclient.wg.spotify.com, ucmp.sf-express.com, www.themoviedb.org
