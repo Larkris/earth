@@ -50,7 +50,7 @@ hostname = acs.m.taobao.com, api-mifit-cn2.zepp.com, api.m.jd.com, api.m.mi.com,
 ^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver$ url reject
 
 # mgtv mob.bz.mgtv.com, mobile.da.mgtv.com
-^https:\/\/mob(ile)?\.(bz|da)\.mgtv\.com\/(odin\/c\d\/channel\/ads\?|(json\/)?app\/(bdboot|pause)|creative\/list|m\/page) url reject-dict
+^https?:\/\/(mob(ile)?|recom|vip)\.(api|bz|da)\.mgtv\.com\/((json\/)?app\/(bdboot|pause)|client\/dynamic_entry\?|creative\/list|m\/page|odin\/c\d\/channel\/ads\?|xyt\/banner\?) url reject-dict
 
 # pdd mobile.yangkeduo.com
 ^https:\/\/mobile\.yangkeduo\.com\/proxy\/api\/api\/(tesla|caterham)\/(v\d\/)?query url reject-dict
