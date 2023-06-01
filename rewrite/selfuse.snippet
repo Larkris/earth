@@ -41,7 +41,7 @@ hostname = acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api-mifit-cn2.
 # chinaunicom img.client.10010.com, m.10010.com, m.client.10010.com
 ^https:\/\/img\.client\.10010\.com\/caifuhome\/index\.html\?isPreLoad=true url reject
 ^https:\/\/m\.10010\.com\/((decoration|mall)-(data|order)|homepage)\/(scaffold|static|query)\/((queryNewHomePageidShowData|newFirstPage)\?(page_alias|provinceCode)|js\/\w+\.\w+\.js$) url reject-dict
-^https:\/\/m\.client\.10010\.com\/(mobile\wervice(important|Nine)?\/)?(activity|customer|homefusion|myPage|query|tyfbSearch|uniAdmsInterface|wisdom)\/(accountListData|fuInter|get(BroadCard|clientconfig|HomePageAd|WelcomeAd)|get_(client_|start)adv|newUserInfo|omoPrecisionConvergence|querySmart(BizHome|Client)|searchHotResult|selTips) url reject-dict
+^https:\/\/m\.client\.10010\.com\/(mobile\wervice(important|Nine)?\/)?(activity|customer|homefusion|myPage|query|tyfbSearch|uniAdmsInterface|wisdom)\/(accountListData|fuInter|get(BroadCard|clientconfig|HomePageAd|WelcomeAd)|get_(client_|start)adv|newUserInfo|omoPrecisionConvergence|querySmart(BizHome|Client)|serviceReminder|searchHotResult|selTips) url reject-dict
 
 # jd api.m.jd.com
 ^https:\/\/api\.m\.jd\.com\/(client\.action\?functionId=(hybrid|jdDiscoveryRedPoint|query(MaterialAdverts|Templates)|start|uniformRecommend|xview2Config)|openUpgrade) url reject-dict
