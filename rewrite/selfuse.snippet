@@ -44,7 +44,7 @@ hostname = acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api-mifit-cn2.
 ^https:\/\/m\.client\.10010\.com\/(mobile\wervice(important|Nine)?\/)?(activity|customer|homefusion|myPage|query|tyfbSearch|uniAdmsInterface|wisdom)\/(accountListData|fuInter|get(BroadCard|clientconfig|HomePageAd|WelcomeAd)|get_(client_|start)adv|newUserInfo|omoPrecisionConvergence|querySmart(BizHome|Client)|searchHotResult|selTips) url reject-dict
 
 # jd api.m.jd.com
-^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(queryMaterialAdverts|start) url reject-dict
+^https:\/\/api\.m\.jd\.com\/(client\.action\?functionId=(jdDiscoveryRedPoint|query(MaterialAdverts|Templates)|uniformRecommend|xview2Config)|openUpgrade) url reject-dict
 
 # jiaoguan12123 gab.122.gov.cn
 ^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver$ url reject
@@ -88,6 +88,9 @@ hostname = acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api-mifit-cn2.
 # baidu tiebac.baidu.com
 ^https?:\/\/(c\.)?tiebac?\.baidu\.com\/(c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)$|tiebaads\/commonbatch|c\/s\/sync$) url script-response-body https://github.com/Larkris/earth/raw/main/script/tieba-json.js
 ^https?:\/\/(c\.)?tiebac?\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd url script-response-body https://github.com/Larkris/earth/raw/main/script/tieba-proto.js
+
+# jd api.m.jd.com
+^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=start url script-response-body https://github.com/Larkris/earth/raw/main/script/startads.js
 
 # xiaomi api.m.mi.com, hd.mina.mi.com
 ^https:\/\/(api|hd)\.m(ina)?\.mi\.com\/(v\d\/app\/start$|splashscreen\/alert) url script-response-body https://github.com/Larkris/earth/raw/main/script/startads.js
