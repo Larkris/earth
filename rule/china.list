@@ -48,5 +48,4 @@ DOMAIN-SUFFIX,local
 #IP-CIDR6,fe80::/10
 
 # geoip
-GEOIP,lan
 GEOIP,cn
