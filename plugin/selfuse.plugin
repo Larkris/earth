@@ -40,6 +40,9 @@
 # bilibili 屏蔽B站视频流端口
 ^http:\/\/.*:(448[03]|9102)\/upgcxcode reject
 
+# cainiao guide-acs.m.taobao.com
+^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.(adx\.flyad\.getad|guoguo\.nbnetflow\.ads\.mshow|miniapp\.user\.todo\.task\.list)\/ reject-dict
+
 # changzhouxing nczx*.czsmk.com
 ^https:\/\/nczx(serv)?\.czsmk\.com:\d+(\/dgApi)?\/dgapp\/(adv|home|news)\/(list\?indexName=.+?&terminalType=\d|newsInfo\/getNewsClass|layout\/contents\?layoutIndex=(homeBanner|rmgn)&pageIndex=home) reject-dict
 
@@ -84,4 +87,4 @@ http-response ^https:\/\/api\.m\.mi\.com\/v\d\/app\/start$ script-path=https://g
 http-response ^https:\/\/hd\.mina\.mi\.com\/splashscreen\/alert script-path=https://github.com/Larkris/earth/raw/main/script/startads.js, requires-body=true, timeout=60, tag=小爱音箱开屏广告
 
 [MITM]
-hostname = acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api-mifit-cn2.zepp.com, api.m.jd.com, api.m.mi.com, backend.getdrafts.com, dayone.*, duckduckgo.com, gab.122.gov.cn, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, img.client.10010.com, m.10010.com, m.client.10010.com, mob.bz.mgtv.com, mobile.da.mgtv.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx*.czsmk.com, pan.baidu.com, sf3-fe-tos.pglstatp-toutiao.com, spclient.wg.spotify.com, ucmp.sf-express.com, www.themoviedb.org
+hostname = acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api-mifit-cn2.zepp.com, api.m.jd.com, api.m.mi.com, backend.getdrafts.com, dayone.*, duckduckgo.com, gab.122.gov.cn, guide-acs.m.taobao.com, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, img.client.10010.com, m.10010.com, m.client.10010.com, mob.bz.mgtv.com, mobile.da.mgtv.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx*.czsmk.com, pan.baidu.com, sf3-fe-tos.pglstatp-toutiao.com, spclient.wg.spotify.com, ucmp.sf-express.com, www.themoviedb.org
