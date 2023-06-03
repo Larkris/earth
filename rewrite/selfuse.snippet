@@ -1,5 +1,5 @@
 # hostname
-hostname = acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api-mifit-cn2.zepp.com, api.m.jd.com, api.m.mi.com, backend.getdrafts.com, dayone.*, duckduckgo.com, gab.122.gov.cn, guide-acs.m.taobao.com, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, img.client.10010.com, m.10010.com, m.client.10010.com, mob.bz.mgtv.com, mobile.da.mgtv.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx*.czsmk.com, pan.baidu.com, sf3-fe-tos.pglstatp-toutiao.com, spclient.wg.spotify.com, testflight.apple.com, tiebac.baidu.com, ucmp.sf-express.com, www.themoviedb.org
+hostname = acs.m.taobao.com, ad.maoyan.com, api-access.pangolin-sdk-toutiao.com, api-mifit-cn2.zepp.com, api.m.jd.com, api.m.mi.com, api.maoyan.com, backend.getdrafts.com, capi.lkcoffee.com, dayone.*, duckduckgo.com, ecapi.lkcoffee.com, gab.122.gov.cn, guide-acs.m.taobao.com, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, img.client.10010.com, m.10010.com, m.client.10010.com, m.lkcoffee.com, mob.bz.mgtv.com, mobile.da.mgtv.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx*.czsmk.com, pan.baidu.com, sf3-fe-tos.pglstatp-toutiao.com, spclient.wg.spotify.com, testflight.apple.com, tiebac.baidu.com, ucmp.sf-express.com, vod-movie.maoyan.com, www.themoviedb.org, wx.maoyan.com
 
 ### rewrite
 ## redirect
@@ -44,13 +44,19 @@ hostname = acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api-mifit-cn2.
 # chinaunicom img.client.10010.com, m.10010.com, m.client.10010.com
 ^https:\/\/img\.client\.10010\.com\/caifuhome\/index\.html\?isPreLoad=true url reject
 ^https:\/\/m\.10010\.com\/((decoration|mall)-(data|order)|homepage)\/(scaffold|static|query)\/((queryNewHomePageidShowData|newFirstPage)\?(page_alias|provinceCode)|js\/\w+\.\w+\.js$) url reject-dict
-^https:\/\/m\.client\.10010\.com\/(\/)?(mobile\wervice(important|Nine)?\/)?(activity|customer|homefusion|myPage|query|serviceAdmin|tyfbSearch|uniAdmsInterface|wisdom)\/(accountListData|fuInter|get(BroadCard|clientconfig|HomePageAd|WelcomeAd)|get_(client_|start)adv|newUserInfo|omoPrecisionConvergence|precisionKeyAndActivity|queryS(erviceAndEngineerPrecisionKey|mart(BizHome|Client))|serviceReminder|searchHotResult|selTips) url reject-dict
+^https:\/\/m\.client\.10010\.com\/(\/)?(mobile[Ss]ervice(important|Nine)?\/)?(activity|customer|homefusion|myPage|query|serviceAdmin|tyfbSearch|uniAdmsInterface|wisdom)\/(accountListData|fuInter|get(BroadCard|clientconfig|HomePageAd|WelcomeAd)|get_(client_|start)adv|newUserInfo|omoPrecisionConvergence|precisionKeyAndActivity|queryS(erviceAndEngineerPrecisionKey|mart(BizHome|Client))|serviceReminder|searchHotResult|selTips) url reject-dict
 
 # jd api.m.jd.com
 ^https:\/\/api\.m\.jd\.com\/(client\.action\?functionId=(hybrid|jdDiscoveryRedPoint|query(MaterialAdverts|Templates)|start|uniformRecommend|xview2Config)|openUpgrade) url reject-dict
 
 # jiaoguan12123 gab.122.gov.cn
 ^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver$ url reject
+
+# lkcoffee capi.lkcoffee.com, ecapi.lkcoffee.com, m.lkcoffee.com
+^https:\/\/(e?capi|m)\.lkcoffee\.com\/(ecapi\/)?resource\/(core|m)\/(eorder|growUp|member|pro(duct|motion)|sys|v\d)\/(base\/myLittleLuck|calendarList|common\/modules|exchange\/page|giftCard\/topPage|homepage\/homePage(CoffeeList|UseLayeredAreaControl)|matchCombo|menu\/ordinaryUserLayeredArea|product\/(popAppTagProductList|(pre)?[Rr]ecommender)) url reject-dict
+
+# maoyan ad.maoyan.com, api.maoyan.com, vod-movie.maoyan.com, wx.maoyan.com
+^https:\/\/(ad|api|vod-movie|wx)\.maoyan\.com\/(api\/position\/detail|(avitrade\/gateway\/(attractions\/homes\/sights|resk\/project\/list)|operation\/v\d\/queryAd|sns\/common\/feed\/channel\/v\d\/list|vod\/video\/onlineMovies)\.json|maoyansh\/myshow\/ajax\/movie\/wonderShow)\? url reject-dict
 
 # mgtv api-access.pangolin-sdk-toutiao.com, mob.bz.mgtv.com, mobile.da.mgtv.com, sf3-fe-tos.pglstatp-toutiao.com
 ^https:\/\/(api-access|sf3-fe-tos)\.(pangolin-sdk|pglstatp)-toutiao\.com\/(api\/ad\/|obj\/ad-pattern\/renderer\/) url reject-dict
