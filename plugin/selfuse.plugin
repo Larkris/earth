@@ -58,7 +58,7 @@
 ^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver$ reject
 
 # lkcoffee capi.lkcoffee.com, ecapi.lkcoffee.com, m.lkcoffee.com
-^https:\/\/(e?capi|m)\.lkcoffee\.com\/(ecapi\/)?resource\/(core|m)\/(eorder|growUp|member|pro(duct|motion)|sys|v\d)\/(base\/myLittleLuck|calendarList|common\/modules|exchange\/page|giftCard\/topPage|homepage\/homePage(CoffeeList|UseLayeredAreaControl)|matchCombo|menu\/ordinaryUserLayeredArea|product\/(popAppTagProductList|(pre)?[Rr]ecommender)) reject-dict
+^https:\/\/(e?capi|m)\.lkcoffee\.com\/(ecapi\/)?resource\/(core|m)\/((eorder|member|promotion|sys|v\d)\/)?(base|common|exchange|giftCard|growUp|homepage|menu|product)\/(calendarList|guesslike|homePage(CoffeeList|UseLayeredAreaControl)|ordinaryUserLayeredArea|(pre)?[Rr]ecommender|tabControl|topPage|(matchCombo|modules|myLittleLuck|page|popAppTagProductList)\?) reject
 
 # maoyan ad.maoyan.com, api.maoyan.com, vod-movie.maoyan.com, wx.maoyan.com
 ^https:\/\/(ad|api|vod-movie|wx)\.maoyan\.com\/(api\/position\/detail|(avitrade\/gateway\/(attractions\/homes\/sights|resk\/project\/list)|operation\/v\d\/queryAd|sns\/common\/feed\/channel\/v\d\/list|vod\/video\/onlineMovies)\.json|maoyansh\/myshow\/ajax\/movie\/wonderShow)\? reject-dict
