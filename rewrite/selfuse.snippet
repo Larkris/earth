@@ -36,7 +36,7 @@ hostname = acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api-mifit-cn2.
 ^http:\/\/.*:(448[03]|9102)\/upgcxcode url reject
 
 # cainiao guide-acs.m.taobao.com
-^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.(adx\.flyad\.getad|nbmensa\.research\.researchservice\.consultmerge) url reject-dict
+^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.(adx\.flyad\.getad|miniapp\.user\.todo\.task\.list|nbmensa\.research\.researchservice\.consultmerge) url reject-dict
 
 # changzhouxing nczx*.czsmk.com
 ^https:\/\/nczx(serv)?\.czsmk\.com:\d+(\/dgApi)?\/dgapp\/(adv|home|news)\/(list\?indexName=.+?&terminalType=\d|newsInfo\/getNewsClass|layout\/contents\?layoutIndex=(homeBanner|rmgn)&pageIndex=home) url reject-dict
@@ -93,7 +93,7 @@ hostname = acs.m.taobao.com, api-access.pangolin-sdk-toutiao.com, api-mifit-cn2.
 ^https?:\/\/(c\.)?tiebac?\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd url script-response-body https://github.com/Larkris/earth/raw/main/script/tieba-proto.js
 
 # cainiao guide-acs.m.taobao.com
-^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshow url script-response-body https://github.com/Larkris/earth/raw/main/script/cainiao.js
+^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshow url script-response-body https://github.com/Larkris/earth/raw/main/script/cainiao.js
 
 # xiaomi api.m.mi.com, hd.mina.mi.com
 ^https:\/\/(api|hd)\.m(ina)?\.mi\.com\/(v\d\/app\/start$|splashscreen\/alert) url script-response-body https://github.com/Larkris/earth/raw/main/script/startads.js
