@@ -41,7 +41,7 @@
 ^http:\/\/.*:(448[03]|9102)\/upgcxcode reject
 
 # cainiao guide-acs.m.taobao.com
-^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.(adx\.flyad\.getad|guoguo\.nbnetflow\.ads\.mshow|miniapp\.user\.todo\.task\.list)\/ reject-dict
+^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.(adx\.flyad\.getad|miniapp\.user\.todo\.task\.list|nbmensa\.research\.researchservice\.consultmerge) reject-dict
 
 # changzhouxing nczx*.czsmk.com
 ^https:\/\/nczx(serv)?\.czsmk\.com:\d+(\/dgApi)?\/dgapp\/(adv|home|news)\/(list\?indexName=.+?&terminalType=\d|newsInfo\/getNewsClass|layout\/contents\?layoutIndex=(homeBanner|rmgn)&pageIndex=home) reject-dict
@@ -84,6 +84,7 @@ http-response ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v\d\/bootstrap|
 
 ## advert
 http-response ^https:\/\/api\.m\.mi\.com\/v\d\/app\/start$ script-path=https://github.com/Larkris/earth/raw/main/script/startads.js, requires-body=true, timeout=60, tag=小米商城开屏广告
+http-response ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshow script-path=https://github.com/Larkris/earth/raw/main/script/cainiao.js, requires-body=true, timeout=60, tag=菜鸟小程序广告
 http-response ^https:\/\/hd\.mina\.mi\.com\/splashscreen\/alert script-path=https://github.com/Larkris/earth/raw/main/script/startads.js, requires-body=true, timeout=60, tag=小爱音箱开屏广告
 
 [MITM]
