@@ -49,7 +49,7 @@
 # chinaunicom img.client.10010.com, m.10010.com, m.client.10010.com
 ^https:\/\/img\.client\.10010\.com\/caifuhome\/index\.html\?isPreLoad=true reject
 ^https:\/\/m\.10010\.com\/((decoration|mall)-(data|order)|homepage)\/(scaffold|static|query)\/((queryNewHomePageidShowData|newFirstPage)\?(page_alias|provinceCode)|js\/\w+\.\w+\.js$) reject-dict
-^https:\/\/m\.client\.10010\.com\/(\/)?(mobile[Ss]ervice(important|Nine)?\/)?(activity|customer|homefusion|myPage|query|serviceAdmin|tyfbSearch|uniAdmsInterface|wisdom)\/(accountListData|fuInter|get(BroadCard|clientconfig|HomePageAd|WelcomeAd)|get_(client_|start)adv|newUserInfo|omoPrecisionConvergence|precisionKeyAndActivity|queryS(erviceAndEngineerPrecisionKey|mart(BizHome|Client))|serviceReminder|searchHotResult|selTips) reject-dict
+^https:\/\/m\.client\.10010\.com\/(getDataFromService\?methodType=searchScroll|(\/)?(mobile[Ss]ervice(important|Nine)?\/)?(activity|customer(Service)?|homefusion|myPage|query|serviceAdmin|tyfbSearch|uniAdmsInterface|wisdom)\/(accountListData|fuInter|get(BroadCard|clientconfig|DynamicH5\.do|HomePageAd|WelcomeAd)|get_(client_|start)adv|newUserInfo|omoPrecisionConvergence|precisionKeyAndActivity|queryS(erviceAndEngineerPrecisionKey|mart(BizHome|Client))|serviceReminder|search(DiscoverListExpress\?yw_code=|HotResult)|selTips)) reject-dict
 
 # jd api.m.jd.com
 ^https:\/\/api\.m\.jd\.com\/(client\.action\?functionId=(hybrid|jdDiscoveryRedPoint|query(MaterialAdverts|Templates)|start|uniformRecommend|xview2Config)|openUpgrade) reject-dict
