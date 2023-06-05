@@ -1,5 +1,5 @@
 # hostname
-hostname = acs.m.taobao.com, ad.maoyan.com, api-access.pangolin-sdk-toutiao.com, api-mifit-cn2.zepp.com, api.m.jd.com, api.m.mi.com, api.maoyan.com, backend.getdrafts.com, capi.lkcoffee.com, dayone.*, duckduckgo.com, ecapi.lkcoffee.com, gab.122.gov.cn, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, img.client.10010.com, m.10010.com, m.client.10010.com, m.lkcoffee.com, mob.bz.mgtv.com, mobile.da.mgtv.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx*.czsmk.com, pan.baidu.com, sf3-fe-tos.pglstatp-toutiao.com, spclient.wg.spotify.com, testflight.apple.com, tiebac.baidu.com, ucmp.sf-express.com, vod-movie.maoyan.com, www.themoviedb.org, wx.maoyan.com
+hostname = acs.m.taobao.com, ad.maoyan.com, api-access.pangolin-sdk-toutiao.com, api-mifit-cn2.zepp.com, api.m.jd.com, api.m.mi.com, api.maoyan.com, api2.mina.mi.com, backend.getdrafts.com, capi.lkcoffee.com, dayone.*, display.api.mina.mi.com, duckduckgo.com, ecapi.lkcoffee.com, gab.122.gov.cn, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, img.client.10010.com, m.10010.com, m.client.10010.com, m.lkcoffee.com, mob.bz.mgtv.com, mobile.da.mgtv.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx*.czsmk.com, pan.baidu.com, sf3-fe-tos.pglstatp-toutiao.com, skillstore.mina.mi.com, spclient.wg.spotify.com, testflight.apple.com, tiebac.baidu.com, ucmp.sf-express.com, vod-movie.maoyan.com, www.themoviedb.org, wx.maoyan.com
 
 ### rewrite
 ## redirect
@@ -71,9 +71,12 @@ hostname = acs.m.taobao.com, ad.maoyan.com, api-access.pangolin-sdk-toutiao.com,
 # wechat mp.weixin.qq.com
 ^https:\/\/mp\.weixin\.qq\.com\/mp\/(cps_product_info|getappmsgad|relatedarticle)\? url reject-dict
 
-# xiaomi api-mifit-cn2.zepp.com, api.m.mi.com, home.mi.com
+# xiaomi api-mifit-cn2.zepp.com, api.m.mi.com, api2.mina.mi.com, display.api.mina.mi.com, home.mi.com, skillstore.mina.mi.com
+^https:\/\/(display\.api|hd|skillstore)\.mina\.mi\.com\/(app_ad|front_page|smart_home_tab)\/(all|banners|more|tab_alert|voice_control_skill)\? url reject-dict
 ^https:\/\/api-mifit-cn2\.zepp\.com\/wechapplets url reject-dict
+^https:\/\/api2\.mina\.mi\.com\/(apphomepage|common_config|music)\/((dedao|patchwall\/appv\d|station\/(audio_books|kids|tab(_list)?))\/(flow(\/qqmusic)?|v\d)|(origin_map)?)\? url reject-dict
 ^https:\/\/api\.m\.mi\.com\/v\d\/(app|home|(mi)?search)\/(page|popup|search)_(default|feed(_v\d)?|info|input)$ url reject-dict
+^https:\/\/home\.mi\.com\/cgi-op\/api\/v\d\/purchase\/scene\/h5\/list(Scenes|Tab)\? url reject-dict
 ^https:\/\/home\.mi\.com\/cgi-op\/api\/v\d\/recommendation\/(carousel\/)?(banners?|myTab)\? url reject-dict
 
 ### script
