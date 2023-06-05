@@ -76,9 +76,12 @@
 # wechat mp.weixin.qq.com
 ^https:\/\/mp\.weixin\.qq\.com\/mp\/(cps_product_info|getappmsgad|relatedarticle)\? reject-dict
 
-# xiaomi api-mifit-cn2.zepp.com, api.m.mi.com, home.mi.com
+# xiaomi api-mifit-cn2.zepp.com, api.m.mi.com, api2.mina.mi.com, display.api.mina.mi.com, home.mi.com, skillstore.mina.mi.com
+^https:\/\/(display\.api|hd|skillstore)\.mina\.mi\.com\/(app_ad|front_page|smart_home_tab)\/(all|banners|more|tab_alert|voice_control_skill)\? reject-dict
 ^https:\/\/api-mifit-cn2\.zepp\.com\/wechapplets reject-dict
+^https:\/\/api2\.mina\.mi\.com\/(apphomepage|common_config|music)\/((dedao|patchwall\/appv\d|station\/(audio_books|kids|tab(_list)?))\/(flow(\/qqmusic)?|v\d)|(origin_map)?)\? reject-dict
 ^https:\/\/api\.m\.mi\.com\/v\d\/(app|home|(mi)?search)\/(page|popup|search)_(default|feed(_v\d)?|info|input)$ reject-dict
+^https:\/\/home\.mi\.com\/cgi-op\/api\/v\d\/purchase\/scene\/h5\/list(Scenes|Tab)\? reject-dict
 ^https:\/\/home\.mi\.com\/cgi-op\/api\/v\d\/recommendation\/(carousel\/)?(banners?|myTab)\? reject-dict
 
 [Script]
@@ -94,4 +97,4 @@ http-response ^https:\/\/api\.m\.mi\.com\/v\d\/app\/start$ script-path=https://g
 http-response ^https:\/\/hd\.mina\.mi\.com\/splashscreen\/alert script-path=https://github.com/Larkris/earth/raw/main/script/startads.js, requires-body=true, timeout=60, tag=小爱音箱开屏广告
 
 [MITM]
-hostname = acs.m.taobao.com, ad.maoyan.com, api-access.pangolin-sdk-toutiao.com, api-mifit-cn2.zepp.com, api.m.jd.com, api.m.mi.com, api.maoyan.com, backend.getdrafts.com, capi.lkcoffee.com, dayone.*, duckduckgo.com, ecapi.lkcoffee.com, gab.122.gov.cn, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, img.client.10010.com, m.10010.com, m.client.10010.com, m.lkcoffee.com, mob.bz.mgtv.com, mobile.da.mgtv.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx*.czsmk.com, pan.baidu.com, sf3-fe-tos.pglstatp-toutiao.com, spclient.wg.spotify.com, ucmp.sf-express.com, vod-movie.maoyan.com, www.themoviedb.org, wx.maoyan.com
+hostname = acs.m.taobao.com, ad.maoyan.com, api-access.pangolin-sdk-toutiao.com, api-mifit-cn2.zepp.com, api.m.jd.com, api.m.mi.com, api.maoyan.com, api2.mina.mi.com, backend.getdrafts.com, capi.lkcoffee.com, dayone.*, display.api.mina.mi.com, duckduckgo.com, ecapi.lkcoffee.com, gab.122.gov.cn, gw.alicdn.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, img.client.10010.com, m.10010.com, m.client.10010.com, m.lkcoffee.com, mob.bz.mgtv.com, mobile.da.mgtv.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx*.czsmk.com, pan.baidu.com, sf3-fe-tos.pglstatp-toutiao.com, skillstore.mina.mi.com, spclient.wg.spotify.com, ucmp.sf-express.com, vod-movie.maoyan.com, www.themoviedb.org, wx.maoyan.com
