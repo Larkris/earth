@@ -4,7 +4,10 @@ DOMAIN-SUFFIX,adguard.org
 DOMAIN-SUFFIX,adtidy.org
 
 # media
+DOMAIN-SUFFIX,ajeee.com
 DOMAIN-SUFFIX,ebys.cc
+DOMAIN-SUFFIX,freeok.vip
+DOMAIN-SUFFIX,kdcdn.net
 DOMAIN-SUFFIX,qooqlevideo.com
 DOMAIN-KEYWORD,cfnode
 DOMAIN-KEYWORD,cupfox
