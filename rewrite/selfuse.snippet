@@ -91,7 +91,8 @@ hostname = acs.m.taobao.com, ad.maoyan.com, api-access.pangolin-sdk-toutiao.com,
 ^https:\/\/backend\.getdrafts\.com\/api\/.*\/verification* url script-response-body https://github.com/Larkris/earth/raw/main/script/draft.js
 
 # spotify spclient.wg.spotify.com
-^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v\d\/bootstrap|user-customization-service\/v\d\/customize)$ url script-response-body https://github.com/app2smile/rules/raw/master/js/spotify-proto.js
+^https:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/ url script-request-header https://github.com/app2smile/rules/raw/master/js/spotify-json.js
+^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ url script-response-body https://github.com/app2smile/rules/raw/master/js/spotify-proto.js
 
 # testflight testflight.apple.com
 ^https:\/\/testflight\.apple\.com\/v\d\/(app|account|invite)s\/ url script-analyze-echo-response https://github.com/Larkris/earth/raw/main/script/testflightaccount.js
