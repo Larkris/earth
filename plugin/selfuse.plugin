@@ -74,7 +74,7 @@
 ^https:\/\/ucmp\.sf-express\.com\/cx-wechat-query\/query\/info-flow\/reconsitution-list reject-dict
 
 # wechat mp.weixin.qq.com
-^https:\/\/mp\.weixin\.qq\.com\/mp\/(cps_product_info|getappmsgad|relatedarticle)\? reject-dict
+^https:\/\/mp\.weixin\.qq\.com\/mp\/(cps_product_info|getappmsgad|masonryfeed|relatedarticle)\? reject-dict
 
 # xiaomi api-mifit-cn2.zepp.com, api.m.mi.com, api2.mina.mi.com, display.api.mina.mi.com, home.mi.com, skillstore.mina.mi.com
 ^https:\/\/(display\.api|hd|skillstore)\.mina\.mi\.com\/(app_ad|front_page|smart_home_tab)\/(all|banners|more|tab_alert|voice_control_skill)\? reject-dict
