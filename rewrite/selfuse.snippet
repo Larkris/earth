@@ -1,0 +1,105 @@
+# hostname
+hostname = *.boxjs.com, *.boxjs.net, acs.m.taobao.com, ad.maoyan.com, api-mifit-cn2.zepp.com, api.coolapk.com, api.m.jd.com, api.m.mi.com, api.maoyan.com, backend.getdrafts.com, biz.cyapi.cn, boxjs.com, boxjs.net, capi.lkcoffee.com, cn-acs.m.cainiao.com, duckduckgo.com, guide-acs.m.taobao.com, hd.mina.mi.com, heic.alicdn.com, hlth.io.mi.com, home.mi.com, img.client.10010.com, info.mina.mi.com, m.10010.com, m.client.10010.com, mcs-mimp-web.sf-express.com, mina.10010.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx.czsmk.com, nczxserv.czsmk.com, poplayer.template.alibaba.com, shop-api.retail.mi.com, sub.store, testflight.apple.com, tiebac.baidu.com, ucmp-static.sf-express.com, ucmp.sf-express.com, vod-movie.maoyan.com, watch.iot.mi.com, wrapper.cyapi.cn, www.themoviedb.org, wx.maoyan.com
+
+### rewrite
+## redirect
+# google *.google.cn
+;^https?:\/\/(www\.)?g(oogle)?\.cn url 302 https://www.google.com
+
+# miwifi
+;^http:\/\/miwifi\.com\/main\.html url 302 http://miwifi.com/cgi-bin/luci/web?goto=pc
+
+# tmdb www.themoviedb.org
+^https:\/\/www\.themoviedb\.org\/(.+)\?language=zh-hans-cn url 302 https://www.themoviedb.org/$1
+
+## search duckduckgo.com
+# bd 百度
+^https:\/\/duckduckgo.com\/\?q=bd\+([^&]+).+ url 302 https://www.baidu.com/s?wd=$1
+
+# 无指令 谷歌
+^https:\/\/duckduckgo.com\/\?q=([^&]+).+ url 302 https://www.google.com/search?q=$1
+
+### reject
+## advert
+# ali acs.m.taobao.com, guide-acs.m.taobao.com, heic.alicdn.com, poplayer.template.alibaba.com
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.(ali(baba|mama|music)|cainiao|etao|film|o2o|taobao|trip)\.(activity|ad(vertisementservice)?|common|etao|idle|mtopadvertiseapi|nbopen|noah)\.(config\.query\/.+?etao_advertise|gateway\.get|getadv|home\.welcome|miniapp\.recommend\.cpc|mobileservice\.startinit|query(\/.+tao_splash|advertise|tmsresources)) url reject-dict
+^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.(cainiao|taobao)\.(adx|guoguo|volvo|wireless)\.(flyad|home|nbnetflow|secondfloor)\.(ads\.batch\.show|get(ad|config)|newface\.awesome\.get) url reject-dict
+^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshow url script-response-body https://github.com/Larkris/earth/raw/main/script/cainiao.js
+^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(cloudvideo\.video\.query|wireless\.home\.splash\.awesome\.get) url script-response-body https://github.com/Larkris/earth/raw/main/script/startads.js
+^https:\/\/heic\.alicdn\.com\/imgextra\/i\d\/\d*\/?[\w!]+-\d-(octopus|tps-1125-1602|tps-1080-1920)\.(jp|pn)g_(1\d{3}|9\d{2})x(1\d{3}|9\d{2})q[59]0 url reject-dict
+^https:\/\/poplayer\.template\.alibaba\.com\/\w+\.json url script-response-body https://github.com/Larkris/earth/raw/main/script/startads.js
+
+# ali_cainiao cn-acs.m.cainiao.com
+^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.(cainiao|nbfriend)\.(guoguo|message|nbpresentation)\.(conversation|nbnetflow|pickup|protocol)\.(ads\.m?show|(empty\.|home)page\.get|list)\.cn url script-response-body https://github.com/Larkris/earth/raw/main/script/cainiao.js
+^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.(com\.)?cainiao\.((adkeyword\.get|cncommunity\.my\.station\.query|cncreditmarket\.hit\.getactivityhit|guoguo\.nbnetflow\.ads\.(batch\.show\.v2|index)|longquan\.place\.getpageresourcecontent|nbmensa\.research\.researchservice\.(acquire|close|event)|nbopen\.miniapp\.recommend\.cpc|nbpresentation(\.homepage\.merge|.tabbar\.marketing)\.get)\.cn|cnactivitycenter) url reject-dict
+
+# baidu tiebac.baidu.com
+^https?:\/\/(c\.)?tiebac?\.baidu\.com\/(c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)$|tiebaads\/commonbatch|c\/s\/sync$) url script-response-body https://github.com/app2smile/rules/raw/master/js/tieba-json.js
+^https?:\/\/(c\.)?tiebac?\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd url script-response-body https://github.com/app2smile/rules/raw/master/js/tieba-proto.js
+
+# bilibili 屏蔽B站视频流端口
+^http:\/\/.*:(448[03]|9102)\/upgcxcode url reject
+
+# caiyun biz.cyapi.cn, wrapper.cyapi.cn
+^https:\/\/biz\.cyapi\.cn\/(p\/v1\/vip_info|v2\/user) url script-response-body https://github.com/RuCu6/QuanX/raw/main/Scripts/break/caiyun.js
+^https:\/\/biz\.cyapi\.cn\/p\/v1\/(entries\?|trial_card\/info) url reject-dict
+^https:\/\/wrapper\.cyapi\.cn\/v1\/activity\? url script-response-body https://github.com/RuCu6/QuanX/raw/main/Scripts/break/caiyun.js
+^https:\/\/wrapper\.cyapi\.cn\/v1\/(nafp\/origin_images|satellite)\? url script-request-header https://github.com/RuCu6/QuanX/raw/main/Scripts/break/caiyun.js
+
+# changzhouxing nczx.czsmk.com, nczxserv.czsmk.com
+^https:\/\/nczx(serv)?\.czsmk\.com:\d+(\/dgApi)?\/dgapp\/(adv|home|news)\/(list\?indexName=.+?&terminalType=\d|newsInfo\/getNewsClass|layout\/contents\?layoutIndex=(homeBanner|rmgn)&pageIndex=home) url reject-dict
+
+# chinaunicom img.client.10010.com, m.10010.com, m.client.10010.com, mina.10010.com
+^https:\/\/(img\.client|m)\.10010\.com\/(caifuhome|home(jingxuan11|page\/static)\/js) url reject
+^https:\/\/m\.client\.10010\.com\/(getDataFromService|growthfunction\/queryHeadUserCard9|(mobile)?[Ss]ervice(\/(activity\/homePopUpActivity|customer\/accountListData|recommend2\/isunicomuser)|important(\/(customer\/querySmartServicekhd|tyfbSearch\/search)|business\/smart\/smartwisdomCommonNew)|Nine\/(api\/v1\/(homeService\/getServiceHomeMarketingBits|index\/query(Index(Cfig|ExclusiveOffers|Waterfall)|OMO))|homefusion\/(fuInter|serviceReminder)|myPage\/(footMark|giftPackage)Info|wisdom\/precisionKeyAndActivity)|query\/customerService\/share\/defaultShare)|video_recommend\/content\/screenSwitch) url reject-dict
+^https:\/\/mina\.10010\.com\/wxapplet\/weixinNew\/(queryGoods(General|List)|zopGoodNumberQuery) url reject-dict
+
+# coolapk api.coolapk.com
+^https:\/\/api\.coolapk\.com\/v6\/(feed|main|page)\/(dataList(\?)?|(detail|replyList)\?|indexV8|init) url script-response-body https://github.com/RuCu6/QuanX/raw/main/Scripts/coolapk.js
+^https:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch url reject-dict
+
+# jd api.m.jd.com
+^http:\/\/\w{32}\.jddebug\.com\/diagnose\? url reject
+^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome) url script-response-body https://github.com/RuCu6/QuanX/raw/main/Scripts/jingdong.js
+^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(searchBoxWord|stationPullService|uniformRecommend[06]) url reject-dict
+
+# lkcoffee capi.lkcoffee.com
+^https:\/\/capi\.lkcoffee\.com\/resource\/core\/v\d\/product\/preRecommender url reject-dict
+
+# maoyan ad.maoyan.com, api.maoyan.com, vod-movie.maoyan.com, wx.maoyan.com
+^https:\/\/(ad|api|vod-movie|wx)\.maoyan\.com\/(api\/position\/detail|(avitrade\/gateway\/(attractions\/homes\/sights|resk\/project\/list)|sns\/common\/feed\/channel\/v2\/list|vod\/video\/onlineMovies)\.json|maoyansh\/(api|myshow)\/(ajax|mobile)\/(eSportsIps|hotMatchList|(ad|celebrityBasicList|movie|performances|recommend)\/(calendar\/0|detail|performances|query|rob\/main|wonderShow))) url reject-dict
+
+# pdd mobile.yangkeduo.com
+^https:\/\/mobile\.yangkeduo\.com\/proxy\/api\/api\/(caterham|mc|tesla)\/(v\d\/)?(alexa\/)?query url reject-dict
+
+# sf mcs-mimp-web.sf-express.com, ucmp-static.sf-express.com, ucmp.sf-express.com
+^https:\/\/(mcs-mimp-web|ucmp(-static)?)\.sf-express\.com\/(cx-wechat-query|mcs-mimp|proxy)\/(esgcempcore|integralPlanet|operation-platform|query|wxbase)\/(getCxAdvertiseList|(info-flow(-adver)?|member(ActLengthy|Goods|Manage)|wxTicket)\/(query|reconsitution-list|wxLiveStreamInfo\?pageNo|((fullGiveActivity|pointMall)Service|memberEquity)\/(fullGiveInfo|goodsList|queryRecommendEquity))) url reject-dict
+
+# wechat mp.weixin.qq.com
+^https:\/\/mp\.weixin\.qq\.com\/mp\/(cps_product_info|getappmsgad|masonryfeed|relatedarticle)\? url reject-dict
+
+# xiaomi api-mifit-cn2.zepp.com, api.m.mi.com, hd.mina.mi.com, hlth.io.mi.com, home.mi.com, info.mina.mi.com, shop-api.retail.mi.com, watch.iot.mi.com
+^https:\/\/(api|hd)\.m(ina)?\.mi\.com\/(v1\/(app\/start|order\/expressView)|splashscreen\/alert) url script-response-body https://github.com/Larkris/earth/raw/main/script/startads.js
+^https:\/\/api-mifit-cn2\.zepp\.com\/(discovery\/mi\/(cards|discovery)\/(home_?page|sleep|sport(_summary)?|startpage|step_detail|training_video)_(ad|promotion)\?|wechapplets) url reject-dict
+^https:\/\/api\.m\.mi\.com\/v\d\/(app|home|(mi)?search)\/(page|popup|search)_(default|feed(_v\d)?|info|input)$ url reject-dict
+^https:\/\/hlth\.io\.mi\.com\/app\/v1\/course\/get_recommend_course_list url reject-dict
+^https:\/\/home\.mi\.com\/cgi-op\/api\/v\d\/(purchase|recommendation)\/((opening)?[Bb]anner|carousel\/banners|myTab|scene\/h5\/list(Scenes|Tab)\?) url reject-dict
+^https:\/\/info\.mina\.mi\.com\/payGuide\/(tabPage|userCenter) url reject-dict
+^https:\/\/shop-api\.retail\.mi\.com\/mtop\/navi\/skywheel\/mishop\/splash url reject-dict
+^https:\/\/watch\.iot\.mi\.com\/cgi-op\/api\/v1\/watch\/health\/resource url reject-dict
+
+### script
+## function
+# boxjs boxjs.com, boxjs.net, *.boxjs.com, *.boxjs.net
+^https?:\/\/(.+\.)?boxjs\.(com|net) url script-analyze-echo-response https://github.com/chavyleung/scripts/raw/master/box/chavy.boxjs.js
+
+# substore sub.store
+^https?:\/\/sub\.store\/((download)|api\/(preview|sync|(utils\/node-info))) url script-analyze-echo-response https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-1.min.js
+^https?:\/\/sub\.store url script-analyze-echo-response https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-0.min.js
+
+## unlock
+# draft backend.getdrafts.com
+^https:\/\/backend\.getdrafts\.com\/api\/.*\/verification* url script-response-body https://github.com/Larkris/earth/raw/main/script/draft.js
+
+# testflight testflight.apple.com
+^https:\/\/testflight\.apple\.com\/v\d\/(app|account|invite)s\/ url script-analyze-echo-response https://github.com/Larkris/earth/raw/main/script/testflightaccount.js
