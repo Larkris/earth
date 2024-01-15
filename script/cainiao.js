@@ -49,6 +49,7 @@ if (url.includes("nbfriend.message.conversation.list")) {
               "cngy", // 免费领水果
               "cnhs", // 菜鸟回收
               "cnhy", // 菜鸟好友
+              "dtxb", // 地图寻宝
               "gjjf", // 裹酱积分
               "jkymd", // 集卡赢免单
               "ljjq", // 领寄件券
