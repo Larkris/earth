@@ -1,5 +1,5 @@
 # hostname
-hostname = *.boxjs.com, *.boxjs.net, acs.m.taobao.com, ad.maoyan.com, api-mifit-cn2.zepp.com, api.coolapk.com, api.m.jd.com, api.m.mi.com, api.maoyan.com, backend.getdrafts.com, biz.cyapi.cn, boxjs.com, boxjs.net, capi.lkcoffee.com, cn-acs.m.cainiao.com, duckduckgo.com, guide-acs.m.taobao.com, hd.mina.mi.com, heic.alicdn.com, hlth.io.mi.com, home.mi.com, img.client.10010.com, info.mina.mi.com, m.10010.com, m.client.10010.com, mcs-mimp-web.sf-express.com, mina.10010.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx.czsmk.com, nczxserv.czsmk.com, poplayer.template.alibaba.com, shop-api.retail.mi.com, sub.store, testflight.apple.com, tiebac.baidu.com, ucmp-static.sf-express.com, ucmp.sf-express.com, vod-movie.maoyan.com, watch.iot.mi.com, wrapper.cyapi.cn, www.themoviedb.org, wx.maoyan.com
+hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, ad.maoyan.com, api-mifit-cn2.zepp.com, api.coolapk.com, api.m.jd.com, api.m.mi.com, api.maoyan.com, app-cdn.2q10.com, backend.getdrafts.com, boxjs.com, boxjs.net, capi.lkcoffee.com, cn-acs.m.cainiao.com, duckduckgo.com, guide-acs.m.taobao.com, hd.mina.mi.com, heic.alicdn.com, hlth.io.mi.com, home.mi.com, idaily-cdn.appcloudcdn.com, idays-cdn.2q10.com, img.client.10010.com, info.mina.mi.com, m.10010.com, m.client.10010.com, mcs-mimp-web.sf-express.com, mina.10010.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx.czsmk.com, nczxserv.czsmk.com, poplayer.template.alibaba.com, shop-api.retail.mi.com, sub.store, testflight.apple.com, tiebac.baidu.com, ucmp-static.sf-express.com, ucmp.sf-express.com, vod-movie.maoyan.com, watch.iot.mi.com, www.themoviedb.org, wx.maoyan.com
 
 ### rewrite
 ## redirect
@@ -40,9 +40,10 @@ hostname = *.boxjs.com, *.boxjs.net, acs.m.taobao.com, ad.maoyan.com, api-mifit-
 # bilibili 屏蔽B站视频流端口
 ^http:\/\/.*:(448[03]|9102)\/upgcxcode url reject
 
-# caiyun biz.cyapi.cn, wrapper.cyapi.cn
+# caiyun *.cyapi.cn
 ^https:\/\/biz\.cyapi\.cn\/(p\/v1\/vip_info|v2\/user) url script-response-body https://github.com/RuCu6/QuanX/raw/main/Scripts/break/caiyun.js
 ^https:\/\/biz\.cyapi\.cn\/p\/v1\/(entries\?|trial_card\/info) url reject-dict
+^https:\/\/starplucker\.cyapi\.cn\/v3\/operation\/homefeatures\? url reject-dict
 ^https:\/\/wrapper\.cyapi\.cn\/v1\/activity\? url script-response-body https://github.com/RuCu6/QuanX/raw/main/Scripts/break/caiyun.js
 ^https:\/\/wrapper\.cyapi\.cn\/v1\/(nafp\/origin_images|satellite)\? url script-request-header https://github.com/RuCu6/QuanX/raw/main/Scripts/break/caiyun.js
 
@@ -58,6 +59,9 @@ hostname = *.boxjs.com, *.boxjs.net, acs.m.taobao.com, ad.maoyan.com, api-mifit-
 ^https:\/\/api\.coolapk\.com\/v6\/(feed|main|page)\/(dataList(\?)?|(detail|replyList)\?|indexV8|init) url script-response-body https://github.com/RuCu6/QuanX/raw/main/Scripts/coolapk.js
 ^https:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch url reject-dict
 
+# daysmatter
+^https:\/\/(app|ida(ily|ys))-cdn\.(2q10|appcloudcdn)\.com\/ap[ip]\/(idays|list)\/(app_ad|honored|on_this_day|popups|v3\/android_mini) url reject-dict
+
 # jd api.m.jd.com
 ^http:\/\/\w{32}\.jddebug\.com\/diagnose\? url reject
 ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome) url script-response-body https://github.com/RuCu6/QuanX/raw/main/Scripts/jingdong.js
@@ -67,7 +71,7 @@ hostname = *.boxjs.com, *.boxjs.net, acs.m.taobao.com, ad.maoyan.com, api-mifit-
 ^https:\/\/capi\.lkcoffee\.com\/resource\/core\/v\d\/product\/preRecommender url reject-dict
 
 # maoyan ad.maoyan.com, api.maoyan.com, vod-movie.maoyan.com, wx.maoyan.com
-^https:\/\/(ad|api|vod-movie|wx)\.maoyan\.com\/(api\/position\/detail|(avitrade\/gateway\/(attractions\/homes\/sights|resk\/project\/list)|sns\/common\/feed\/channel\/v2\/list|vod\/video\/onlineMovies)\.json|maoyansh\/(api|myshow)\/(ajax|mobile)\/(eSportsIps|hotMatchList|(ad|celebrityBasicList|movie|performances|recommend)\/(calendar\/0|detail|performances|query|rob\/main|wonderShow))) url reject-dict
+^https:\/\/(ad|api|vod-movie|wx)\.maoyan\.com\/(api\/position\/detail|(avitrade\/gateway\/(attractions\/homes\/sights|resk\/project\/list)|goods\/queryDealList|sns\/common\/feed\/channel\/v2\/list|vod\/video\/onlineMovies)\.json|maoyansh\/(api|myshow)\/(ajax|mobile)\/(eSportsIps|hotMatchList|(ad|celebrityBasicList|movie|performances|recommend)\/(calendar\/0|detail|performances|query|rob\/main|wonderShow))) url reject-dict
 
 # pdd mobile.yangkeduo.com
 ^https:\/\/mobile\.yangkeduo\.com\/proxy\/api\/api\/(caterham|mc|tesla)\/(v\d\/)?(alexa\/)?query url reject-dict
