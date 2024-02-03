@@ -1,5 +1,5 @@
 # hostname
-hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, ad.maoyan.com, api-mifit-cn2.zepp.com, api.coolapk.com, api.m.jd.com, api.m.mi.com, api.maoyan.com, app-cdn.2q10.com, backend.getdrafts.com, boxjs.com, boxjs.net, capi.lkcoffee.com, cdn.cnbj1.fds.api.mi-img.com, cn-acs.m.cainiao.com, duckduckgo.com, guide-acs.m.taobao.com, hd.mina.mi.com, heic.alicdn.com, hlth.io.mi.com, home.mi.com, idaily-cdn.appcloudcdn.com, idays-cdn.2q10.com, img.client.10010.com, info.mina.mi.com, m.10010.com, m.client.10010.com, mcs-mimp-web.sf-express.com, mina.10010.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx.czsmk.com, nczxserv.czsmk.com, poplayer.template.alibaba.com, shop-api.retail.mi.com, sub.store, testflight.apple.com, tiebac.baidu.com, ucmp-static.sf-express.com, ucmp.sf-express.com, vod-movie.maoyan.com, watch.iot.mi.com, www.themoviedb.org, wx.maoyan.com
+hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, ad.maoyan.com, api-mifit-cn3.zepp.com, api.coolapk.com, api.m.jd.com, api.m.mi.com, api.maoyan.com, app-cdn.2q10.com, backend.getdrafts.com, boxjs.com, boxjs.net, capi.lkcoffee.com, cdn.cnbj1.fds.api.mi-img.com, cn-acs.m.cainiao.com, duckduckgo.com, guide-acs.m.taobao.com, hd.mina.mi.com, heic.alicdn.com, hlth.io.mi.com, home.mi.com, idaily-cdn.appcloudcdn.com, idays-cdn.2q10.com, img.client.10010.com, info.mina.mi.com, m.10010.com, m.client.10010.com, mcs-mimp-web.sf-express.com, mina.10010.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx.czsmk.com, nczxserv.czsmk.com, poplayer.template.alibaba.com, shop-api.retail.mi.com, sub.store, testflight.apple.com, tiebac.baidu.com, ucmp-static.sf-express.com, ucmp.sf-express.com, vod-movie.maoyan.com, watch.iot.mi.com, www.themoviedb.org, wx.maoyan.com
 
 ### rewrite
 ## redirect
@@ -83,9 +83,9 @@ hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, ad.maoyan.com
 # wechat mp.weixin.qq.com
 ^https:\/\/mp\.weixin\.qq\.com\/mp\/(cps_product_info|getappmsgad|masonryfeed|relatedarticle)\? url reject-dict
 
-# xiaomi api-mifit-cn2.zepp.com, api.m.mi.com, cdn.cnbj1.fds.api.mi-img.com, hd.mina.mi.com, hlth.io.mi.com, home.mi.com, info.mina.mi.com, shop-api.retail.mi.com, watch.iot.mi.com
+# xiaomi api-mifit-cn3.zepp.com, api.m.mi.com, cdn.cnbj1.fds.api.mi-img.com, hd.mina.mi.com, hlth.io.mi.com, home.mi.com, info.mina.mi.com, shop-api.retail.mi.com, watch.iot.mi.com
 ^https:\/\/(api|hd)\.m(ina)?\.mi\.com\/(v1\/(app\/start|order\/expressView)|splashscreen\/alert) url script-response-body https://github.com/Larkris/earth/raw/main/script/startads.js
-^https:\/\/api-mifit-cn2\.zepp\.com\/(discovery\/mi\/(cards|discovery)\/(home_?page|sleep|sport(_summary)?|startpage|step_detail|training_video)_(ad|promotion)\?|wechapplets) url reject-dict
+^https:\/\/api-mifit-cn3\.zepp\.com\/(discovery\/mi\/(cards|discovery)\/(home_?page|sleep|sport(_summary)?|startpage|step_detail|training_video)_(ad|promotion)\?|wechapplets) url reject-dict
 ^https:\/\/api\.m\.mi\.com\/v\d\/(app|home|(mi)?search)\/(page|popup|search)_(default|feed(_v\d)?|info|input)$ url reject-dict
 ^https:\/\/cdn\.cnbj1\.fds\.api\.mi-img\.com\/hlth-operate\/course\/video url reject-dict
 ^https:\/\/hlth\.io\.mi\.com\/app\/v1\/course\/get_recommend_course_list url reject-dict
