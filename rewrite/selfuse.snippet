@@ -1,5 +1,5 @@
 # hostname
-hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, ad.maoyan.com, api-mifit-cn3.zepp.com, api.coolapk.com, api.m.mi.com, api.maoyan.com, app-cdn.2q10.com, backend.getdrafts.com, boxjs.com, boxjs.net, capi.lkcoffee.com, cn-acs.m.cainiao.com, duckduckgo.com, guide-acs.m.taobao.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, idaily-cdn.appcloudcdn.com, idays-cdn.2q10.com, img.client.10010.com, info.mina.mi.com, m.10010.com, m.client.10010.com, mcs-mimp-web.sf-express.com, mina.10010.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx.czsmk.com, nczxserv.czsmk.com, poplayer.template.alibaba.com, shop-api.retail.mi.com, sub.store, testflight.apple.com, tiebac.baidu.com, ucmp-static.sf-express.com, ucmp.sf-express.com, vod-movie.maoyan.com, www.themoviedb.org, wx.maoyan.com
+hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, ad.maoyan.com, api-mifit-cn3.zepp.com, api.coolapk.com, api.m.mi.com, api.maoyan.com, app-cdn.2q10.com, backend.getdrafts.com, boxjs.com, boxjs.net, capi.lkcoffee.com, cn-acs.m.cainiao.com, duckduckgo.com, guide-acs.m.taobao.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, idaily-cdn.appcloudcdn.com, idays-cdn.2q10.com, img.client.10010.com, info.mina.mi.com, m.10010.com, m.client.10010.com, mcs-mimp-web.sf-express.com, mina.10010.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx.czsmk.com, nczxserv.czsmk.com, poplayer.template.alibaba.com, shop-api.retail.mi.com, sub.store, testflight.apple.com, ucmp-static.sf-express.com, ucmp.sf-express.com, vod-movie.maoyan.com, www.themoviedb.org, wx.maoyan.com
 
 ### rewrite
 ## redirect
@@ -32,10 +32,6 @@ hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, ad.maoyan.com
 # ali_cainiao cn-acs.m.cainiao.com
 ^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.(cainiao|nbfriend)\.(guoguo|message|nbpresentation)\.(conversation|nbnetflow|pickup|protocol)\.(ads\.m?show|(empty\.|home)page\.get|list)\.cn url script-response-body https://github.com/Larkris/earth/raw/main/script/cainiao.js
 ^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.(com\.)?cainiao\.((adkeyword\.get|cncommunity\.my\.station\.query|cncreditmarket\.hit\.getactivityhit|guoguo\.nbnetflow\.ads\.(batch\.show\.v2|expose\.mreply|index)|longquan\.place\.getpageresourcecontent|nbmensa\.research\.researchservice\.(acquire|close|event)|nbopen\.miniapp\.recommend\.cpc|nbpresentation(\.homepage\.merge|.tabbar\.marketing)\.get)\.cn|cnactivitycenter) url reject-dict
-
-# baidu tiebac.baidu.com
-^https?:\/\/(c\.)?tiebac?\.baidu\.com\/(c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)$|tiebaads\/commonbatch|c\/s\/sync$) url script-response-body https://github.com/app2smile/rules/raw/master/js/tieba-json.js
-^https?:\/\/(c\.)?tiebac?\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd url script-response-body https://github.com/app2smile/rules/raw/master/js/tieba-proto.js
 
 # bilibili 屏蔽B站视频流端口
 ^http:\/\/.*:(448[03]|9102)\/upgcxcode url reject
