@@ -1,9 +1,5 @@
 # hostname
-hostname = api.m.jd.com, c.tieba.baidu.com, me-api.jd.com, ms.jr.jd.com
-
-# jd_dailybonus api.m.jd.com, me-api.jd.com, ms.jr.jd.com
-^https?:\/\/(api\.m|me-api)\.jd\.com\/(client\.action\?functionId=signBean|user_new\/info\/GetJDUserInfoUnion\?) url script-request-header https://github.com/NobyDa/Script/raw/master/JD-DailyBonus/JD_DailyBonus.js
-^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/hy\/h5\/m\/appSign\? url script-request-body https://github.com/NobyDa/Script/raw/master/JD-DailyBonus/JD_DailyBonus.js
+hostname = c.tieba.baidu.com
 
 # tieba c.tieba.baidu.com
 ^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/login url script-request-header https://github.com/Larkris/earth/raw/main/script/tieba.js
