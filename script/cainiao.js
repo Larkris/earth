@@ -9,6 +9,7 @@ if (url.includes(".guoguo.nbnetflow.ads.mshow")) {
   if (obj?.data) {
     const items = [
       "10", // 物流详情页 底部横图
+      "52",
       "328", // 3位数为家乡版本
       "366",
       "369",
