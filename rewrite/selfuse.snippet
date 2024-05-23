@@ -1,5 +1,5 @@
 # hostname
-hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, ad.maoyan.com, api-mifit-cn3.zepp.com, api.coolapk.com, api.m.mi.com, api.maoyan.com, app-cdn.2q10.com, backend.getdrafts.com, boxjs.com, boxjs.net, capi.lkcoffee.com, cn-acs.m.cainiao.com, duckduckgo.com, guide-acs.m.taobao.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, idaily-cdn.appcloudcdn.com, idays-cdn.2q10.com, img.client.10010.com, info.mina.mi.com, m.10010.com, m.client.10010.com, mcs-mimp-web.sf-express.com, mina.10010.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx.czsmk.com, nczxserv.czsmk.com, poplayer.template.alibaba.com, shop-api.retail.mi.com, sub.store, testflight.apple.com, ucmp-static.sf-express.com, ucmp.sf-express.com, vod-movie.maoyan.com, www.themoviedb.org, wx.maoyan.com
+hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, ad.maoyan.com, api-mifit-cn3.zepp.com, api.coolapk.com, api.m.mi.com, api.maoyan.com, app-cdn.2q10.com, backend.getdrafts.com, boxjs.com, boxjs.net, capi.lkcoffee.com, cn-acs.m.cainiao.com, duckduckgo.com, guide-acs.m.taobao.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, idaily-cdn.appcloudcdn.com, idays-cdn.2q10.com, img.client.10010.com, info.mina.mi.com, m.10010.com, m.client.10010.com, mcs-mimp-web.sf-express.com, mina.10010.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx.czsmk.com, nczxserv.czsmk.com, poplayer.template.alibaba.com, prod.zh.igpsport.com, shop-api.retail.mi.com, sub.store, testflight.apple.com, ucmp-static.sf-express.com, ucmp.sf-express.com, vod-movie.maoyan.com, www.themoviedb.org, wx.maoyan.com
 
 ### rewrite
 ## redirect
@@ -57,6 +57,9 @@ hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, ad.maoyan.com
 
 # daysmatter app-cdn.2q10.com, idaily-cdn.appcloudcdn.com, idays-cdn.2q10.com
 ^https:\/\/(app|ida(ily|ys))-cdn\.(2q10|appcloudcdn)\.com\/ap[ip]\/(idays|list)\/(app_ad|honored|on_this_day|popups|v3\/android_mini) url reject-dict
+
+# igpsport prod.zh.igpsport.com
+^https:\/\/prod\.zh\.igpsport\.com\/service\/mobile\/api\/(v2\/)?System\/(GetStartAd|IsShowIndexActivityContent) url reject-dict
 
 # jd
 ^http:\/\/\w{32}\.jddebug\.com\/diagnose\? url reject
