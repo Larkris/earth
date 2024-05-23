@@ -101,4 +101,5 @@ hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, ad.maoyan.com
 ^https:\/\/backend\.getdrafts\.com\/api\/.*\/verification* url script-response-body https://github.com/Larkris/earth/raw/main/script/draft.js
 
 # testflight testflight.apple.com
-^https:\/\/testflight\.apple\.com\/v\d\/(app|account|invite)s\/ url script-analyze-echo-response https://github.com/Larkris/earth/raw/main/script/testflightaccount.js
+#^https:\/\/testflight\.apple\.com\/v\d\/(app|account|invite)s\/ url script-analyze-echo-response https://github.com/Larkris/earth/raw/main/script/testflightaccount.js
+^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$ url script-request-body https://github.com/Larkris/earth/raw/main/script/testflightdownload.js
