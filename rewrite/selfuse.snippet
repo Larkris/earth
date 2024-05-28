@@ -7,7 +7,7 @@ hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, ad.maoyan.com
 ;^https?:\/\/(www\.)?g(oogle)?\.cn url 302 https://www.google.com
 
 # miwifi
-;^http:\/\/miwifi\.com\/main\.html url 302 http://miwifi.com/cgi-bin/luci/web?goto=pc
+^http:\/\/miwifi\.com\/main\.html url 302 http://miwifi.com/cgi-bin/luci/web?goto=pc
 
 # tmdb www.themoviedb.org
 ^https:\/\/www\.themoviedb\.org\/(.+)\?language=zh-hans-cn url 302 https://www.themoviedb.org/$1
