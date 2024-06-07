@@ -1,5 +1,5 @@
 # hostname
-hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, ad.maoyan.com, api-mifit-cn3.zepp.com, api.coolapk.com, api.m.mi.com, api.maoyan.com, app-cdn.2q10.com, backend.getdrafts.com, boxjs.com, boxjs.net, capi.lkcoffee.com, cn-acs.m.cainiao.com, duckduckgo.com, guide-acs.m.taobao.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, idaily-cdn.appcloudcdn.com, idays-cdn.2q10.com, img.client.10010.com, info.mina.mi.com, m.10010.com, m.client.10010.com, mcs-mimp-web.sf-express.com, mina.10010.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx.czsmk.com, nczxserv.czsmk.com, poplayer.template.alibaba.com, prod.zh.igpsport.com, shop-api.retail.mi.com, sub.store, testflight.apple.com, tiebac.baidu.com, ucmp-static.sf-express.com, ucmp.sf-express.com, vod-movie.maoyan.com, www.themoviedb.org, wx.maoyan.com
+hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, ad.maoyan.com, api-mifit-cn3.zepp.com, api.coolapk.com, api.m.mi.com, api.maoyan.com, app-cdn.2q10.com, backend.getdrafts.com, boxjs.com, boxjs.net, capi.lkcoffee.com, cn-acs.m.cainiao.com, duckduckgo.com, guide-acs.m.taobao.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, idaily-cdn.appcloudcdn.com, idays-cdn.2q10.com, img.client.10010.com, info.mina.mi.com, m.10010.com, m.client.10010.com, mcs-mimp-web.sf-express.com, mina.10010.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx.czsmk.com, nczxserv.czsmk.com, poplayer.template.alibaba.com, prod.zh.igpsport.com, shop-api.retail.mi.com, sub.store, testflight.apple.com, tiebac.baidu.com, ucmp-static.sf-express.com, ucmp.sf-express.com, vod-movie.maoyan.com, www.themoviedb.org, www.xiaoxiongyouhao.com, wx.maoyan.com
 
 ### rewrite
 ## redirect
@@ -106,7 +106,9 @@ hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, ad.maoyan.com
 # draft backend.getdrafts.com
 ^https:\/\/backend\.getdrafts\.com\/api\/.*\/verification* url script-response-body https://github.com/Larkris/earth/raw/main/script/draft.js
 
+# xiaoxiongyouhao www.xiaoxiongyouhao.com
+^https:\/\/www\.xiaoxiongyouhao\.com\/api\/vip\/index\.php url script-response-body https://github.com/Yu9191/Rewrite/raw/main/xiaoxiongyouhao.js
+
 # testflight testflight.apple.com
-#^https:\/\/testflight\.apple\.com\/v\d\/(app|account|invite)s\/ url script-analyze-echo-response https://github.com/Larkris/earth/raw/main/script/testflightaccount.js
 ^https:\/\/testflight\.apple\.com\/v2\/accounts\/.*\/apps\/\d*\/builds\/\d*\/install$ url request-body "storefrontId"\x20:\x20.*, request-body "storefrontId":"143441-19,29",
 #^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$ url script-request-body https://github.com/Larkris/earth/raw/main/script/testflightdownload.js
