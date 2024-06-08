@@ -1,4 +1,4 @@
-// 2024-03-23 19:00
+// 2024-06-08 09:40
 
 const url = $request.url;
 if (!$response.body) $done({});
@@ -36,7 +36,8 @@ if (url.includes(".guoguo.nbnetflow.ads.mshow")) {
       "1525", // 幸运包裹
       "1562", // 自动识别物流截图查包裹
       "1607", // 查快递导包裹就找菜小鸟
-      "1638" // 为你精选了一些商品
+      "1638", // 为你精选了一些商品
+      "1910" // 618促销红包
     ];
     for (let i of items) {
       if (obj.data?.[i]) {
