@@ -83,7 +83,8 @@ hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, ad.maoyan.com
 ^https:\/\/tiebac\.baidu\.com\/tiebaads\/commonbatch\? url script-response-body https://github.com/RuCu6/QuanX/raw/main/Scripts/baidu/tiebaJson.js
 
 # wechat mp.weixin.qq.com
-^https:\/\/mp\.weixin\.qq\.com\/mp\/(cps_product_info|getappmsgad|masonryfeed|relatedarticle)\? url reject-dict
+^http:\/\/\w+\.wxs\.qq\.com\/\d+\/\d+\/snssvpdownload\/SH\/reserved\/ads_svp_video url reject-dict
+^https:\/\/mp\.weixin\.qq\.com\/mp\/(cps_product_info|getappmsgad|jsmonitor|masonryfeed|relatedarticle)\? url reject-dict
 
 # xiaomi api-mifit-cn3.zepp.com, api.m.mi.com, hd.mina.mi.com, home.mi.com, info.mina.mi.com, shop-api.retail.mi.com, watch.iot.mi.com
 ^https:\/\/(api|hd)\.m(ina)?\.mi\.com\/(v1\/(app\/start|order\/expressView)|splashscreen\/alert) url script-response-body https://github.com/RuCu6/QuanX/raw/main/Scripts/myBlockAds.js
