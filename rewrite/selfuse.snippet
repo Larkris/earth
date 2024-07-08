@@ -1,5 +1,5 @@
 # hostname
-hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, ad.maoyan.com, api-mifit-cn3.zepp.com, api.coolapk.com, api.m.mi.com, api.maoyan.com, app-cdn.2q10.com, backend.getdrafts.com, boxjs.com, boxjs.net, capi.lkcoffee.com, cn-acs.m.cainiao.com, duckduckgo.com, guide-acs.m.taobao.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, idaily-cdn.appcloudcdn.com, idays-cdn.2q10.com, img.client.10010.com, info.mina.mi.com, m.10010.com, m.client.10010.com, mcs-mimp-web.sf-express.com, mina.10010.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx.czsmk.com, nczxserv.czsmk.com, poplayer.template.alibaba.com, prod.zh.igpsport.com, shop-api.retail.mi.com, sub.store, testflight.apple.com, tiebac.baidu.com, ucmp-static.sf-express.com, ucmp.sf-express.com, vod-movie.maoyan.com, watch.iot.mi.com, www.themoviedb.org, www.xiaoxiongyouhao.com, wx.maoyan.com
+hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, ad.maoyan.com, api-mifit-cn3.zepp.com, api.coolapk.com, api.m.mi.com, api.maoyan.com, app-cdn.2q10.com, backend.getdrafts.com, boxjs.com, boxjs.net, capi.lkcoffee.com, cn-acs.m.cainiao.com, duckduckgo.com, guide-acs.m.taobao.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, idaily-cdn.appcloudcdn.com, idays-cdn.2q10.com, img.client.10010.com, info.mina.mi.com, m.10010.com, m.client.10010.com, mcs-mimp-web.sf-express.com, mina.10010.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx.czsmk.com, nczxserv.czsmk.com, poplayer.template.alibaba.com, prod.zh.igpsport.com, shop-api.retail.mi.com, sub.store, testflight.apple.com, tieba.baidu.com, tiebac.baidu.com, ucmp-static.sf-express.com, ucmp.sf-express.com, vod-movie.maoyan.com, watch.iot.mi.com, www.themoviedb.org, www.xiaoxiongyouhao.com, wx.maoyan.com, zlsdk.1rtb.net
 
 ### rewrite
 ## redirect
@@ -43,8 +43,9 @@ hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, ad.maoyan.com
 ^https:\/\/wrapper\.cyapi\.cn\/v1\/activity\? url script-response-body https://github.com/RuCu6/QuanX/raw/main/Scripts/break/caiyun.js
 ^https:\/\/wrapper\.cyapi\.cn\/v1\/(nafp\/origin_images|satellite)\? url script-request-header https://github.com/RuCu6/QuanX/raw/main/Scripts/break/caiyun.js
 
-# changzhouxing nczx.czsmk.com, nczxserv.czsmk.com
+# changzhouxing nczx.czsmk.com, nczxserv.czsmk.com, zlsdk.1rtb.net
 ^https:\/\/nczx(serv)?\.czsmk\.com:\d+(\/dgApi)?\/dgapp\/(adv|home|news)\/(list\?indexName=.+?&terminalType=\d|newsInfo\/getNewsClass|layout\/contents\?layoutIndex=(homeBanner|rmgn)&pageIndex=home) url reject-dict
+^https:\/\/zlsdk\.1rtb\.net\/sdk\/req_ad\? url reject-dict
 
 # chinaunicom img.client.10010.com, m.10010.com, m.client.10010.com, mina.10010.com
 ^https:\/\/(img\.client|m)\.10010\.com\/(caifuhome|home(jingxuan11|page\/static)\/js) url reject
@@ -76,11 +77,11 @@ hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, ad.maoyan.com
 # sf mcs-mimp-web.sf-express.com, ucmp-static.sf-express.com, ucmp.sf-express.com
 ^https:\/\/(mcs-mimp-web|ucmp(-static)?)\.sf-express\.com\/(cx-wechat-query|mcs-mimp|proxy)\/(esgcempcore|integralPlanet|operation-platform|query|wxbase)\/(getCxAdvertiseList|(info-flow(-adver)?|member(ActLengthy|Goods|Manage)|wxTicket)\/(query|reconsitution-list|wxLiveStreamInfo\?pageNo|((fullGiveActivity|pointMall)Service|memberEquity)\/(fullGiveInfo|goodsList|queryRecommendEquity))) url reject-dict
 
-# tieba tiebac.baidu.com
-^http:\/\/c\.tieba\.baidu\.com\/c\/f\/(excellent\/personalized|frs\/(generalTabList|page|threadlist)|pb\/(pic)?page)$ url script-response-body https://github.com/RuCu6/QuanX/raw/main/Scripts/baidu/tiebaJson.js
-^http:\/\/c\.tieba\.baidu\.com\/c\/f\/(excellent\/personalized|frs\/(generalTabList|page|threadlist)|pb\/(pic)?page)\?cmd url script-response-body https://github.com/RuCu6/QuanX/raw/main/Scripts/baidu/tiebaProto.js
-^http:\/\/c\.tieba\.baidu\.com\/c\/s\/sync$ url script-response-body https://github.com/RuCu6/QuanX/raw/main/Scripts/baidu/tiebaJson.js
-^https:\/\/tiebac\.baidu\.com\/tiebaads\/commonbatch\? url script-response-body https://github.com/RuCu6/QuanX/raw/main/Scripts/baidu/tiebaJson.js
+# tieba tieba.baidu.com, tiebac.baidu.com
+^https:\/\/tiebac?\.baidu\.com\/(c\/(f\/(frs\/frsBottom|sidebar\/home)|u\/user\/profile)|livefeed\/feed) url script-response-body https://github.com/ZenmoFeiShi/Qx/raw/main/TB.js
+^https:\/\/tiebac\.baidu\.com\/c\/f\/(forum\/forumGuide|search\/discover) url reject-dict
+^https?:\/\/(c\.tieba|tiebac)\.baidu\.com\/(c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)$|tiebaads\/commonbatch|c\/s\/sync$) url script-response-body https://github.com/app2smile/rules/raw/master/js/tieba-json.js
+^https?:\/\/(c\.tieba|tiebac)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd url script-response-body https://github.com/app2smile/rules/raw/master/js/tieba-proto.js
 
 # wechat mp.weixin.qq.com
 ^http:\/\/\w+\.wxs\.qq\.com\/\d+\/\d+\/snssvpdownload\/SH\/reserved\/ads_svp_video url reject-dict
