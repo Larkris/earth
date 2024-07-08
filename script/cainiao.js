@@ -50,8 +50,10 @@ if (url.includes(".guoguo.nbnetflow.ads.mshow")) {
   if (obj?.data?.result?.length > 0) {
     // 29338 寄件会员
     // 29339 裹酱积分
+    // 29577 生活服务
     // 33927 绿色能量
     // 36649 回收旧物
+    // 37127 回收订单
     // 38241 寄件5折券
     obj.data.result = obj.data.result.filter(
       (i) =>
@@ -59,7 +61,7 @@ if (url.includes(".guoguo.nbnetflow.ads.mshow")) {
           i?.materialContentMapper?.adItemDetail ||
           (i?.materialContentMapper?.bgImg && i?.materialContentMapper?.advRecGmtModifiedTime) ||
           ["common_header_banner", "entertainment", "kuaishou_banner"]?.includes(i?.materialContentMapper?.group_id) ||
-          ["29338", "29339", "32103", "33927", "36649", "38241"]?.includes(i?.id)
+          ["29338", "29339", "29577", "32103", "33927", "36649", "37127", "38241"]?.includes(i?.id)
         )
     );
   }
