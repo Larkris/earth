@@ -1,5 +1,5 @@
 # hostname
-hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, ad.maoyan.com, api-mifit-cn3.zepp.com, api.coolapk.com, api.m.mi.com, api.maoyan.com, app-cdn.2q10.com, backend.getdrafts.com, boxjs.com, boxjs.net, capi.lkcoffee.com, cn-acs.m.cainiao.com, duckduckgo.com, guide-acs.m.taobao.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, idaily-cdn.appcloudcdn.com, idays-cdn.2q10.com, img.client.10010.com, info.mina.mi.com, m.10010.com, m.client.10010.com, mcs-mimp-web.sf-express.com, mina.10010.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx.czsmk.com, nczxserv.czsmk.com, poplayer.template.alibaba.com, prod.zh.igpsport.com, shop-api.retail.mi.com, sub.store, testflight.apple.com, tieba.baidu.com, tiebac.baidu.com, ucmp-static.sf-express.com, ucmp.sf-express.com, vod-movie.maoyan.com, watch.iot.mi.com, www.themoviedb.org, www.xiaoxiongyouhao.com, wx.maoyan.com, zlsdk.1rtb.net
+hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, ad.maoyan.com, api-mifit-cn3.zepp.com, api.coolapk.com, api.m.mi.com, api.maoyan.com, app-cdn.2q10.com, backend.getdrafts.com, boxjs.com, boxjs.net, capi.lkcoffee.com, cn-acs.m.cainiao.com, duckduckgo.com, guide-acs.m.taobao.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, idaily-cdn.appcloudcdn.com, idays-cdn.2q10.com, img.client.10010.com, info.mina.xiaoaisound.com, m.10010.com, m.client.10010.com, mcs-mimp-web.sf-express.com, mina.10010.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx.czsmk.com, nczxserv.czsmk.com, poplayer.template.alibaba.com, prod.zh.igpsport.com, shop-api.retail.mi.com, sub.store, testflight.apple.com, tieba.baidu.com, tiebac.baidu.com, ucmp-static.sf-express.com, ucmp.sf-express.com, vod-movie.maoyan.com, watch.iot.mi.com, www.themoviedb.org, www.xiaoxiongyouhao.com, wx.maoyan.com, zlsdk.1rtb.net
 
 ### rewrite
 ## redirect
@@ -87,12 +87,12 @@ hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, ad.maoyan.com
 ^http:\/\/\w+\.wxs\.qq\.com\/\d+\/\d+\/sns(cos|svp)download\/S[HZ]\/reserved\/\w+ url reject-dict
 ^https:\/\/mp\.weixin\.qq\.com\/mp\/(cps_product_info|getappmsgad|jsmonitor|masonryfeed|relatedarticle)\? url reject-dict
 
-# xiaomi api-mifit-cn3.zepp.com, api.m.mi.com, hd.mina.mi.com, home.mi.com, info.mina.mi.com, shop-api.retail.mi.com, watch.iot.mi.com
+# xiaomi api-mifit-cn3.zepp.com, api.m.mi.com, hd.mina.mi.com, home.mi.com, info.mina.xiaoaisound.com, shop-api.retail.mi.com, watch.iot.mi.com
 ^https:\/\/(api|hd)\.m(ina)?\.mi\.com\/(v1\/(app\/start|order\/expressView)|splashscreen\/alert) url script-response-body https://github.com/RuCu6/QuanX/raw/main/Scripts/myBlockAds.js
 ^https:\/\/api-mifit-cn3\.zepp\.com\/(discovery\/mi\/(cards|discovery)\/(home_?page|sleep|sport(_summary)?|startpage|step_detail|training_video)_(ad|promotion)\?|wechapplets) url reject-dict
 ^https:\/\/api\.m\.mi\.com\/v\d\/(app|home|(mi)?search)\/(page|popup|search)_(default|feed(_v\d)?|info|input)$ url reject-dict
 ^https:\/\/home\.mi\.com\/cgi-op\/api\/v\d\/(purchase|recommendation)\/((opening)?[Bb]anner|carousel\/banners|myTab|scene\/h5\/list(Scenes|Tab)\?) url reject-dict
-^https:\/\/info\.mina\.mi\.com\/(advertise|payGuide)\/(splash|tab.a.e|userCenter) url reject-dict
+^https:\/\/info\.mina\.xiaoaisound\.com\/(advertise|payGuide)\/(splash|tab.a.e|userCenter) url reject-dict
 ^https:\/\/shop-api\.retail\.mi\.com\/mtop\/navi\/(rec\/merge\/|skywheel\/mishop\/splash) url reject-dict
 ^https:\/\/watch\.iot\.mi\.com\/cgi-op\/api\/v1\/watch\/health\/resource\?business=MI_(HEALTH_DEVICE_TAB_PAGE|WATCH_SPORT) url reject-dict
 
