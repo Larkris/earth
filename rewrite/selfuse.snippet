@@ -84,7 +84,7 @@ hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, ad.maoyan.com
 ^https?:\/\/(c\.tieba|tiebac)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd url script-response-body https://github.com/app2smile/rules/raw/master/js/tieba-proto.js
 
 # wechat mp.weixin.qq.com
-^http:\/\/\w+\.wxs\.qq\.com\/\d+\/\d+\/snssvpdownload\/SH\/reserved\/ads_svp_video url reject-dict
+^http:\/\/\w+\.wxs\.qq\.com\/\d+\/\d+\/sns(cos|svp)download\/S[HZ]\/reserved\/\w+ url reject-dict
 ^https:\/\/mp\.weixin\.qq\.com\/mp\/(cps_product_info|getappmsgad|jsmonitor|masonryfeed|relatedarticle)\? url reject-dict
 
 # xiaomi api-mifit-cn3.zepp.com, api.m.mi.com, hd.mina.mi.com, home.mi.com, info.mina.mi.com, shop-api.retail.mi.com, watch.iot.mi.com
