@@ -1,5 +1,5 @@
 # hostname
-hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, ad.maoyan.com, api-mifit-cn3.zepp.com, api.coolapk.com, api.m.mi.com, api.maoyan.com, app-cdn.2q10.com, backend.getdrafts.com, boxjs.com, boxjs.net, capi.lkcoffee.com, cn-acs.m.cainiao.com, duckduckgo.com, guide-acs.m.taobao.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, idaily-cdn.appcloudcdn.com, idays-cdn.2q10.com, img.client.10010.com, info.mina.xiaoaisound.com, m.10010.com, m.client.10010.com, mcs-mimp-web.sf-express.com, mina.10010.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx.czsmk.com, nczxserv.czsmk.com, poplayer.template.alibaba.com, prod.zh.igpsport.com, shop-api.retail.mi.com, sub.store, testflight.apple.com, tieba.baidu.com, tiebac.baidu.com, ucmp-static.sf-express.com, ucmp.sf-express.com, vod-movie.maoyan.com, watch.iot.mi.com, www.themoviedb.org, www.xiaoxiongyouhao.com, wx.maoyan.com, zlsdk.1rtb.net
+hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, ad.maoyan.com, api-mifit-cn3.zepp.com, api.coolapk.com, api.m.mi.com, api.maoyan.com, app-cdn.2q10.com, backend.getdrafts.com, boxjs.com, boxjs.net, capi.lkcoffee.com, cn-acs.m.cainiao.com, duckduckgo.com, guide-acs.m.taobao.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, idaily-cdn.appcloudcdn.com, idays-cdn.2q10.com, img.client.10010.com, info.mina.xiaoaisound.com, m.10010.com, m.client.10010.com, mcs-mimp-web.sf-express.com, mina.10010.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx.czsmk.com, nczxserv.czsmk.com, p0.pipi.cn, poplayer.template.alibaba.com, prod.zh.igpsport.com, shop-api.retail.mi.com, sub.store, testflight.apple.com, tieba.baidu.com, tiebac.baidu.com, ucmp-static.sf-express.com, ucmp.sf-express.com, vod-movie.maoyan.com, watch.iot.mi.com, www.themoviedb.org, www.xiaoxiongyouhao.com, wx.maoyan.com, zlsdk.1rtb.net
 
 ### rewrite
 ## redirect
@@ -68,8 +68,9 @@ hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, ad.maoyan.com
 # lkcoffee capi.lkcoffee.com
 ^https:\/\/capi\.lkcoffee\.com\/resource\/core\/v\d\/product\/preRecommender url reject-dict
 
-# maoyan ad.maoyan.com, api.maoyan.com, vod-movie.maoyan.com, wx.maoyan.com
+# maoyan ad.maoyan.com, api.maoyan.com, p0.pipi.cn, vod-movie.maoyan.com, wx.maoyan.com
 ^https:\/\/(ad|api|vod-movie|wx)\.maoyan\.com\/(api\/position\/detail|(avitrade\/gateway\/(attractions\/homes\/sights|resk\/project\/list)|goods\/queryDealList|sns\/common\/feed\/channel\/v2\/list|vod\/video\/onlineMovies)\.json|maoyansh\/(api|myshow)\/(ajax|mobile)\/(eSportsIps|hotMatchList|(ad|celebrityBasicList|movie|performances|recommend)\/(calendar\/0|detail|performances|query|rob\/main|wonderShow))) url reject-dict
+^https:\/\/p0\.pipi\.cn\/(adAdmin|mediaplus\/maoyantong_ads_fe)\/\w+\.(jpg|png)\?imageMogr2\/(quality\/|thumbnail\/(860x0|!165x165|!1049x1169)) url reject-dict
 
 # pdd mobile.yangkeduo.com
 ^https:\/\/mobile\.yangkeduo\.com\/proxy\/api\/api\/(caterham|mc|tesla)\/(v\d\/)?(alexa\/)?query url reject-dict
