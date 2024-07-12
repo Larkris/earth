@@ -56,13 +56,14 @@ if (url.includes(".guoguo.nbnetflow.ads.mshow")) {
     // 37127 回收订单
     // 38241 寄件5折券
     // 38436 寄件6元券
+    // 38480 寄件5折券
     obj.data.result = obj.data.result.filter(
       (i) =>
         !(
           i?.materialContentMapper?.adItemDetail ||
           (i?.materialContentMapper?.bgImg && i?.materialContentMapper?.advRecGmtModifiedTime) ||
           ["common_header_banner", "entertainment", "kuaishou_banner"]?.includes(i?.materialContentMapper?.group_id) ||
-          ["29338", "29339", "29577", "32103", "33927", "36649", "37127", "38241", "38436"]?.includes(i?.id)
+          ["29338", "29339", "29577", "32103", "33927", "36649", "37127", "38241", "38436", "38480"]?.includes(i?.id)
         )
     );
   }
