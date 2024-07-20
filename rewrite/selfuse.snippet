@@ -54,7 +54,10 @@ hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, ad.maoyan.com
 
 # coolapk api.coolapk.com
 ^https:\/\/api\.coolapk\.com\/v6\/(account\/loadConfig\?key=my_page_card_config|main\/in(dexV8|it)|page\/dataList) url script-response-body https://github.com/ZenmoFeiShi/Qx/raw/main/KuAn.js
-^https:\/\/api\.coolapk\.com\/v6\/(feed|main|page)\/(dataList(\?)?|(detail|replyList)\?|indexV8|init) url script-response-body https://github.com/RuCu6/QuanX/raw/main/Scripts/coolapk.js
+^https:\/\/api\.coolapk\.com\/v6\/(feed|main|page)\/(dataList\??|(detail|replyList)\?|in(dexV8|it)) url script-response-body https://github.com/RuCu6/QuanX/raw/main/Scripts/coolapk.js
+
+
+
 ^https:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch url reject-dict
 
 # daysmatter app-cdn.2q10.com, idaily-cdn.appcloudcdn.com, idays-cdn.2q10.com
