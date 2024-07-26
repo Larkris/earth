@@ -1,5 +1,5 @@
 # hostname
-hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, ad.maoyan.com, api-mifit-cn3.zepp.com, api.coolapk.com, api.m.mi.com, api.maoyan.com, app-cdn.2q10.com, backend.getdrafts.com, boxjs.com, boxjs.net, capi.lkcoffee.com, cn-acs.m.cainiao.com, duckduckgo.com, guide-acs.m.taobao.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, idaily-cdn.appcloudcdn.com, idays-cdn.2q10.com, img.client.10010.com, info.mina.xiaoaisound.com, m.10010.com, m.client.10010.com, mcs-mimp-web.sf-express.com, mina.10010.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx.czsmk.com, nczxserv.czsmk.com, p0.pipi.cn, poplayer.template.alibaba.com, prod.zh.igpsport.com, shop-api.retail.mi.com, sub.store, testflight.apple.com, tieba.baidu.com, tiebac.baidu.com, ucmp-static.sf-express.com, ucmp.sf-express.com, vod-movie.maoyan.com, watch.iot.mi.com, www.themoviedb.org, www.xiaoxiongyouhao.com, wx.maoyan.com, zlsdk.1rtb.net
+hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, ad.maoyan.com, api-mifit-cn3.zepp.com, api.caiyunapp.com, api.coolapk.com, api.m.mi.com, api.maoyan.com, app-cdn.2q10.com, backend.getdrafts.com, boxjs.com, boxjs.net, capi.lkcoffee.com, cn-acs.m.cainiao.com, duckduckgo.com, guide-acs.m.taobao.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, idaily-cdn.appcloudcdn.com, idays-cdn.2q10.com, img.client.10010.com, info.mina.xiaoaisound.com, m.10010.com, m.client.10010.com, mcs-mimp-web.sf-express.com, mina.10010.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx.czsmk.com, nczxserv.czsmk.com, p0.pipi.cn, poplayer.template.alibaba.com, prod.zh.igpsport.com, shop-api.retail.mi.com, sub.store, testflight.apple.com, tieba.baidu.com, tiebac.baidu.com, ucmp-static.sf-express.com, ucmp.sf-express.com, vod-movie.maoyan.com, watch.iot.mi.com, www.themoviedb.org, www.xiaoxiongyouhao.com, wx.maoyan.com, zlsdk.1rtb.net
 
 ### rewrite
 ## redirect
@@ -36,11 +36,11 @@ hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, ad.maoyan.com
 # bilibili 屏蔽B站视频流端口
 ^http:\/\/.*:(448[03]|9102)\/upgcxcode url reject
 
-# caiyun *.cyapi.cn
-^https:\/\/biz\.cyapi\.cn\/(p\/v1\/vip_info|v2\/user) url script-response-body https://github.com/RuCu6/QuanX/raw/main/Scripts/break/caiyun.js
+# caiyun *.cyapi.cn, api.caiyunapp.com
+^https:\/\/(api\.caiyunapp\.com|wrapper\.cyapi\.cn)\/v1\/activity\? url script-response-body https://github.com/RuCu6/QuanX/raw/main/Scripts/break/caiyun.js
 ^https:\/\/biz\.cyapi\.cn\/(p\/v1\/(entries|trial_card\/info)|v2\/product) url reject-dict
+^https:\/\/biz\.cyapi\.cn\/(p\/v1\/vip_info|v2\/user) url script-response-body https://github.com/RuCu6/QuanX/raw/main/Scripts/break/caiyun.js
 ^https:\/\/starplucker\.cyapi\.cn\/v3\/(config\/cypage\/\w+\/conditions|notification\/message_center|operation\/homefeatures) url reject-dict
-^https:\/\/wrapper\.cyapi\.cn\/v1\/activity\? url script-response-body https://github.com/RuCu6/QuanX/raw/main/Scripts/break/caiyun.js
 ^https:\/\/wrapper\.cyapi\.cn\/v1\/(nafp\/origin_images|satellite)\? url script-request-header https://github.com/RuCu6/QuanX/raw/main/Scripts/break/caiyun.js
 
 # changzhouxing nczx.czsmk.com, nczxserv.czsmk.com, zlsdk.1rtb.net
