@@ -53,7 +53,7 @@ hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, ad.maoyan.com
 ^https:\/\/m\.client\.10010\.com\/mobileserviceNine\/(api\/v1\/(homeService\/getServiceHomeMarketingBits|index\/query(Index(Cfig|ExclusiveOffers|Waterfall)|OMO)\/)|myPage\/|wisdom\/precisionKeyAndActivity) url reject-dict
 ^https:\/\/m\.client\.10010\.com\/search_service\/tyfbSearch\/search(DiscoverListExpress|HotResult)\? url reject-dict
 ^https:\/\/m\.client\.10010\.com\/serviceimportantbusiness\/smart\/smartwisdomCommonNew\? url reject-dict
-^https:\/\/upay\.10010\.com\/(npfwap\/NpfMob\/offerRate\/getExclusiveBenefits\.action\?|upay-web3\/js\/.+\.js) url reject-dict
+^https:\/\/upay\.10010\.com\/npfwap\/NpfMob\/offerRate\/getExclusiveBenefits\.action\? url reject-dict
 
 # coolapk api.coolapk.com
 ^https:\/\/api\.coolapk\.com\/v6\/(account\/loadConfig\?key=my_page_card_config|main\/in(dexV8|it)|page\/dataList) url script-response-body https://github.com/ZenmoFeiShi/Qx/raw/main/KuAn.js
