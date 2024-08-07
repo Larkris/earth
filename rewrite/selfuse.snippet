@@ -1,5 +1,5 @@
 # hostname
-hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, acs4miniapp-inner.m.taobao.com, ad.maoyan.com, api-mifit-cn3.zepp.com, api.caiyunapp.com, api.coolapk.com, api.m.mi.com, api.maoyan.com, app-cdn.2q10.com, backend.getdrafts.com, boxjs.com, boxjs.net, capi.lkcoffee.com, cn-acs.m.cainiao.com, duckduckgo.com, guide-acs.m.taobao.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, idaily-cdn.appcloudcdn.com, idays-cdn.2q10.com, img.client.10010.com, info.mina.xiaoaisound.com, m.client.10010.com, mcs-mimp-web.sf-express.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx.czsmk.com, nczxserv.czsmk.com, p0.pipi.cn, poplayer.template.alibaba.com, prod.zh.igpsport.com, shop-api.retail.mi.com, sub.store, testflight.apple.com, tieba.baidu.com, tiebac.baidu.com, ucmp-static.sf-express.com, ucmp.sf-express.com, vod-movie.maoyan.com, watch.iot.mi.com, www.themoviedb.org, www.xiaoxiongyouhao.com, wx.maoyan.com
+hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, acs4miniapp-inner.m.taobao.com, ad.maoyan.com, api-mifit-cn3.zepp.com, api.caiyunapp.com, api.coolapk.com, api.m.mi.com, api.maoyan.com, app-cdn.2q10.com, backend.getdrafts.com, boxjs.com, boxjs.net, capi.lkcoffee.com, cn-acs.m.cainiao.com, duckduckgo.com, ecapi.lkcoffee.com, guide-acs.m.taobao.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, idaily-cdn.appcloudcdn.com, idays-cdn.2q10.com, img.client.10010.com, info.mina.xiaoaisound.com, m.client.10010.com, mcs-mimp-web.sf-express.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx.czsmk.com, nczxserv.czsmk.com, p0.pipi.cn, poplayer.template.alibaba.com, prod.zh.igpsport.com, shop-api.retail.mi.com, sub.store, testflight.apple.com, tieba.baidu.com, tiebac.baidu.com, ucmp-static.sf-express.com, ucmp.sf-express.com, vod-movie.maoyan.com, watch.iot.mi.com, www.themoviedb.org, www.xiaoxiongyouhao.com, wx.maoyan.com
 
 ### rewrite
 ## redirect
@@ -63,8 +63,9 @@ hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, acs4miniapp-i
 # igpsport prod.zh.igpsport.com
 ^https:\/\/prod\.zh\.igpsport\.com\/service\/(mobile\/api\/(v2\/)?System\/(GetStartAd|IsShowIndexActivityContent)|sportg\/club\/rideTeams\/) url reject-dict
 
-# lkcoffee capi.lkcoffee.com
-^https:\/\/capi\.lkcoffee\.com\/resource\/core\/v\d\/product\/preRecommender url reject-dict
+# lkcoffee capi.lkcoffee.com, ecapi.lkcoffee.com
+;^https:\/\/capi\.lkcoffee\.com\/resource\/core\/v\d\/product\/preRecommender url reject-dict
+^https:\/\/e?capi\.lkcoffee\.com\/resource\/(core\/v\d\/(homepage\/homePageCoffeeList|menu\/ordinaryUserLayeredArea|product\/preRecommender)|m\/(growUp\/calendarList|promotion\/giftCard\/topPage|sys\/base\/myLittleLuck|eorder\/product\/popAppTagProductList)) url reject-dict
 
 # maoyan ad.maoyan.com, api.maoyan.com, p0.pipi.cn, vod-movie.maoyan.com, wx.maoyan.com
 ^https:\/\/(ad|api|vod-movie|wx)\.maoyan\.com\/(api\/position\/detail|(avitrade\/gateway\/(attractions\/homes\/sights|resk\/project\/list)|goods\/queryDealList|sns\/common\/feed\/channel\/v2\/list|vod\/video\/onlineMovies)\.json|maoyansh\/(api|myshow)\/(ajax|mobile)\/(eSportsIps|hotMatchList|(ad|celebrityBasicList|movie|performances|recommend)\/(calendar\/0|detail|performances|query|rob\/main|wonderShow))) url reject-dict
@@ -94,7 +95,6 @@ hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, acs4miniapp-i
 ^https:\/\/info\.mina\.xiaoaisound\.com\/(advertise|payGuide)\/(splash|tab.a.e|userCenter) url reject-dict
 ^https:\/\/shop-api\.retail\.mi\.com\/mtop\/navi\/(rec\/merge\/|skywheel\/mishop\/splash) url reject-dict
 ^https:\/\/watch\.iot\.mi\.com\/cgi-op\/api\/v1\/watch\/health\/resource\?business=MI_(HEALTH_DEVICE_TAB_PAGE|WATCH_SPORT) url reject-dict
-
 
 ### script
 ## function
