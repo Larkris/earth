@@ -1,5 +1,5 @@
 # hostname
-hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, acs4miniapp-inner.m.taobao.com, ad.maoyan.com, api-mifit-cn3.zepp.com, api.caiyunapp.com, api.coolapk.com, api.m.mi.com, api.maoyan.com, app-cdn.2q10.com, backend.getdrafts.com, boxjs.com, boxjs.net, capi.lkcoffee.com, cn-acs.m.cainiao.com, duckduckgo.com, ecapi.lkcoffee.com, guide-acs.m.taobao.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, idaily-cdn.appcloudcdn.com, idays-cdn.2q10.com, img.client.10010.com, info.mina.xiaoaisound.com, m.client.10010.com, mcs-mimp-web.sf-express.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx.czsmk.com, nczxserv.czsmk.com, p0.pipi.cn, poplayer.template.alibaba.com, prod.zh.igpsport.com, shop-api.retail.mi.com, sub.store, testflight.apple.com, tieba.baidu.com, tiebac.baidu.com, ucmp-static.sf-express.com, ucmp.sf-express.com, vod-movie.maoyan.com, watch.iot.mi.com, www.themoviedb.org, www.xiaoxiongyouhao.com, wx.maoyan.com
+hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, acs4miniapp-inner.m.taobao.com, ad.maoyan.com, api-mifit-cn3.zepp.com, api.caiyunapp.com, api.coolapk.com, api.m.mi.com, api.maoyan.com, app-cdn.2q10.com, backend.getdrafts.com, boxjs.com, boxjs.net, capi.lkcoffee.com, cn-acs.m.cainiao.com, duckduckgo.com, ecapi.lkcoffee.com, guide-acs.m.taobao.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, idaily-cdn.appcloudcdn.com, idays-cdn.2q10.com, img.client.10010.com, info.mina.xiaoaisound.com, m.client.10010.com, mcs-mimp-web.sf-express.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx.czsmk.com, nczxserv.czsmk.com, p0.pipi.cn, pan.baidu.com, poplayer.template.alibaba.com, prod.zh.igpsport.com, shop-api.retail.mi.com, sub.store, testflight.apple.com, tieba.baidu.com, tiebac.baidu.com, ucmp-static.sf-express.com, ucmp.sf-express.com, vod-movie.maoyan.com, watch.iot.mi.com, www.themoviedb.org, www.xiaoxiongyouhao.com, wx.maoyan.com
 
 ### rewrite
 ## redirect
@@ -32,6 +32,9 @@ hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, acs4miniapp-i
 # ali_cainiao cn-acs.m.cainiao.com
 ^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.(cainiao|nbfriend)\.(guoguo|message|nbpresentation)\.(conversation|nbnetflow|pickup|protocol)\.(ads\.m?show|(empty\.|home)page\.get|list)\.cn url script-response-body https://github.com/Larkris/earth/raw/main/script/cainiao.js
 ^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.(com\.)?cainiao\.((adkeyword\.get|cncommunity\.my\.station\.query|cncreditmarket\.hit\.getactivityhit|guoguo\.nbnetflow\.ads\.(batch\.show\.v2|expose\.mreply|index)|longquan\.place\.getpageresourcecontent|nbfriend\.bird\.assistant\.entranceinfo\.show|nbmensa\.research\.researchservice\.(acquire|close|event)|nbopen\.miniapp\.recommend\.cpc|nbpresentation(\.homepage\.merge|.tabbar\.marketing)\.get)\.cn|cnactivitycenter) url reject-dict
+
+# baidu pan.baidu.com
+^https:\/\/pan\.baidu\.com\/(act\/(api\/activityentry|v\d\/)|api\/(get(config|holiday|syscfg)|plugin\/get|taskscore\/tasklist)|feed\/(cardinfos|hotlist)|rest\/\d\.\d\/(membership\/user\?method=gamecenter|pcs\/ad|xpan\/smartprogram)) url reject-dict
 
 # bilibili 屏蔽B站视频流端口
 ^http:\/\/.*:(448[03]|9102)\/upgcxcode url reject
