@@ -47,7 +47,7 @@ hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, acs4miniapp-i
 ^https:\/\/wrapper\.cyapi\.cn\/v1\/(nafp\/origin_images|satellite)\? url script-request-header https://github.com/RuCu6/QuanX/raw/main/Scripts/break/caiyun.js
 
 # changzhouxing nczx.czsmk.com, nczxserv.czsmk.com
-^https:\/\/nczx(serv)?\.czsmk\.com:\d+(\/dgApi)?\/dgapp\/(adv|home|news)\/(list\?indexName=.+?&terminalType=\d|newsInfo\/getNewsClass|layout\/contents\?layoutIndex=(homeBanner|rmgn)&pageIndex=home) url reject-dict
+^https:\/\/nczx(serv)?\.czsmk\.com:\d+(\/dgApi)?\/dgapp\/(adv|home|news)\/(advThirdShow|list\?indexName=.+?&terminalType=\d|newsInfo\/getNewsClass|layout\/contents\?layoutIndex=(homeBanner|rmgn)&pageIndex=home) url reject-dict
 
 # chinaunicom img.client.10010.com, m.client.10010.com, mina.10010.com
 ^https:\/\/img\.client\.10010\.com\/homejingxuan11\/js\/.+\.js url reject-dict
@@ -62,10 +62,10 @@ hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, acs4miniapp-i
 ^https:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch url reject-dict
 
 # daysmatter app-cdn.2q10.com, idaily-cdn.appcloudcdn.com, idays-cdn.2q10.com
-^https:\/\/(app|ida(ily|ys))-cdn\.(2q10|appcloudcdn)\.com\/ap[ip]\/(idays|list)\/(app_ad|honored|on_this_day|popups|v3\/android_mini) url reject-dict
+^https:\/\/(app|ida(ily|ys))-cdn\.(2q10|appcloudcdn)\.com\/ap[ip]\/(idays|list)\/(app_ad|honored|on_this_day|popups|v\d\/android_mini) url reject-dict
 
 # igpsport prod.zh.igpsport.com
-^https:\/\/prod\.zh\.igpsport\.com\/service\/(mobile\/api\/(v2\/)?System\/(GetStartAd|IsShowIndexActivityContent)|sportg\/club\/rideTeams\/) url reject-dict
+^https:\/\/prod\.zh\.igpsport\.com\/service\/(mobile\/api\/(v\d\/)?System\/(GetStartAd|IsShowIndexActivityContent)|sportg\/club\/rideTeams\/) url reject-dict
 
 # lkcoffee capi.lkcoffee.com, ecapi.lkcoffee.com
 ;^https:\/\/capi\.lkcoffee\.com\/resource\/core\/v\d\/product\/preRecommender url reject-dict
