@@ -1,5 +1,5 @@
 # hostname
-hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, acs4miniapp-inner.m.taobao.com, ad.maoyan.com, api-mifit-cn3.zepp.com, api.caiyunapp.com, api.coolapk.com, api.m.mi.com, api.maoyan.com, app-cdn.2q10.com, backend.getdrafts.com, boxjs.com, boxjs.net, capi.lkcoffee.com, cn-acs.m.cainiao.com, duckduckgo.com, ecapi.lkcoffee.com, guide-acs.m.taobao.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, idaily-cdn.appcloudcdn.com, idays-cdn.2q10.com, img.client.10010.com, info.mina.xiaoaisound.com, m.client.10010.com, mcs-mimp-web.sf-express.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx.czsmk.com, nczxserv.czsmk.com, p0.pipi.cn, pan.baidu.com, poplayer.template.alibaba.com, prod.zh.igpsport.com, shop-api.retail.mi.com, sub.store, testflight.apple.com, tieba.baidu.com, tiebac.baidu.com, ucmp-static.sf-express.com, ucmp.sf-express.com, vod-movie.maoyan.com, watch.iot.mi.com, www.themoviedb.org, www.xiaoxiongyouhao.com, wx.maoyan.com
+hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, acs4miniapp-inner.m.taobao.com, ad.maoyan.com, api-mifit-cn3.zepp.com, api.caiyunapp.com, api.coolapk.com, api.m.mi.com, api.maoyan.com, app-cdn.2q10.com, backend.getdrafts.com, boxjs.com, boxjs.net, capi.lkcoffee.com, cn-acs.m.cainiao.com, duckduckgo.com, ecapi.lkcoffee.com, guide-acs.m.taobao.com, hd.mina.mi.com, heic.alicdn.com, home.mi.com, idaily-cdn.appcloudcdn.com, idays-cdn.2q10.com, img.client.10010.com, info.mina.xiaoaisound.com, m.client.10010.com, mcs-mimp-web.sf-express.com, mina.10010.com, mobile.yangkeduo.com, mp.weixin.qq.com, nczx.czsmk.com, nczxserv.czsmk.com, p0.pipi.cn, pan.baidu.com, poplayer.template.alibaba.com, prod.zh.igpsport.com, shop-api.retail.mi.com, sub.store, testflight.apple.com, tieba.baidu.com, tiebac.baidu.com, ucmp-static.sf-express.com, ucmp.sf-express.com, vod-movie.maoyan.com, watch.iot.mi.com, www.themoviedb.org, www.xiaoxiongyouhao.com, wx.maoyan.com
 
 ### rewrite
 ## redirect
@@ -49,11 +49,12 @@ hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, acs4miniapp-i
 # changzhouxing nczx.czsmk.com, nczxserv.czsmk.com
 ^https:\/\/nczx(serv)?\.czsmk\.com:\d+(\/dgApi)?\/dgapp\/(adv|home|news)\/(list\?indexName=.+?&terminalType=\d|newsInfo\/getNewsClass|layout\/contents\?layoutIndex=(homeBanner|rmgn)&pageIndex=home) url reject-dict
 
-# chinaunicom img.client.10010.com, m.client.10010.com
+# chinaunicom img.client.10010.com, m.client.10010.com, mina.10010.com
 ^https:\/\/img\.client\.10010\.com\/homejingxuan11\/js\/.+\.js url reject-dict
 ^https:\/\/m\.client\.10010\.com\/(getDataFromService|proMyGameFloor|search_service\/tyfbSearch\/search(DiscoverListExpress|HotResult)|serviceimportantbusiness\/smart\/smartwisdomCommonNew)\? url reject-dict
 ^https:\/\/m\.client\.10010\.com\/mobile[Ss]ervice(important|query)?\/customer(Service)?\/(accountListData|querySmartServicekhd|share\/defaultShare)\.htm url reject-dict
 ^https:\/\/m\.client\.10010\.com\/mobileserviceNine\/(api\/v1\/(homeService\/getServiceHomeMarketingBits|index\/query(Index(Cfig|ExclusiveOffers|Waterfall)|OMO)\/)|myPage\/|wisdom\/precisionKeyAndActivity) url reject-dict
+^https:\/\/mina\.10010\.com\/wxapplet\/weixinNew\/(queryGoods(General|List)|zopGoodNumberQuery) url reject-dict
 
 # coolapk api.coolapk.com
 ^https:\/\/api\.coolapk\.com\/v6\/(account\/loadConfig\?key=my_page_card_config|main\/in(dexV8|it)|page\/dataList) url script-response-body https://github.com/ZenmoFeiShi/Qx/raw/main/KuAn.js
