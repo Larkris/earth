@@ -47,7 +47,7 @@ hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, acs4miniapp-i
 ^https:\/\/wrapper\.cyapi\.cn\/v1\/(nafp\/origin_images|satellite)\? url script-request-header https://github.com/RuCu6/QuanX/raw/main/Scripts/break/caiyun.js
 
 # changzhouxing nczx.czsmk.com, nczxserv.czsmk.com
-^https:\/\/nczx(serv)?\.czsmk\.com:\d+(\/dgApi)?\/dgapp\/(adv|home|news)\/(advThirdShow|list\?indexName=.+?&terminalType=\d|newsInfo\/getNewsClass|layout\/contents\?layoutIndex=(homeBanner|rmgn)&pageIndex=home) url reject-dict
+^https:\/\/nczx(serv)?\.czsmk\.com:\d+\/(dgApi\/)?dgapp\/(adv|home\/layout\/contents\?layoutIndex=(homeBanner|rmgn)&pageIndex=home|news\/newsInfo\/getNewsClass) url reject-dict
 
 # chinaunicom img.client.10010.com, m.client.10010.com, mina.10010.com
 ^https:\/\/img\.client\.10010\.com\/homejingxuan11\/js\/.+\.js url reject-dict
