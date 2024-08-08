@@ -23,7 +23,7 @@ hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, acs4miniapp-i
 ## advert
 # ali acs.m.taobao.com, acs4miniapp-inner.m.taobao.com, guide-acs.m.taobao.com, heic.alicdn.com, poplayer.template.alibaba.com
 ^https:\/\/acs(4miniapp-inner)?\.m\.taobao\.com\/gw\/mtop\.(ali(baba|mama|music)|cainiao|etao|film|o2o|taobao|trip)\.(abyss|activity|ad(vertisementservice)?|common|etao|idle|mtopadvertiseapi|nbopen|noah)\.(config\.query\/.+?etao_advertise|(gateway|unionpage)\.get|getadv|home\.welcome|miniapp\.recommend\.cpc|mobileservice\.startinit|query(\/.+tao_splash|advertise|tmsresources)) url reject-dict
-^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.(cainiao|taobao)\.(adx|guoguo|volvo|wireless)\.(flyad|home|nbnetflow|secondfloor)\.(ads\.batch\.show|get(ad|config)|newface\.awesome\.get) url reject-dict
+^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.((com\.)?cainiao|cncreditmarket|taobao)\.(adx|config|guoguo|longquan|volvo|wireless)\.((flyad|home|nbnetflow|place|secondfloor)\.(ads\.batch\.show|get(ad|config|pageresourcecontent)|newface\.awesome\.get)|getuserpageconfig) url reject-dict
 ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshow url script-response-body https://github.com/Larkris/earth/raw/main/script/cainiao.js
 ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(cloudvideo\.video\.query|wireless\.home\.splash\.awesome\.get) url script-response-body https://github.com/RuCu6/QuanX/raw/main/Scripts/myBlockAds.js
 ^https:\/\/heic\.alicdn\.com\/imgextra\/i\d\/\d*\/?[\w!]+-\d-(octopus|tps-1125-1602|tps-1080-1920)\.(jp|pn)g_(1\d{3}|9\d{2})x(1\d{3}|9\d{2})q[59]0 url reject-dict
@@ -31,7 +31,7 @@ hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, acs4miniapp-i
 
 # ali_cainiao cn-acs.m.cainiao.com
 ^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.(cainiao|nbfriend)\.(guoguo|message|nbpresentation)\.(conversation|nbnetflow|pickup|protocol)\.(ads\.m?show|(empty\.|home)page\.get|list)\.cn url script-response-body https://github.com/Larkris/earth/raw/main/script/cainiao.js
-^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.(com\.)?cainiao\.((adkeyword\.get|cncommunity\.my\.station\.query|cncreditmarket\.hit\.getactivityhit|guoguo\.nbnetflow\.ads\.(batch\.show\.v2|expose\.mreply|index)|longquan\.place\.getpageresourcecontent|nbfriend\.bird\.assistant\.entranceinfo\.show|nbmensa\.research\.researchservice\.(acquire|close|event)|nbopen\.miniapp\.recommend\.cpc|nbpresentation(\.homepage\.merge|.tabbar\.marketing)\.get)\.cn|cnactivitycenter) url reject-dict
+^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.((com\.)?cainiao|cncreditmarket)\.((adkeyword\.get|config\.getuserpageconfig|cncommunity\.my\.station\.query|cncreditmarket\.hit\.getactivityhit|guoguo\.nbnetflow\.ads\.(batch\.show\.v2|expose\.mreply|index)|longquan\.place\.getpageresourcecontent|nbfriend\.bird\.assistant\.entranceinfo\.show|nbmensa\.research\.researchservice\.(acquire|close|event)|nbopen\.miniapp\.recommend\.cpc|nbpresentation(\.homepage\.merge|.tabbar\.marketing)\.get)\.cn|cnactivitycenter) url reject-dict
 
 # baidu pan.baidu.com
 ^https:\/\/pan\.baidu\.com\/(act\/(api\/activityentry|v\d\/)|api\/(get(config|holiday|syscfg)|plugin\/get|taskscore\/tasklist)|feed\/(cardinfos|hotlist)|rest\/\d\.\d\/(membership\/user\?method=gamecenter|pcs\/ad|xpan\/smartprogram)) url reject-dict
