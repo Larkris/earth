@@ -24,47 +24,14 @@ hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, acs4miniapp-i
 # ali acs.m.taobao.com, acs4miniapp-inner.m.taobao.com, guide-acs.m.taobao.com, heic.alicdn.com, poplayer.template.alibaba.com
 ^https:\/\/acs(4miniapp-inner)?\.m\.taobao\.com\/gw\/mtop\.(alibaba\.advertisementservice\.getadv|alimama\.(etao\.config\.query\/.+?etao_advertise|abyss\.unionpage\.get)|alimusic\.common\.mobileservice\.startinit|etao\.noah\.query\/.+tao_splash|film\.mtopadvertiseapi\.queryadvertise|fliggy\.crm\.screen\.(allresource|predict)|o2o\.ad\.gateway\.get|taobao\.idle\.home\.welcome|trip\.activity\.querytmsresources) url reject-dict
 ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.(cainiao\.adx\.flyad\.getad|cncreditmarket\.config\.getuserpageconfig|com\.cainiao\.longquan\.place\.getpageresourcecontent|taobao\.(volvo\.secondfloor\.getconfig|wireless\.home\.newface\.awesome\.get)) url reject-dict
-;^https:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get url reject-dict
-;^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.advertisementservice\.getadv url reject-dict
-;^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimama\.etao\.config\.query\/.+?etao_advertise url reject-dict
-;^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimusic\.common\.mobileservice\.startinit url reject-dict
-;^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.etao\.noah\.query\/.+tao_splash url reject-dict
-;^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryadvertise url reject-dict
-;^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.fliggy\.crm\.screen\.(allresource|predict) url reject-dict
-;^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.o2o\.ad\.gateway\.get url reject-dict
-;^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.taobao\.idle\.home\.welcome url reject-dict
-;^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.activity\.querytmsresources url reject-dict
-;^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.adx\.flyad\.getad url reject-dict
 ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshow url script-response-body https://github.com/Larkris/earth/raw/main/script/cainiao.js
-;^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cncreditmarket\.config\.getuserpageconfig url reject-dict
-;^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.com\.cainiao\.longquan\.place\.getpageresourcecontent url reject-dict
 ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(cloudvideo\.video\.query|wireless\.home\.splash\.awesome\.get) url script-response-body https://github.com/RuCu6/QuanX/raw/main/Scripts/myBlockAds.js
-;^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(volvo\.secondfloor\.getconfig|wireless\.home\.newface\.awesome\.get) url reject-dict
 ^https:\/\/heic\.alicdn\.com\/imgextra\/i\d\/\d*\/?[\w!]+-\d-(octopus|tps-1125-1602|tps-1080-1920)\.(jp|pn)g_(1\d{3}|9\d{2})x(1\d{3}|9\d{2})q[59]0 url reject-dict
 ^https:\/\/poplayer\.template\.alibaba\.com\/\w+\.json url script-response-body https://github.com/RuCu6/QuanX/raw/main/Scripts/myBlockAds.js
 
 # ali_cainiao cn-acs.m.cainiao.com
-### 首页 好物推荐,商品推广,底部标签页,快递详情页,问卷调查,主页图标
-^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.((adkeyword|nbpresentation\.(homepage\.merge|tabbar\.marketing))\.get|cncommunity\.my\.station\.query|guoguo\.nbnetflow\.ads\.(batch\.show\.v2|expose\.mreply|index)|nbmensa\.research\.researchservice\.(acquire|close|event)|nbopen\.miniapp\.recommend\.cpc)\.cn url reject-dict
-^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.(guoguo\.nbnetflow\.ads\.m?show|nbpresentation\.(pickup\.empty\.|protocol\.home)page\.get)\.cn url script-response-body https://github.com/Larkris/earth/raw/main/script/cainiao.js
-;^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.adkeyword\.get\.cn url reject-dict
-;^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.cncommunity\.my\.station\.query\.cn url reject-dict
-;^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.(batch\.show\.v2|expose\.mreply|index)\.cn url reject-dict
-;^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.m?show\.cn url script-response-body https://github.com/Larkris/earth/raw/main/script/cainiao.js
-;^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbmensa\.research\.researchservice\.(acquire|event|close)\.cn url reject-dict
-;^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbopen\.miniapp\.recommend\.cpc\.cn url reject-dict
-;^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbpresentation\.(homepage\.merge|tabbar\.marketing)\.get\.cn url reject-dict
-;^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbpresentation\.(pickup\.empty\.page|protocol\.homepage)\.get\.cn url script-response-body https://github.com/Larkris/earth/raw/main/script/cainiao.js
-
-### 消息中心
-^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.nbfriend\.message\.conversation\.list\.cn url script-response-body https://github.com/Larkris/earth/raw/main/script/cainiao.js
-
-### 发现页 数字角标 裹裹券
-^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.(cncreditmarket\.config\.getuserpageconfig\.cn|com\.cainiao\.(cnactivitycenter|(cncreditmarket\.hit\.getactivityhit|longquan\.place\.getpageresourcecontent)\.cn)) url reject-dict
-;^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cncreditmarket\.config\.getuserpageconfig\.cn url reject-dict
-;^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.com\.cainiao\.cnactivitycenter url reject-dict
-;^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.com\.cainiao\.cncreditmarket\.hit\.getactivityhit\.cn url reject-dict
-;^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.com\.cainiao\.longquan\.place\.getpageresourcecontent\.cn url reject-dict
+^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.((cainiao\.((adkeyword|nbpresentation\.(homepage\.merge|tabbar\.marketing))\.get|cncommunity\.my\.station\.query|guoguo\.nbnetflow\.ads\.(batch\.show\.v2|expose\.mreply|index)|nbmensa\.research\.researchservice\.(acquire|close|event)|nbopen\.miniapp\.recommend\.cpc)|cncreditmarket\.config\.getuserpageconfig)\.cn|com\.cainiao\.(cnactivitycenter|(cncreditmarket\.hit\.getactivityhit|longquan\.place\.getpageresourcecontent)\.cn)) url reject-dict
+^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.(cainiao\.(guoguo\.nbnetflow\.ads\.m?show|nbpresentation\.p(ickup\.empty\.|rotocol\.home)page\.get)|nbfriend\.message\.conversation\.list)\.cn url script-response-body https://github.com/Larkris/earth/raw/main/script/cainiao.js
 
 # baidu pan.baidu.com
 ^https:\/\/pan\.baidu\.com\/(act\/(api\/activityentry|v\d\/)|api\/(get(config|holiday|syscfg)|plugin\/get|taskscore\/tasklist)|feed\/(cardinfos|hotlist)|rest\/\d\.\d\/(membership\/user\?method=gamecenter|pcs\/ad|xpan\/smartprogram)) url reject-dict
