@@ -78,11 +78,12 @@ hostname = *.boxjs.com, *.boxjs.net, *.cyapi.cn, acs.m.taobao.com, acs4miniapp-i
 ^https:\/\/nczx(serv)?\.czsmk\.com:\d+\/(dgApi\/)?dgapp\/(adv|home\/layout\/contents\?layoutIndex=(homeBanner|rmgn)&pageIndex=home|news\/newsInfo\/getNewsClass) url reject-dict
 
 # chinaunicom img.client.10010.com, m.client.10010.com, mina.10010.com
-^https:\/\/img\.client\.10010\.com\/(caifuhome|homejingxuan11\/js) url reject-dict
+^https:\/\/img\.client\.10010\.com\/(caifuhome|homejingxuan) url reject-dict
 ^https:\/\/m\.10010\.com\/(decoration-data\/scaffold\/queryNewHomePageidShowData|homepage\/static\/js|mall-order\/query\/(activity\/Config\/v1|newFirstPage)) url reject-dict
 ^https:\/\/m\.client\.10010\.com\/(getDataFromService|proMyGameFloor|search_service\/tyfbSearch\/search(DiscoverListExpress|HotResult)|serviceimportantbusiness\/smart\/smartwisdomCommonNew|wealthservice\/service\/action) url reject-dict
-^https:\/\/m\.client\.10010\.com\/mobile[Ss]ervice(important|query)?\/customer(Service)?\/(accountListData|querySmartServicekhd|share\/defaultShare)\.htm url reject-dict
-^https:\/\/m\.client\.10010\.com\/mobileserviceNine\/(api\/v1\/(homeService\/getServiceHomeMarketingBits|index\/query(Cfig|Index(Cfig|ExclusiveOffers|Waterfall)|OMO))|homefusion\/fuInter|myPage\/|wisdom\/precisionKeyAndActivity) url reject-dict
+^https:\/\/m\.client\.10010\.com\/mobileservice(important|query)\/(customer(Service)?\/(querySmartServicekhd|share\/defaultShare)\.htm|myInfoMoney\/queryMoney\.do) url reject-dict
+^https:\/\/m\.client\.10010\.com\/mobileService\/((customer\/accountListData|push\/messagepush|query\/querySmartBizHome|recommend2\/isunicomuser)\.htm|navigation) url reject-dict
+^https:\/\/m\.client\.10010\.com\/mobileserviceNine\/(api\/v1\/(homeService\/getServiceHomeMarketingBits|index\/query(Cfig|Index(Cfig|ExclusiveOffers|Waterfall)|OMO))|homefusion\/fuInter|myPage|wisdom\/precisionKeyAndActivity) url reject-dict
 ^https:\/\/mina\.10010\.com\/wxapplet\/weixinNew\/(queryGoods(General|List)|zopGoodNumberQuery) url reject-dict
 
 # coolapk api.coolapk.com
